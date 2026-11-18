@@ -4,7 +4,7 @@
 often the numbers are right** against the official data published by the CVM
 (Brazil's securities regulator), with an accountant's eye on where and why it fails.
 
-> Live demo: *coming soon* · Full results tables: [`docs/results.md`](docs/results.md)
+> **Live demo: [financial-statements-extractorr.streamlit.app](https://financial-statements-extractorr.streamlit.app/)** · Full results tables: [`docs/results.md`](docs/results.md)
 
 ---
 
