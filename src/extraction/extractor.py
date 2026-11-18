@@ -109,6 +109,12 @@ def save_statement(result: LLMResult[FinancialStatement], name: str, out_dir: Pa
     return csv_path
 
 
+def load_statement(json_path: Path) -> FinancialStatement:
+    """Read back a statement saved by `save_statement`."""
+    data = json.loads(Path(json_path).read_text(encoding="utf-8"))
+    return FinancialStatement.model_validate(data["statement"])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract a financial statement from a PDF.")
     parser.add_argument("pdf", type=Path)

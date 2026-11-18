@@ -1,0 +1,59 @@
+﻿section,pdf_account_name,pdf_value,cvm_codes,cvm_names,draft_status,reviewed
+1.01,Caixa e equivalentes de caixa,6296498,1.01.01,Caixa e Equivalentes de Caixa,single,ok
+1.01,Aplicações financeiras,983367,1.01.02,Aplicações Financeiras,single,ok
+1.01,Instrumentos financeiros derivativos,25146,1.01.08.03.01,Instrumentos Financeiros Derivativos,single,ok
+1.01,Clientes,7837018,1.01.03.01,Clientes,single_tiebreak_by_name,ok
+1.01,Estoques,9911053,1.01.04,Estoques,single,ok
+1.01,Tributos a recuperar,762068,1.01.06.01.02,Outros Tributos a Recuperar,single,ok
+1.01,Imposto de renda/contribuição social a recuperar,221894,1.01.06.01.01,Imposto de Renda/Contribuição Social a Recuperar,single,ok
+1.01,Dividendos e juros sobre capital próprio a receber,0,,,zero_in_pdf,ok
+1.01,Outros ativos circulantes,873801,1.01.08.03.02,Outros,single,ok
+1.01,Ativo Circulante,26910845,1.01,Ativo Circulante,single,ok
+1.02,Aplicações financeiras,14263,1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,single,ok
+1.02,Instrumentos financeiros derivativos,0,,,zero_in_pdf,ok
+1.02,Depósitos judiciais,58623,1.02.01.10.03,Depósitos Judiciais,single,ok
+1.02,Tributos diferidos,981841,1.02.01.07,Tributos Diferidos,single_tiebreak_by_name,ok
+1.02,Tributos a recuperar,167197,1.02.01.10.05,Outros Tributos a Recuperar,single,ok
+1.02,Imposto de renda/contribuição social a recuperar,1552,1.02.01.10.04,Imposto de Renda/Contribuição Social a Recuperar,single,ok
+1.02,Outros ativos não circulantes,146892,1.02.01.10.07,Outros,single,ok
+1.02,Investimentos,67026,1.02.02,Investimentos,single_tiebreak_by_name,ok
+1.02,Imobilizado,10625487,1.02.03.01,Imobilizado em Operação,single,ok
+1.02,Direito de uso em arrendamento,886315,1.02.03.02,Direito de Uso em Arrendamento,single,ok
+1.02,Intangível,2784989,1.02.04,Intangível,single,ok
+1.02,Ativo Não Circulante,15734185,1.02,Ativo Não Circulante,single,ok
+1,TOTAL DO ATIVO,42645030,1,Ativo Total,single,ok
+2.01,Fornecedores,2789346,2.01.02,Fornecedores,single,ok
+2.01,Empréstimos e financiamentos,3549314,2.01.04,Empréstimos e Financiamentos,single_tiebreak_by_name,ok
+2.01,Instrumentos financeiros derivativos,75075,2.01.05.02.06,Instrumentos Financeiros Derivativos,single,ok
+2.01,Obrigações sociais e tributárias,1170206,2.01.01+2.01.03.01.02,Obrigações Sociais e Trabalhistas + Outros,sum_of_two,ok
+2.01,Imposto de renda e contribuição social,321188,2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,single,ok
+2.01,Dividendos e juros sobre capital próprio a pagar,1759319,2.01.05.02.01,Dividendos e JCP a Pagar,single,ok
+2.01,Adiantamento de clientes,4693390,2.01.05.02.04,Adiantamento de Clientes,single,ok
+2.01,Participação nos lucros,621573,2.01.05.02.05,Participação nos Lucros,single,ok
+2.01,Arrendamentos,221934,2.01.05.02.07,Arrendamentos,single,ok
+2.01,Faturamento para entrega futura,200215,2.01.05.02.09,Faturamento para entrega futura,single,ok
+2.01,Provisão para garantia de produtos,578055,2.01.05.02.08,Provisão para garantias de produtos,single,ok
+2.01,Outros passivos circulantes,1406786,2.01.05.02.10,Outros,single,ok
+2.01,Passivo Circulante,17386401,2.01,Passivo Circulante,single,ok
+2.02,Empréstimos e financiamentos,1041508,2.02.01,Empréstimos e Financiamentos,single_tiebreak_by_name,ok
+2.02,Instrumentos financeiros derivativos,1367,2.02.02.02.04,Instrumentos Financeiros Derivativos,single,ok
+2.02,Arrendamentos,625219,2.02.02.02.05,Arrendamentos,single,ok
+2.02,Provisão para contingências,812188,2.02.04,Provisões,single,ok
+2.02,Tributos diferidos,220971,2.02.03,Tributos Diferidos,single_tiebreak_by_name,ok
+2.02,Obrigações tributárias,33314,2.02.02.02.03,Obrigações Tributárias,single,ok
+2.02,Dividendos a pagar,3464232,2.02.02.02.07,Dividendos a pagar,single,ok
+2.02,Outros passivos não circulantes,506466,2.02.02.02.06,Outros,single,ok
+2.02,Passivo Não Circulante,6705265,2.02,Passivo Não Circulante,single,ok
+2.03,Total do Passivo,24091666,2.01+2.02,Passivo Circulante + Passivo Não Circulante,sum_of_two,ok
+2.03,Capital Social,12504517,2.03.01,Capital Social Realizado,single,ok
+2.03,Reservas de capital,-145575,2.03.02.07+2.03.03,Ágio na Transação de Capital + Reservas de Reavaliação,sum_of_two,ok
+2.03,Plano de opções de ações,20215,2.03.02.04,Opções Outorgadas,single,ok
+2.03,Ações em tesouraria,-43579,2.03.02.05,Ações em Tesouraria,single,ok
+2.03,Reservas de lucros,2575748,2.03.04,Reservas de Lucros,single,ok
+2.03,Ajuste de avaliação patrimonial,267222,2.03.06,Ajustes de Avaliação Patrimonial,single_tiebreak_by_name,ok
+2.03,Outros resultados abrangentes,2238637,2.03.08,Outros Resultados Abrangentes,single,ok
+2.03,Dividendos adicionais propostos,0,,,zero_in_pdf,ok
+2.03,Acionistas controladores,17417185,2.03-2.03.09,Patrimônio Líquido Consolidado - Participação dos Acionistas Não Controladores,manual,ok
+2.03,Acionistas não controladores,1136179,2.03.09,Participação dos Acionistas Não Controladores,single,ok
+2.03,Total do Patrimônio Líquido,18553364,2.03,Patrimônio Líquido Consolidado,single,ok
+2,TOTAL DO PASSIVO E PATRIMÔNIO LÍQUIDO,42645030,2,Passivo Total,single,ok

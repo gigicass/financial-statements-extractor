@@ -3,7 +3,8 @@ from decimal import Decimal
 import pandas as pd
 
 from src.evaluation.cvm_loader import normalize_cvm_rows
-from src.evaluation.metrics import compare_values, evaluate_key_totals, summarize
+from src.evaluation.matching import MappingRow, parse_codes
+from src.evaluation.metrics import compare_values, evaluate_key_totals, evaluate_lines, summarize
 from src.extraction.schemas import FinancialStatement
 
 
@@ -54,3 +55,45 @@ def test_key_totals_converts_scale_and_reports_missing():
 
     summary = summarize(results)
     assert summary["found"] == 2 and summary["exact_match_pct"] == 50.0
+
+
+
+def test_parse_codes_handles_sums_and_subtractions():
+    assert parse_codes("2.01+2.02") == [(1, "2.01"), (1, "2.02")]
+    assert parse_codes("2.03-2.03.09") == [(1, "2.03"), (-1, "2.03.09")]
+    assert parse_codes("") == []
+
+
+def test_evaluate_lines_uses_section_for_repeated_names():
+    statement = FinancialStatement.model_validate({
+        "company": "X", "statement_type": "balance_sheet", "scope": "consolidated",
+        "reference_date": "2025-12-31", "currency_scale": "MIL",
+        "lines": [
+            {"account_name": "Aplicações financeiras", "value": "10"},
+            {"account_name": "Linha inventada", "value": "1"},
+            {"account_name": "Ativo Circulante", "value": "11", "is_total": True},
+            {"account_name": "Aplicações financeiras", "value": "7"},  # wrong: CVM says 5
+            {"account_name": "Ativo Não Circulante", "value": "5", "is_total": True},
+        ],
+    })
+    cvm = pd.DataFrame({"code": ["1.01", "1.01.02", "1.02", "1.02.01", "1.02.09"],
+                        "name": [""] * 5,
+                        "value": [Decimal(v) * 1000 for v in (11, 10, 5, 3, 2)]})
+    mapping = [
+        MappingRow("1.01", "Aplicações financeiras", [(1, "1.01.02")]),
+        MappingRow("1.01", "Ativo Circulante", [(1, "1.01")]),
+        MappingRow("1.02", "Aplicações financeiras", [(1, "1.02.01"), (1, "1.02.09")]),
+        MappingRow("1.02", "Conta que o modelo pulou", [(1, "1.02.09")]),
+        MappingRow("1.02", "Ativo Não Circulante", [(1, "1.02")]),
+        MappingRow("1.02", "Linha sem código", []),
+    ]
+
+    results, extras = evaluate_lines(statement, mapping, cvm)
+    by_key = {(r.section, r.account): r for r in results.itertuples()}
+
+    assert by_key[("1.01", "Aplicações financeiras")].exact_match
+    wrong = by_key[("1.02", "Aplicações financeiras")]
+    assert not wrong.exact_match and wrong.abs_error == Decimal(2000)
+    assert by_key[("1.02", "Conta que o modelo pulou")].extracted_value is None
+    assert ("1.02", "Linha sem código") not in by_key
+    assert extras == ["Linha inventada"]

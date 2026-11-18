@@ -1,14 +1,15 @@
 """Map extracted PDF lines to CVM account codes.
 
 The CVM DFP uses a standardized chart of accounts, while the PDF follows each company's
-own layout, so names alone are not enough (see README). The evaluation therefore uses a
+own layout, so names alone are not enough. The line-level evaluation therefore uses a
 reference mapping file per company/statement: PDF account -> CVM code(s), reviewed by hand.
 
-This module drafts that file automatically. The draft uses values to suggest codes,
+This module (1) drafts that file automatically and (2) loads a reviewed file and pairs
+its rows with the lines of a new extraction. The draft uses values to suggest codes,
 which is fine for a *draft to be reviewed*, but the evaluation itself must only use the
 reviewed mapping - otherwise a wrong value could never be detected.
 
-Usage:
+Usage (draft):
     uv run python -m src.evaluation.matching \
         data/processed/WEG_DFP_2025_balance_sheet_consolidated.json --company WEG
 """
@@ -17,23 +18,69 @@ import argparse
 import csv
 import difflib
 import logging
+import re
+from dataclasses import dataclass
 from decimal import Decimal
 from itertools import combinations
 from pathlib import Path
 
 import pandas as pd
 
-from src.evaluation.cvm_loader import COMPANIES, load_cvm_statement
-from src.evaluation.evaluate import DEFAULT_CVM_ZIP, load_extracted
-from src.evaluation.metrics import KEY_TOTALS
+from src.evaluation.cvm_loader import COMPANIES, DEFAULT_CVM_ZIP, load_cvm_statement
+from src.extraction.extractor import load_statement
 from src.extraction.pdf_reader import normalize
-from src.extraction.schemas import FinancialStatement
+from src.extraction.schemas import FinancialStatement, StatementLine, StatementType
 
 logger = logging.getLogger(__name__)
 
 MAPPINGS_DIR = Path("mappings")
 MAPPING_COLUMNS = ["section", "pdf_account_name", "pdf_value", "cvm_codes",
                    "cvm_names", "draft_status", "reviewed"]
+
+# Names in a new extraction may differ slightly from the reviewed file (e.g. another
+# model fixes a typo or changes case). Below this similarity a line is not paired.
+MIN_NAME_SIMILARITY = 0.85
+
+# CVM code -> accepted names of the matching total line in the PDF (normalized).
+# Careful: CVM "2 - Passivo Total" is liabilities PLUS equity, i.e. the PDF line
+# "Total do Passivo e Patrimônio Líquido", not "Total do Passivo".
+KEY_TOTALS: dict[StatementType, dict[str, list[str]]] = {
+    StatementType.BALANCE_SHEET: {
+        "1": ["total do ativo", "ativo total"],
+        "1.01": ["ativo circulante", "total do ativo circulante"],
+        "1.02": ["ativo nao circulante", "total do ativo nao circulante"],
+        "2": ["total do passivo e patrimonio liquido", "total do passivo e do patrimonio liquido",
+              "passivo total"],
+        "2.01": ["passivo circulante", "total do passivo circulante"],
+        "2.02": ["passivo nao circulante", "total do passivo nao circulante"],
+        "2.03": ["total do patrimonio liquido", "patrimonio liquido",
+                 "patrimonio liquido consolidado"],
+    },
+}
+
+
+@dataclass
+class MappingRow:
+    """One reviewed row: a PDF account and the signed CVM codes that make up its value."""
+
+    section: str
+    pdf_account_name: str
+    codes: list[tuple[int, str]]  # (+1 or -1, CVM code)
+
+
+def mapping_path(company: str, statement: FinancialStatement) -> Path:
+    """Reviewed mapping file name, e.g. mappings/WEG_2025_balance_sheet_consolidated.csv."""
+    return MAPPINGS_DIR / (f"{company}_{statement.reference_date.year}_"
+                           f"{statement.statement_type.value}_{statement.scope.value}.csv")
+
+
+def parse_codes(expression: str) -> list[tuple[int, str]]:
+    """'2.01+2.02' -> [(1,'2.01'),(1,'2.02')]; '2.03-2.03.09' -> [(1,'2.03'),(-1,'2.03.09')]."""
+    tokens = re.findall(r"([+-]?)\s*(\d+(?:\.\d+)*)", expression)
+    return [(-1 if sign == "-" else 1, code) for sign, code in tokens]
+
+
+# ---------------------------------------------------------------- sections
 
 
 def assign_sections(statement: FinancialStatement) -> list[str | None]:
@@ -58,12 +105,15 @@ def assign_sections(statement: FinancialStatement) -> list[str | None]:
     return sections
 
 
-def _is_ancestor(a: str, b: str) -> bool:
-    return b.startswith(a + ".")
-
-
 def _name_similarity(a: str, b: str) -> float:
     return difflib.SequenceMatcher(None, normalize(a), normalize(b)).ratio()
+
+
+# ---------------------------------------------------------------- draft
+
+
+def _is_ancestor(a: str, b: str) -> bool:
+    return b.startswith(a + ".")
 
 
 def suggest_codes(name: str, value: Decimal, section: str | None,
@@ -114,7 +164,43 @@ def write_mapping(rows: list[dict], path: Path) -> None:
         writer = csv.DictWriter(f, fieldnames=MAPPING_COLUMNS)
         writer.writeheader()
         writer.writerows(rows)
-    logger.info("Draft mapping written to %s", path)
+    logger.info("Mapping written to %s", path)
+
+
+# ---------------------------------------------------------------- reviewed mapping
+
+
+def load_mapping(path: Path) -> list[MappingRow]:
+    """Load a reviewed mapping file. Rows with empty cvm_codes are kept (not evaluated)."""
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        return [MappingRow(section=r["section"], pdf_account_name=r["pdf_account_name"],
+                           codes=parse_codes(r["cvm_codes"] or ""))
+                for r in csv.DictReader(f)]
+
+
+def pair_lines(statement: FinancialStatement, mapping: list[MappingRow],
+               ) -> tuple[list[tuple[MappingRow, StatementLine | None]], list[StatementLine]]:
+    """Pair each mapping row with an extracted line (same section, same or similar name).
+
+    Returns (pairs, extra_lines): extra lines are extracted lines no mapping row claimed,
+    e.g. invented lines or accounts the reference file does not have.
+    """
+    available = list(zip(statement.lines, assign_sections(statement)))
+    used: set[int] = set()
+    pairs = []
+    for row in mapping:
+        candidates = [(i, line) for i, (line, section) in enumerate(available)
+                      if i not in used and (section or "") == row.section]
+        best = max(candidates, default=None,
+                   key=lambda c: _name_similarity(c[1].account_name, row.pdf_account_name))
+        if best and _name_similarity(best[1].account_name,
+                                     row.pdf_account_name) >= MIN_NAME_SIMILARITY:
+            used.add(best[0])
+            pairs.append((row, best[1]))
+        else:
+            pairs.append((row, None))
+    extras = [line for i, (line, _) in enumerate(available) if i not in used]
+    return pairs, extras
 
 
 def main() -> None:
@@ -125,11 +211,10 @@ def main() -> None:
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
-    statement = load_extracted(args.extracted_json)
+    statement = load_statement(args.extracted_json)
     cvm = load_cvm_statement(args.cvm_zip, COMPANIES[args.company],
                              statement.statement_type, statement.scope)
-    out = MAPPINGS_DIR / (f"{args.company}_{statement.reference_date.year}_"
-                          f"{statement.statement_type.value}_{statement.scope.value}.draft.csv")
+    out = mapping_path(args.company, statement).with_suffix(".draft.csv")
     if out.exists():
         raise FileExistsError(f"{out} already exists; delete it to regenerate the draft")
     write_mapping(draft_mapping(statement, cvm), out)

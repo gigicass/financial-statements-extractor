@@ -23,6 +23,8 @@ CVM_FILES: dict[StatementType, list[str]] = {
     StatementType.CASH_FLOW: ["DFC_MI"],  # indirect method; most companies use it
 }
 
+DEFAULT_CVM_ZIP = Path("data/raw/cvm/dfp_cia_aberta_2025.zip")
+
 SCOPE_SUFFIX = {Scope.CONSOLIDATED: "con", Scope.INDIVIDUAL: "ind"}
 
 SCALE_MULTIPLIER = {"UNIDADE": 1, "MIL": 1000}
