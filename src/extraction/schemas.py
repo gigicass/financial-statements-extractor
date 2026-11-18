@@ -3,8 +3,15 @@
 from datetime import date
 from decimal import Decimal
 from enum import Enum
+from typing import Annotated
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, WithJsonSchema
+
+# Pydantic's default JSON schema for Decimal is "number OR any string", so the API let a
+# model answer "-" as a value. This schema only allows plain numeric strings, and the API
+# enforces it while the model generates; Pydantic still parses the value into a Decimal.
+NUMERIC_PATTERN = r"^-?\d+(\.\d+)?$"
+StrictDecimal = Annotated[Decimal, WithJsonSchema({"type": "string", "pattern": NUMERIC_PATTERN})]
 
 
 class StatementType(str, Enum):
@@ -33,9 +40,10 @@ class StatementLine(BaseModel):
     """One line (account) of a financial statement for a single period."""
 
     account_name: str = Field(description="Account name exactly as printed in the PDF.")
-    value: Decimal = Field(
-        description="Value as printed, in the statement's scale. Negative if shown "
-        "in parentheses or with a minus sign. Dashes ('-') mean zero."
+    value: StrictDecimal = Field(
+        description="Value as printed, in the statement's scale, written as a plain "
+        "number without thousands separators (e.g. -43579 or 1.52). Negative if shown "
+        "in parentheses or with a minus sign. Dashes ('-') mean 0."
     )
     is_total: bool = Field(
         default=False,

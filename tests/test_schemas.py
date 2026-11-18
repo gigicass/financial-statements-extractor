@@ -38,3 +38,11 @@ def test_statement_requires_at_least_one_line():
 def test_unknown_scale_is_rejected():
     with pytest.raises(ValidationError):
         make_statement(currency_scale="MILHOES")
+
+
+def test_value_schema_only_allows_plain_numbers():
+    schema = StatementLine.model_json_schema()["properties"]["value"]
+    assert schema["type"] == "string" and "pattern" in schema
+    with pytest.raises(ValidationError):
+        StatementLine(account_name="Derivativos", value="-")
+    assert StatementLine(account_name="Tesouraria", value="-43579").value == Decimal("-43579")
