@@ -1,0 +1,345 @@
+31
+Americanas S.A. - Em Recuperação Judicial
+BALANÇOS PATRIMONIAIS
+Em 31 de dezembro de 2025 e em 31 de dezembro de 2024
+(Em milhões de reais)
+Controladora
+Consolidado
+ATIVO
+Nota
+31/12/2025
+31/12/2024
+31/12/2025
+31/12/2024
+CIRCULANTE
+Caixa e equivalentes de caixa
+6
+784
+1.021
+879
+1.129
+Títulos e valores mobiliários
+7
+ 175
+21
+ 175
+21
+Contas a receber de clientes
+8
+ 1.444
+1.674
+ 1.467
+1.796
+Contas a receber - partes relacionadas
+12
+42
+267
+ -
+-
+Estoques
+9
+ 1.843
+1.860
+ 1.850
+1.899
+Tributos a recuperar
+10
+ 963
+1.019
+ 1.010
+1.125
+Imposto de renda e contribuição social
+ 
+11
+ 19
+95
+ 35
+124
+Despesas antecipadas
+152
+111
+165
+130
+Outros ativos circulantes
+308
+327
+344
+352
+Ativos mantidos para venda
+29
+1.561
+581
+1.846
+502
+Total do ativo circulante
+7.291
+6.976
+7.771
+7.078
+NÃO CIRCULANTE
+Títulos e valores mobiliários
+7
+18
+-
+-
+-
+Tributos a recuperar
+10
+ 2.765
+3.056
+ 2.883
+3.056
+Imposto de renda e contribuição social
+ 
+11
+288
+298
+341
+298
+Imposto de renda e contribuição social diferidos
+11
+ 74
+131
+ 74
+134
+Depósitos judiciais
+21
+ 731
+754
+ 739
+762
+Contas a receber - partes relacionadas
+12
+ 78
+53
+ -
+-
+Outros ativos não circulantes
+ 10
+9
+15
+10
+Investimentos
+13
+713
+623
+32
+30
+Imobilizado
+14
+1.458
+2.016
+1.464
+2.045
+Intangível
+ 
+15
+170
+531
+172
+743
+Ativo de direito de uso
+16
+2.758
+3.293
+2.758
+3.309
+Total do ativo não circulante
+9.063
+10.764
+8.478
+10.387
+TOTAL DO ATIVO
+16.354
+17.740
+16.249
+17.465
+As notas explicativas da administração são parte integrante das demonstrações financeiras individuais e consolidadas.
+
+32
+Americanas S.A. - Em Recuperação Judicial
+BALANÇOS PATRIMONIAIS
+Em 31 de dezembro de 2025 e em 31 de dezembro de 2024
+(Em milhões de reais)
+Controladora
+Consolidado
+PASSIVO E PATRIMÔNIO LÍQUIDO
+Nota
+31/12/2025
+31/12/2024
+31/12/2025
+31/12/2024
+CIRCULANTE
+Fornecedores
+17
+2.420
+2.113
+2.461
+2.190
+Risco sacado
+18
+ 309
+49
+308
+49
+Empréstimos e financiamentos
+ -
+-
+-
+49
+Contas a pagar - partes relacionadas
+ 
+12
+237
+219
+-
+-
+Salários, provisões e contribuições sociais
+242
+303
+262
+333
+Tributos a recolher
+ 
+20
+337
+631
+343
+647
+Imposto de renda e contribuição social
+11
+-
+-
+2
+15
+Adiantamento recebido de clientes
+11
+104
+32
+112
+Passivo de arrendamento
+ 
+16
+365
+446
+365
+451
+Outros passivos circulantes
+241
+354
+287
+400
+Passivos associados a ativos mantidos para venda
+ 
+29
+333
+-
+604
+136
+Total do passivo circulante
+4.495
+4.219
+4.664
+4.382
+NÃO CIRCULANTE
+Fornecedores
+17
+ 255
+338
+259
+341
+Empréstimos e financiamentos
+-
+-
+-
+17
+Debêntures
+ 
+19
+ 1.995
+1.716
+1.995
+1.716
+Tributos a recolher
+ 
+20
+ 62
+155
+71
+163
+Imposto de renda e contribuição social diferidos
+11
+ -
+-
+-
+52
+Provisão para processos judiciais e contingências
+21
+688
+1.233
+701
+1.299
+Contas a pagar - Partes relacionadas
+ 
+12
+ 77
+57
+-
+-
+Passivo de arrendamento
+16
+ 3.218
+3.722
+3.218
+3.735
+Provisão para perdas em investimentos
+13
+223
+541
+-
+-
+Plano de assistência médica
+ 
+31
+ 195
+243
+195
+243
+Outros passivos não circulantes
+ 387
+546
+387
+547
+Total do passivo não circulante
+7.100
+8.551
+6.826
+8.113
+PATRIMÔNIO LÍQUIDO
+Capital social
+22
+39.891
+39.891
+39.891
+39.891
+Outros resultados abrangentes
+(7)
+(67)
+(7)
+(67)
+Prejuízos acumulados
+(35.125)
+(34.854)
+(35.125)
+(34.854)
+Total do patrimônio líquido
+4.759
+4.970
+4.759
+4.970
+TOTAL DO PASSIVO E DO PATRIMÔNIO LÍQUIDO
+16.354
+17.740
+16.249
+17.465
+As notas explicativas da administração são parte integrante das demonstrações financeiras individuais e consolidadas.

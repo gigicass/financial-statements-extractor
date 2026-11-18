@@ -1,0 +1,130 @@
+33
+Americanas S.A. - Em Recuperação Judicial
+DEMONSTRAÇÕES DOS RESULTADOS
+Exercícios findos em 31 de dezembro de 2025 e 2024
+(Em milhões de reais, exceto o resultado por ação)
+ Controladora
+ Consolidado
+Nota
+31/12/2025
+31/12/2024
+31/12/2025
+31/12/2024
+Receita operacional líquida
+24
+12.185
+12.143
+12.305
+12.452
+Custo das mercadorias vendidas e serviços prestados
+25
+(8.886)
+(8.335)
+(8.981)
+(8.457)
+Lucro bruto
+3.299
+3.808
+3.324
+3.995
+Receitas (Despesas) operacionais
+Vendas
+26
+(2.712)
+ (2.881)
+(2.720)
+ (2.925)
+Gerais e administrativas
+26
+(1.394)
+ (1.901)
+(1.462)
+ (2.085)
+Resultado de equivalência patrimonial
+13
+10
+(1.110)
+-
+-
+Outras receitas (despesas) operacionais, líquidas
+26
+1.159
+1.780
+1.189
+1.831
+Lucro (Prejuízo) operacional antes do resultado financeiro
+362
+(304)
+331
+816
+Receitas financeiras
+27
+917
+24.218
+963
+16.749
+Despesas financeiras
+27
+(1.124)
+(10.668)
+(1.127)
+(4.288)
+Resultado financeiro
+(207)
+13.550
+(164)
+12.461
+Lucro antes do Imposto de renda e da contribuição social
+155
+13.246
+167
+13.277
+Imposto de renda e contribuição social
+Correntes
+11
+-
+-
+(14)
+(30)
+Diferidos
+11
+(57)
+(4.635)
+(55)
+(4.636)
+Lucro do exercício das operações continuadas
+98
+8.611
+98
+8.611
+Operações descontinuadas
+ Prejuízo do exercício das operações descontinuadas
+29
+(369)
+(330)
+(369)
+(330)
+Lucro líquido (Prejuízo) do exercício
+(271)
+8.281
+(271)
+8.281
+Lucro líquido por ação - Operações continuadas
+Básico – em R$
+28
+0,67
+93,61
+Diluído – em R$
+28
+0,67
+72,74
+Lucro líquido (Prejuízo) por ação do exercício
+Básico – em R$
+28
+(1,86)
+90,02
+Diluído – em R$
+28
+(1,86)
+69,95
+As notas explicativas da administração são parte integrante das demonstrações financeiras individuais e consolidadas.

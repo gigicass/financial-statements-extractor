@@ -1,0 +1,322 @@
+ATIVO
+Nota
+31/12/2025
+31/12/2024
+Circulante 
+Caixa e equivalentes de caixa
+6
+5.854
+                  
+5.628
+                  
+Contas a receber
+7
+3.056
+                  
+2.210
+                  
+Estoques
+8
+7.504
+                  
+7.127
+                  
+Tributos a recuperar
+9
+1.139
+                  
+1.241
+                  
+Instrumentos financeiros derivativos
+16.9
+7
+                         
+93
+                       
+Despesas antecipadas
+111
+                     
+99
+                       
+Outras contas a receber
+111
+                     
+50
+                       
+17.782
+                
+16.448
+                
+Ativos mantidos para venda
+27
+18
+                       
+-
+                      
+Total do ativo circulante
+17.800
+                
+16.448
+                
+Não circulante
+Tributos a recuperar
+9
+943
+                     
+672
+                     
+Imposto de renda e contribuição social diferidos
+19.2
+443
+                     
+140
+                     
+Instrumentos financeiros derivativos
+16.9
+448
+                     
+297
+                     
+Partes relacionadas
+10.1
+30
+                       
+23
+                       
+Depósitos judiciais
+17.6
+22
+                       
+24
+                       
+Despesas antecipadas
+19
+                       
+9
+                         
+Outras contas a receber
+605
+                     
+31
+                       
+.
+2.510
+                  
+1.196
+                  
+.
+Investimentos
+11
+326
+                     
+804
+                     
+Imobilizado
+12.2
+13.073
+                
+13.564
+                
+Intangível
+13.1
+5.202
+                  
+5.183
+                  
+Direito de uso
+14.1
+8.914
+                  
+8.398
+                  
+27.515
+                
+27.949
+                
+Total do ativo não circulante
+30.025
+                
+29.145
+                
+TOTAL DO ATIVO
+47.825
+                
+45.593
+                
+SENDAS DISTRIBUIDORA S.A.
+BALANÇOS PATRIMONIAIS
+31 DE DEZEMBRO DE 2025
+(Em milhões de reais)
+ As notas explicativas são parte integrante das demonstrações financeiras. 
+35
+
+PASSIVO
+Nota
+31/12/2025
+31/12/2024
+Circulante 
+Fornecedores
+15
+11.437
+                
+10.709
+                
+Fornecedores - Convênios
+15.2
+990
+                     
+938
+                     
+Empréstimos
+16.9
+1.202
+                  
+38
+                       
+Debêntures e notas promissórias
+16.9
+517
+                     
+2.046
+                  
+Salários e encargos sociais
+753
+                     
+682
+                     
+Passivo de arrendamento
+14.2
+461
+                     
+412
+                     
+Demais impostos a recolher
+473
+                     
+529
+                     
+Imposto de renda e contribuição social a pagar 
+45
+                       
+34
+                       
+Receitas a apropriar
+18
+507
+                     
+449
+                     
+Dividendos e juros sobre capital próprio a pagar
+20.2
+123
+                     
+129
+                     
+Outras contas a pagar
+309
+                     
+346
+                     
+Total do passivo circulante
+16.817
+                
+16.312
+                
+Não circulante
+Fornecedores
+15
+-
+                      
+12
+                       
+Empréstimos
+16.9
+2.414
+                  
+1.720
+                  
+Debêntures e notas promissórias
+16.9
+12.166
+                
+12.761
+                
+Provisão para demandas judiciais
+17
+266
+                     
+223
+                     
+Passivo de arrendamento
+14.2
+10.017
+                
+9.232
+                  
+Receitas a apropriar
+18
+518
+                     
+26
+                       
+Plano de ações liquidadas em caixa
+20.6.3
+12
+                       
+5
+                         
+Outras contas a pagar
+61
+                       
+47
+                       
+Total do passivo não circulante
+25.454
+                
+24.026
+                
+PATRIMÔNIO LÍQUIDO
+Capital social
+20.1
+1.456
+                  
+1.272
+                  
+Reserva de capital
+115
+                     
+88
+                       
+Reservas de lucros
+4.106
+                  
+3.933
+                  
+Ações em tesouraria
+20.5
+(104)
+                    
+(26)
+                      
+Outros resultados abrangentes
+(19)
+                      
+(12)
+                      
+Total do patrimônio líquido
+.
+5.554
+                  
+5.255
+                  
+TOTAL DO PASSIVO E PATRIMÔNIO LÍQUIDO
+47.825
+                
+45.593
+                
+As notas explicativas são parte integrante das demonstrações financeiras.
+SENDAS DISTRIBUIDORA S.A.
+BALANÇOS PATRIMONIAIS
+(Em milhões de reais)
+31 DE DEZEMBRO DE 2025
+36

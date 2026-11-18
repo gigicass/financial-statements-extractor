@@ -1,0 +1,340 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 4656,
+    "output_tokens": 1746,
+    "seconds": 8.3,
+    "cost_usd": "0.026772",
+    "source_pdf": "data/raw/KLBN_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "Klabin S.A.",
+    "statement_type": "balance_sheet",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Caixa e equivalentes de caixa",
+        "value": "10106016",
+        "is_total": false
+      },
+      {
+        "account_name": "Títulos e valores mobiliários",
+        "value": "785369",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber de clientes",
+        "value": "2404326",
+        "is_total": false
+      },
+      {
+        "account_name": "Partes relacionadas",
+        "value": "7981",
+        "is_total": false
+      },
+      {
+        "account_name": "Estoques",
+        "value": "3683984",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "110015",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social a recuperar",
+        "value": "361972",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "356450",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos",
+        "value": "233572",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo circulante",
+        "value": "18049685",
+        "is_total": true
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "544521",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social diferidos",
+        "value": "103138",
+        "is_total": false
+      },
+      {
+        "account_name": "Depósitos judiciais",
+        "value": "216005",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social a recuperar",
+        "value": "212535",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "213790",
+        "is_total": false
+      },
+      {
+        "account_name": "Partes relacionadas",
+        "value": "23741",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos",
+        "value": "280145",
+        "is_total": false
+      },
+      {
+        "account_name": "Realizável a Longo Prazo",
+        "value": "1593875",
+        "is_total": true
+      },
+      {
+        "account_name": "Participação em controladas e controladas em conjunto",
+        "value": "76072",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros investimentos",
+        "value": "20819",
+        "is_total": false
+      },
+      {
+        "account_name": "Imobilizado",
+        "value": "28648316",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativos biológicos",
+        "value": "13242376",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativos de direito de uso",
+        "value": "1659808",
+        "is_total": false
+      },
+      {
+        "account_name": "Intangível",
+        "value": "505826",
+        "is_total": false
+      },
+      {
+        "account_name": "Investimentos",
+        "value": "44153217",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do ativo não circulante",
+        "value": "45747092",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do ativo",
+        "value": "63796777",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "2362018",
+        "is_total": false
+      },
+      {
+        "account_name": "Fornecedor risco sacado",
+        "value": "658466",
+        "is_total": false
+      },
+      {
+        "account_name": "Fornecedor risco sacado florestal",
+        "value": "1118187",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivos de arrendamentos",
+        "value": "251911",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações fiscais",
+        "value": "285544",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações sociais e trabalhistas",
+        "value": "556251",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos, financiamentos e debêntures",
+        "value": "1770665",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para imposto de renda e contribuição social correntes",
+        "value": "87913",
+        "is_total": false
+      },
+      {
+        "account_name": "Partes relacionadas",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos e juros sobre capital próprio a pagar",
+        "value": "1112000",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a pagar e provisões",
+        "value": "564443",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo circulante",
+        "value": "8767398",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "6053",
+        "is_total": false
+      },
+      {
+        "account_name": "Fornecedor risco sacado florestal",
+        "value": "233784",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivos de arrendamentos",
+        "value": "1485620",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos, financiamentos e debêntures",
+        "value": "34950377",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "574557",
+        "is_total": false
+      },
+      {
+        "account_name": "Participação de passivo a descoberto de controlada",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social diferidos",
+        "value": "1878984",
+        "is_total": false
+      },
+      {
+        "account_name": "Partes relacionadas",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a pagar - investidores de sociedade em conta de participação",
+        "value": "189898",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisões fiscais, previdenciárias, trabalhistas e cíveis",
+        "value": "520181",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão do passivo atuarial",
+        "value": "575155",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações fiscais",
+        "value": "90300",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a pagar e provisões",
+        "value": "123369",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo não circulante",
+        "value": "40628278",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do passivo",
+        "value": "49395676",
+        "is_total": true
+      },
+      {
+        "account_name": "Capital social",
+        "value": "6875625",
+        "is_total": false
+      },
+      {
+        "account_name": "Reservas de capital",
+        "value": "-156626",
+        "is_total": false
+      },
+      {
+        "account_name": "Ações em tesouraria",
+        "value": "-101882",
+        "is_total": false
+      },
+      {
+        "account_name": "Reservas de lucros",
+        "value": "2777662",
+        "is_total": false
+      },
+      {
+        "account_name": "Ajustes de avaliação patrimonial",
+        "value": "-1508833",
+        "is_total": false
+      },
+      {
+        "account_name": "Patrimônio líquido dos acionistas da Klabin",
+        "value": "7885946",
+        "is_total": true
+      },
+      {
+        "account_name": "Participação dos acionistas não controladores",
+        "value": "6515155",
+        "is_total": false
+      },
+      {
+        "account_name": "Patrimônio líquido consolidado",
+        "value": "14401101",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do passivo e patrimônio líquido",
+        "value": "63796777",
+        "is_total": true
+      }
+    ]
+  }
+}

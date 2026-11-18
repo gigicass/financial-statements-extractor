@@ -1,0 +1,1377 @@
+code,name,value,is_fixed,level,company,statement,scope
+1,Ativo Total,42645030000,True,1,WEG,balance_sheet,consolidated
+1.01,Ativo Circulante,26910845000,True,2,WEG,balance_sheet,consolidated
+1.01.01,Caixa e Equivalentes de Caixa,6296498000,True,3,WEG,balance_sheet,consolidated
+1.01.01.01,Caixa e Bancos,2040959000,False,4,WEG,balance_sheet,consolidated
+1.01.01.02,Aplicações Financeiras,4255539000,False,4,WEG,balance_sheet,consolidated
+1.01.02,Aplicações Financeiras,983367000,True,3,WEG,balance_sheet,consolidated
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,WEG,balance_sheet,consolidated
+1.01.02.01.01,Títulos para Negociação,0,True,5,WEG,balance_sheet,consolidated
+1.01.02.01.02,Títulos Designados a Valor Justo,0,True,5,WEG,balance_sheet,consolidated
+1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,WEG,balance_sheet,consolidated
+1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,WEG,balance_sheet,consolidated
+1.01.03,Contas a Receber,7837018000,True,3,WEG,balance_sheet,consolidated
+1.01.03.01,Clientes,7837018000,True,4,WEG,balance_sheet,consolidated
+1.01.03.02,Outras Contas a Receber,0,True,4,WEG,balance_sheet,consolidated
+1.01.04,Estoques,9911053000,True,3,WEG,balance_sheet,consolidated
+1.01.05,Ativos Biológicos,0,True,3,WEG,balance_sheet,consolidated
+1.01.06,Tributos a Recuperar,983962000,True,3,WEG,balance_sheet,consolidated
+1.01.06.01,Tributos Correntes a Recuperar,983962000,True,4,WEG,balance_sheet,consolidated
+1.01.06.01.01,Imposto de Renda/Contribuição Social a Recuperar,221894000,False,5,WEG,balance_sheet,consolidated
+1.01.06.01.02,Outros Tributos a Recuperar,762068000,False,5,WEG,balance_sheet,consolidated
+1.01.07,Despesas Antecipadas,0,True,3,WEG,balance_sheet,consolidated
+1.01.08,Outros Ativos Circulantes,898947000,True,3,WEG,balance_sheet,consolidated
+1.01.08.01,Ativos Não-Correntes a Venda,0,True,4,WEG,balance_sheet,consolidated
+1.01.08.02,Ativos de Operações Descontinuadas,0,True,4,WEG,balance_sheet,consolidated
+1.01.08.03,Outros,898947000,True,4,WEG,balance_sheet,consolidated
+1.01.08.03.01,Instrumentos Financeiros Derivativos,25146000,False,5,WEG,balance_sheet,consolidated
+1.01.08.03.02,Outros,873801000,False,5,WEG,balance_sheet,consolidated
+1.02,Ativo Não Circulante,15734185000,True,2,WEG,balance_sheet,consolidated
+1.02.01,Ativo Realizável a Longo Prazo,1370368000,True,3,WEG,balance_sheet,consolidated
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,14263000,True,4,WEG,balance_sheet,consolidated
+1.02.01.01.01,Títulos Designados a Valor Justo,0,True,5,WEG,balance_sheet,consolidated
+1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.04,Contas a Receber,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.04.01,Clientes,0,False,5,WEG,balance_sheet,consolidated
+1.02.01.04.02,Outras Contas a Receber,0,False,5,WEG,balance_sheet,consolidated
+1.02.01.05,Estoques,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.06,Ativos Biológicos,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.07,Tributos Diferidos,981841000,True,4,WEG,balance_sheet,consolidated
+1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,981841000,False,5,WEG,balance_sheet,consolidated
+1.02.01.08,Despesas Antecipadas,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.09,Créditos com Partes Relacionadas,0,True,4,WEG,balance_sheet,consolidated
+1.02.01.09.01,Créditos com Coligadas,0,True,5,WEG,balance_sheet,consolidated
+1.02.01.09.03,Créditos com Controladores,0,False,5,WEG,balance_sheet,consolidated
+1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,False,5,WEG,balance_sheet,consolidated
+1.02.01.10,Outros Ativos Não Circulantes,374264000,True,4,WEG,balance_sheet,consolidated
+1.02.01.10.01,Ativos Não-Correntes a Venda,0,True,5,WEG,balance_sheet,consolidated
+1.02.01.10.02,Ativos de Operações Descontinuadas,0,True,5,WEG,balance_sheet,consolidated
+1.02.01.10.03,Depósitos Judiciais,58623000,False,5,WEG,balance_sheet,consolidated
+1.02.01.10.04,Imposto de Renda/Contribuição Social a Recuperar,1552000,False,5,WEG,balance_sheet,consolidated
+1.02.01.10.05,Outros Tributos a Recuperar,167197000,False,5,WEG,balance_sheet,consolidated
+1.02.01.10.06,Instrumentos Financeiros Derivativos,0,False,5,WEG,balance_sheet,consolidated
+1.02.01.10.07,Outros,146892000,False,5,WEG,balance_sheet,consolidated
+1.02.02,Investimentos,67026000,True,3,WEG,balance_sheet,consolidated
+1.02.02.01,Participações Societárias,67026000,True,4,WEG,balance_sheet,consolidated
+1.02.02.01.01,Participações em Coligadas,65506000,True,5,WEG,balance_sheet,consolidated
+1.02.02.01.04,Participações em Controladas em Conjunto,0,True,5,WEG,balance_sheet,consolidated
+1.02.02.01.05,Outros Investimentos,1520000,True,5,WEG,balance_sheet,consolidated
+1.02.02.02,Propriedades para Investimento,0,True,4,WEG,balance_sheet,consolidated
+1.02.03,Imobilizado,11511802000,True,3,WEG,balance_sheet,consolidated
+1.02.03.01,Imobilizado em Operação,10625487000,True,4,WEG,balance_sheet,consolidated
+1.02.03.02,Direito de Uso em Arrendamento,886315000,True,4,WEG,balance_sheet,consolidated
+1.02.03.03,Imobilizado em Andamento,0,True,4,WEG,balance_sheet,consolidated
+1.02.04,Intangível,2784989000,True,3,WEG,balance_sheet,consolidated
+1.02.04.01,Intangíveis,767825000,True,4,WEG,balance_sheet,consolidated
+1.02.04.01.01,Contrato de Concessão,0,True,5,WEG,balance_sheet,consolidated
+1.02.04.01.02,Outros,767825000,False,5,WEG,balance_sheet,consolidated
+1.02.04.02,Goodwill,2017164000,True,4,WEG,balance_sheet,consolidated
+2,Passivo Total,42645030000,True,1,WEG,balance_sheet,consolidated
+2.01,Passivo Circulante,17386401000,True,2,WEG,balance_sheet,consolidated
+2.01.01,Obrigações Sociais e Trabalhistas,820283000,True,3,WEG,balance_sheet,consolidated
+2.01.01.01,Obrigações Sociais,820283000,True,4,WEG,balance_sheet,consolidated
+2.01.01.02,Obrigações Trabalhistas,0,True,4,WEG,balance_sheet,consolidated
+2.01.02,Fornecedores,2789346000,True,3,WEG,balance_sheet,consolidated
+2.01.02.01,Fornecedores Nacionais,0,True,4,WEG,balance_sheet,consolidated
+2.01.02.02,Fornecedores Estrangeiros,0,True,4,WEG,balance_sheet,consolidated
+2.01.03,Obrigações Fiscais,671111000,True,3,WEG,balance_sheet,consolidated
+2.01.03.01,Obrigações Fiscais Federais,671111000,True,4,WEG,balance_sheet,consolidated
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,321188000,True,5,WEG,balance_sheet,consolidated
+2.01.03.01.02,Outros,349923000,False,5,WEG,balance_sheet,consolidated
+2.01.03.02,Obrigações Fiscais Estaduais,0,True,4,WEG,balance_sheet,consolidated
+2.01.03.03,Obrigações Fiscais Municipais,0,True,4,WEG,balance_sheet,consolidated
+2.01.04,Empréstimos e Financiamentos,3549314000,True,3,WEG,balance_sheet,consolidated
+2.01.04.01,Empréstimos e Financiamentos,3549314000,True,4,WEG,balance_sheet,consolidated
+2.01.04.01.01,Em Moeda Nacional,1475622000,True,5,WEG,balance_sheet,consolidated
+2.01.04.01.02,Em Moeda Estrangeira,2073692000,True,5,WEG,balance_sheet,consolidated
+2.01.04.02,Debêntures,0,True,4,WEG,balance_sheet,consolidated
+2.01.04.03,Financiamento por Arrendamento,0,True,4,WEG,balance_sheet,consolidated
+2.01.05,Outras Obrigações,9556347000,True,3,WEG,balance_sheet,consolidated
+2.01.05.01,Passivos com Partes Relacionadas,0,True,4,WEG,balance_sheet,consolidated
+2.01.05.01.01,Débitos com Coligadas,0,True,5,WEG,balance_sheet,consolidated
+2.01.05.01.03,Débitos com Controladores,0,True,5,WEG,balance_sheet,consolidated
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,0,True,5,WEG,balance_sheet,consolidated
+2.01.05.02,Outros,9556347000,True,4,WEG,balance_sheet,consolidated
+2.01.05.02.01,Dividendos e JCP a Pagar,1759319000,True,5,WEG,balance_sheet,consolidated
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,0,True,5,WEG,balance_sheet,consolidated
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,0,True,5,WEG,balance_sheet,consolidated
+2.01.05.02.04,Adiantamento de Clientes,4693390000,False,5,WEG,balance_sheet,consolidated
+2.01.05.02.05,Participação nos Lucros,621573000,False,5,WEG,balance_sheet,consolidated
+2.01.05.02.06,Instrumentos Financeiros Derivativos,75075000,False,5,WEG,balance_sheet,consolidated
+2.01.05.02.07,Arrendamentos,221934000,False,5,WEG,balance_sheet,consolidated
+2.01.05.02.08,Provisão para garantias de produtos,578055000,False,5,WEG,balance_sheet,consolidated
+2.01.05.02.09,Faturamento para entrega futura,200215000,False,5,WEG,balance_sheet,consolidated
+2.01.05.02.10,Outros,1406786000,False,5,WEG,balance_sheet,consolidated
+2.01.06,Provisões,0,True,3,WEG,balance_sheet,consolidated
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,WEG,balance_sheet,consolidated
+2.01.06.01.01,Provisões Fiscais,0,True,5,WEG,balance_sheet,consolidated
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,WEG,balance_sheet,consolidated
+2.01.06.01.03,Provisões para Benefícios a Empregados,0,True,5,WEG,balance_sheet,consolidated
+2.01.06.01.04,Provisões Cíveis,0,True,5,WEG,balance_sheet,consolidated
+2.01.06.02,Outras Provisões,0,True,4,WEG,balance_sheet,consolidated
+2.01.06.02.01,Provisões para Garantias,0,True,5,WEG,balance_sheet,consolidated
+2.01.06.02.02,Provisões para Reestruturação,0,True,5,WEG,balance_sheet,consolidated
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,WEG,balance_sheet,consolidated
+2.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,WEG,balance_sheet,consolidated
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,WEG,balance_sheet,consolidated
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,WEG,balance_sheet,consolidated
+2.02,Passivo Não Circulante,6705265000,True,2,WEG,balance_sheet,consolidated
+2.02.01,Empréstimos e Financiamentos,1041508000,True,3,WEG,balance_sheet,consolidated
+2.02.01.01,Empréstimos e Financiamentos,1041508000,True,4,WEG,balance_sheet,consolidated
+2.02.01.01.01,Em Moeda Nacional,394588000,True,5,WEG,balance_sheet,consolidated
+2.02.01.01.02,Em Moeda Estrangeira,646920000,True,5,WEG,balance_sheet,consolidated
+2.02.01.02,Debêntures,0,True,4,WEG,balance_sheet,consolidated
+2.02.01.03,Financiamento por Arrendamento,0,True,4,WEG,balance_sheet,consolidated
+2.02.02,Outras Obrigações,4630598000,True,3,WEG,balance_sheet,consolidated
+2.02.02.01,Passivos com Partes Relacionadas,0,True,4,WEG,balance_sheet,consolidated
+2.02.02.01.01,Débitos com Coligadas,0,True,5,WEG,balance_sheet,consolidated
+2.02.02.01.03,Débitos com Controladores,0,True,5,WEG,balance_sheet,consolidated
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,0,True,5,WEG,balance_sheet,consolidated
+2.02.02.02,Outros,4630598000,True,4,WEG,balance_sheet,consolidated
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,0,True,5,WEG,balance_sheet,consolidated
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,0,True,5,WEG,balance_sheet,consolidated
+2.02.02.02.03,Obrigações Tributárias,33314000,False,5,WEG,balance_sheet,consolidated
+2.02.02.02.04,Instrumentos Financeiros Derivativos,1367000,False,5,WEG,balance_sheet,consolidated
+2.02.02.02.05,Arrendamentos,625219000,False,5,WEG,balance_sheet,consolidated
+2.02.02.02.06,Outros,506466000,False,5,WEG,balance_sheet,consolidated
+2.02.02.02.07,Dividendos a pagar,3464232000,False,5,WEG,balance_sheet,consolidated
+2.02.03,Tributos Diferidos,220971000,True,3,WEG,balance_sheet,consolidated
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,220971000,True,4,WEG,balance_sheet,consolidated
+2.02.04,Provisões,812188000,True,3,WEG,balance_sheet,consolidated
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,WEG,balance_sheet,consolidated
+2.02.04.01.01,Provisões Fiscais,0,True,5,WEG,balance_sheet,consolidated
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,WEG,balance_sheet,consolidated
+2.02.04.01.03,Provisões para Benefícios a Empregados,0,True,5,WEG,balance_sheet,consolidated
+2.02.04.01.04,Provisões Cíveis,0,True,5,WEG,balance_sheet,consolidated
+2.02.04.02,Outras Provisões,0,True,4,WEG,balance_sheet,consolidated
+2.02.04.02.01,Provisões para Garantias,0,True,5,WEG,balance_sheet,consolidated
+2.02.04.02.02,Provisões para Reestruturação,0,True,5,WEG,balance_sheet,consolidated
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,WEG,balance_sheet,consolidated
+2.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,WEG,balance_sheet,consolidated
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,WEG,balance_sheet,consolidated
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,WEG,balance_sheet,consolidated
+2.02.06,Lucros e Receitas a Apropriar,0,True,3,WEG,balance_sheet,consolidated
+2.02.06.01,Lucros a Apropriar,0,True,4,WEG,balance_sheet,consolidated
+2.02.06.02,Receitas a Apropriar,0,True,4,WEG,balance_sheet,consolidated
+2.02.06.03,Subvenções de Investimento a Apropriar,0,True,4,WEG,balance_sheet,consolidated
+2.03,Patrimônio Líquido Consolidado,18553364000,True,2,WEG,balance_sheet,consolidated
+2.03.01,Capital Social Realizado,12504517000,True,3,WEG,balance_sheet,consolidated
+2.03.02,Reservas de Capital,-172570000,True,3,WEG,balance_sheet,consolidated
+2.03.02.01,Ágio na Emissão de Ações,0,True,4,WEG,balance_sheet,consolidated
+2.03.02.02,Reserva Especial de Ágio na Incorporação,0,True,4,WEG,balance_sheet,consolidated
+2.03.02.03,Alienação de Bônus de Subscrição,0,True,4,WEG,balance_sheet,consolidated
+2.03.02.04,Opções Outorgadas,20215000,True,4,WEG,balance_sheet,consolidated
+2.03.02.05,Ações em Tesouraria,-43579000,True,4,WEG,balance_sheet,consolidated
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,0,True,4,WEG,balance_sheet,consolidated
+2.03.02.07,Ágio na Transação de Capital,-149206000,False,4,WEG,balance_sheet,consolidated
+2.03.03,Reservas de Reavaliação,3631000,True,3,WEG,balance_sheet,consolidated
+2.03.04,Reservas de Lucros,2575748000,True,3,WEG,balance_sheet,consolidated
+2.03.04.01,Reserva Legal,318811000,True,4,WEG,balance_sheet,consolidated
+2.03.04.02,Reserva Estatutária,2256937000,True,4,WEG,balance_sheet,consolidated
+2.03.04.03,Reserva para Contingências,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.04,Reserva de Lucros a Realizar,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.05,Reserva de Retenção de Lucros,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.07,Reserva de Incentivos Fiscais,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.08,Dividendo Adicional Proposto,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.09,Ações em Tesouraria,0,True,4,WEG,balance_sheet,consolidated
+2.03.04.10,Ajuste de Adoção Inicial IFRS,0,False,4,WEG,balance_sheet,consolidated
+2.03.05,Lucros/Prejuízos Acumulados,0,True,3,WEG,balance_sheet,consolidated
+2.03.06,Ajustes de Avaliação Patrimonial,267222000,True,3,WEG,balance_sheet,consolidated
+2.03.06.01,Custo Atribuído,267222000,False,4,WEG,balance_sheet,consolidated
+2.03.07,Ajustes Acumulados de Conversão,0,True,3,WEG,balance_sheet,consolidated
+2.03.08,Outros Resultados Abrangentes,2238637000,True,3,WEG,balance_sheet,consolidated
+2.03.08.01,Instrumentos Financeiros Derivativos,3727000,False,4,WEG,balance_sheet,consolidated
+2.03.08.02,Variação Participação Societária,-4288000,False,4,WEG,balance_sheet,consolidated
+2.03.08.03,Ajustes Acumulados de Conversão,2239198000,False,4,WEG,balance_sheet,consolidated
+2.03.09,Participação dos Acionistas Não Controladores,1136179000,True,3,WEG,balance_sheet,consolidated
+1,Ativo Total,63796777000,True,1,KLBN,balance_sheet,consolidated
+1.01,Ativo Circulante,18049685000,True,2,KLBN,balance_sheet,consolidated
+1.01.01,Caixa e Equivalentes de Caixa,10106016000,True,3,KLBN,balance_sheet,consolidated
+1.01.02,Aplicações Financeiras,785369000,True,3,KLBN,balance_sheet,consolidated
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,785369000,True,4,KLBN,balance_sheet,consolidated
+1.01.02.01.01,Títulos para Negociação,0,True,5,KLBN,balance_sheet,consolidated
+1.01.02.01.02,Títulos Designados a Valor Justo,0,True,5,KLBN,balance_sheet,consolidated
+1.01.02.01.03,Títulos e Valores Mobiliários,785369000,False,5,KLBN,balance_sheet,consolidated
+1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,KLBN,balance_sheet,consolidated
+1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,KLBN,balance_sheet,consolidated
+1.01.03,Contas a Receber,2404326000,True,3,KLBN,balance_sheet,consolidated
+1.01.03.01,Clientes,2404326000,True,4,KLBN,balance_sheet,consolidated
+1.01.03.02,Outras Contas a Receber,0,True,4,KLBN,balance_sheet,consolidated
+1.01.04,Estoques,3683984000,True,3,KLBN,balance_sheet,consolidated
+1.01.05,Ativos Biológicos,0,True,3,KLBN,balance_sheet,consolidated
+1.01.06,Tributos a Recuperar,718422000,True,3,KLBN,balance_sheet,consolidated
+1.01.06.01,Tributos Correntes a Recuperar,718422000,True,4,KLBN,balance_sheet,consolidated
+1.01.06.01.01,Imposto de renda e contribuição social a recuperar,361972000,False,5,KLBN,balance_sheet,consolidated
+1.01.06.01.02,Tributos a Recuperar,356450000,False,5,KLBN,balance_sheet,consolidated
+1.01.07,Despesas Antecipadas,0,True,3,KLBN,balance_sheet,consolidated
+1.01.08,Outros Ativos Circulantes,351568000,True,3,KLBN,balance_sheet,consolidated
+1.01.08.01,Ativos Não-Correntes a Venda,0,True,4,KLBN,balance_sheet,consolidated
+1.01.08.02,Ativos de Operações Descontinuadas,0,True,4,KLBN,balance_sheet,consolidated
+1.01.08.03,Outros,351568000,True,4,KLBN,balance_sheet,consolidated
+1.01.08.03.01,Partes relacionadas,7981000,False,5,KLBN,balance_sheet,consolidated
+1.01.08.03.03,Instrumentos financeiros derivativos,110015000,False,5,KLBN,balance_sheet,consolidated
+1.01.08.03.04,Outros ativos,233572000,False,5,KLBN,balance_sheet,consolidated
+1.02,Ativo Não Circulante,45747092000,True,2,KLBN,balance_sheet,consolidated
+1.02.01,Ativo Realizável a Longo Prazo,14836251000,True,3,KLBN,balance_sheet,consolidated
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,KLBN,balance_sheet,consolidated
+1.02.01.01.01,Títulos Designados a Valor Justo,0,True,5,KLBN,balance_sheet,consolidated
+1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,KLBN,balance_sheet,consolidated
+1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,KLBN,balance_sheet,consolidated
+1.02.01.04,Contas a Receber,0,True,4,KLBN,balance_sheet,consolidated
+1.02.01.04.01,Clientes,0,False,5,KLBN,balance_sheet,consolidated
+1.02.01.04.02,Outras Contas a Receber,0,False,5,KLBN,balance_sheet,consolidated
+1.02.01.05,Estoques,0,True,4,KLBN,balance_sheet,consolidated
+1.02.01.06,Ativos Biológicos,13242376000,True,4,KLBN,balance_sheet,consolidated
+1.02.01.07,Tributos Diferidos,103138000,True,4,KLBN,balance_sheet,consolidated
+1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,103138000,False,5,KLBN,balance_sheet,consolidated
+1.02.01.08,Despesas Antecipadas,0,True,4,KLBN,balance_sheet,consolidated
+1.02.01.09,Créditos com Partes Relacionadas,23741000,True,4,KLBN,balance_sheet,consolidated
+1.02.01.09.01,Créditos com Coligadas,0,True,5,KLBN,balance_sheet,consolidated
+1.02.01.09.03,Créditos com Controladores,0,False,5,KLBN,balance_sheet,consolidated
+1.02.01.09.04,Créditos com Outras Partes Relacionadas,23741000,False,5,KLBN,balance_sheet,consolidated
+1.02.01.10,Outros Ativos Não Circulantes,1466996000,True,4,KLBN,balance_sheet,consolidated
+1.02.01.10.01,Ativos Não-Correntes a Venda,0,True,5,KLBN,balance_sheet,consolidated
+1.02.01.10.02,Ativos de Operações Descontinuadas,0,True,5,KLBN,balance_sheet,consolidated
+1.02.01.10.03,Depósitos judiciais,216005000,False,5,KLBN,balance_sheet,consolidated
+1.02.01.10.04,Tributos a recuperar,213790000,False,5,KLBN,balance_sheet,consolidated
+1.02.01.10.05,Outros ativos,280145000,False,5,KLBN,balance_sheet,consolidated
+1.02.01.10.06,Imposto de renda e contribuição social a recuperar,212535000,False,5,KLBN,balance_sheet,consolidated
+1.02.01.10.07,Instrumentos financeiros derivativos,544521000,False,5,KLBN,balance_sheet,consolidated
+1.02.02,Investimentos,96891000,True,3,KLBN,balance_sheet,consolidated
+1.02.02.01,Participações Societárias,96891000,True,4,KLBN,balance_sheet,consolidated
+1.02.02.01.01,Participações em Coligadas,0,True,5,KLBN,balance_sheet,consolidated
+1.02.02.01.04,Participações em Controladas em Conjunto,76072000,True,5,KLBN,balance_sheet,consolidated
+1.02.02.01.05,Outros Investimentos,20819000,True,5,KLBN,balance_sheet,consolidated
+1.02.02.02,Propriedades para Investimento,0,True,4,KLBN,balance_sheet,consolidated
+1.02.03,Imobilizado,30308124000,True,3,KLBN,balance_sheet,consolidated
+1.02.03.01,Imobilizado em Operação,28648316000,True,4,KLBN,balance_sheet,consolidated
+1.02.03.02,Direito de Uso em Arrendamento,1659808000,True,4,KLBN,balance_sheet,consolidated
+1.02.03.03,Imobilizado em Andamento,0,True,4,KLBN,balance_sheet,consolidated
+1.02.03.03.01,Ativos de bens mantidos para venda,0,False,5,KLBN,balance_sheet,consolidated
+1.02.04,Intangível,505826000,True,3,KLBN,balance_sheet,consolidated
+1.02.04.01,Intangíveis,505826000,True,4,KLBN,balance_sheet,consolidated
+1.02.04.01.01,Contrato de Concessão,0,True,5,KLBN,balance_sheet,consolidated
+1.02.04.01.02,Intangível,505826000,False,5,KLBN,balance_sheet,consolidated
+1.02.04.02,Goodwill,0,True,4,KLBN,balance_sheet,consolidated
+2,Passivo Total,63796777000,True,1,KLBN,balance_sheet,consolidated
+2.01,Passivo Circulante,8767398000,True,2,KLBN,balance_sheet,consolidated
+2.01.01,Obrigações Sociais e Trabalhistas,556251000,True,3,KLBN,balance_sheet,consolidated
+2.01.01.01,Obrigações Sociais,0,True,4,KLBN,balance_sheet,consolidated
+2.01.01.02,Obrigações Trabalhistas,556251000,True,4,KLBN,balance_sheet,consolidated
+2.01.02,Fornecedores,4138670000,True,3,KLBN,balance_sheet,consolidated
+2.01.02.01,Fornecedores Nacionais,3973166000,True,4,KLBN,balance_sheet,consolidated
+2.01.02.01.01,Fornecedores Nacionais,2196513000,False,5,KLBN,balance_sheet,consolidated
+2.01.02.01.02,Fornecedor risco sacado,658466000,False,5,KLBN,balance_sheet,consolidated
+2.01.02.01.03,Fornecedor risco sacado florestal,1118187000,False,5,KLBN,balance_sheet,consolidated
+2.01.02.02,Fornecedores Estrangeiros,165504000,True,4,KLBN,balance_sheet,consolidated
+2.01.03,Obrigações Fiscais,373458000,True,3,KLBN,balance_sheet,consolidated
+2.01.03.01,Obrigações Fiscais Federais,221340000,True,4,KLBN,balance_sheet,consolidated
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,87913000,True,5,KLBN,balance_sheet,consolidated
+2.01.03.01.02,Obrigações fiscais,133427000,False,5,KLBN,balance_sheet,consolidated
+2.01.03.02,Obrigações Fiscais Estaduais,141029000,True,4,KLBN,balance_sheet,consolidated
+2.01.03.03,Obrigações Fiscais Municipais,11089000,True,4,KLBN,balance_sheet,consolidated
+2.01.04,Empréstimos e Financiamentos,1770665000,True,3,KLBN,balance_sheet,consolidated
+2.01.04.01,Empréstimos e Financiamentos,1770665000,True,4,KLBN,balance_sheet,consolidated
+2.01.04.01.01,Em Moeda Nacional,496831000,True,5,KLBN,balance_sheet,consolidated
+2.01.04.01.02,Em Moeda Estrangeira,1273834000,True,5,KLBN,balance_sheet,consolidated
+2.01.04.02,Debêntures,0,True,4,KLBN,balance_sheet,consolidated
+2.01.04.03,Financiamento por Arrendamento,0,True,4,KLBN,balance_sheet,consolidated
+2.01.05,Outras Obrigações,1928354000,True,3,KLBN,balance_sheet,consolidated
+2.01.05.01,Passivos com Partes Relacionadas,0,True,4,KLBN,balance_sheet,consolidated
+2.01.05.01.01,Débitos com Coligadas,0,True,5,KLBN,balance_sheet,consolidated
+2.01.05.01.03,Débitos com Controladores,0,True,5,KLBN,balance_sheet,consolidated
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,0,True,5,KLBN,balance_sheet,consolidated
+2.01.05.02,Outros,1928354000,True,4,KLBN,balance_sheet,consolidated
+2.01.05.02.01,Dividendos e JCP a Pagar,1112000000,True,5,KLBN,balance_sheet,consolidated
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,0,True,5,KLBN,balance_sheet,consolidated
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,0,True,5,KLBN,balance_sheet,consolidated
+2.01.05.02.04,Instrumentos financeiros derivativos,0,False,5,KLBN,balance_sheet,consolidated
+2.01.05.02.05,Outras Contas a Pagar e Provisões,564443000,False,5,KLBN,balance_sheet,consolidated
+2.01.05.02.06,Passivos de arrendamentos,251911000,False,5,KLBN,balance_sheet,consolidated
+2.01.05.02.07,Provisões Fiscais,0,False,5,KLBN,balance_sheet,consolidated
+2.01.06,Provisões,0,True,3,KLBN,balance_sheet,consolidated
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,KLBN,balance_sheet,consolidated
+2.01.06.01.01,Provisões Fiscais,0,True,5,KLBN,balance_sheet,consolidated
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,KLBN,balance_sheet,consolidated
+2.01.06.01.03,Provisões para Benefícios a Empregados,0,True,5,KLBN,balance_sheet,consolidated
+2.01.06.01.04,Provisões Cíveis,0,True,5,KLBN,balance_sheet,consolidated
+2.01.06.02,Outras Provisões,0,True,4,KLBN,balance_sheet,consolidated
+2.01.06.02.01,Provisões para Garantias,0,True,5,KLBN,balance_sheet,consolidated
+2.01.06.02.02,Provisões para Reestruturação,0,True,5,KLBN,balance_sheet,consolidated
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,KLBN,balance_sheet,consolidated
+2.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,KLBN,balance_sheet,consolidated
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,KLBN,balance_sheet,consolidated
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,KLBN,balance_sheet,consolidated
+2.02,Passivo Não Circulante,40628278000,True,2,KLBN,balance_sheet,consolidated
+2.02.01,Empréstimos e Financiamentos,34950377000,True,3,KLBN,balance_sheet,consolidated
+2.02.01.01,Empréstimos e Financiamentos,34950377000,True,4,KLBN,balance_sheet,consolidated
+2.02.01.01.01,Em Moeda Nacional,5927998000,True,5,KLBN,balance_sheet,consolidated
+2.02.01.01.02,Em Moeda Estrangeira,29022379000,True,5,KLBN,balance_sheet,consolidated
+2.02.01.02,Debêntures,0,True,4,KLBN,balance_sheet,consolidated
+2.02.01.03,Financiamento por Arrendamento,0,True,4,KLBN,balance_sheet,consolidated
+2.02.02,Outras Obrigações,3188436000,True,3,KLBN,balance_sheet,consolidated
+2.02.02.01,Passivos com Partes Relacionadas,0,True,4,KLBN,balance_sheet,consolidated
+2.02.02.01.01,Débitos com Coligadas,0,True,5,KLBN,balance_sheet,consolidated
+2.02.02.01.03,Débitos com Controladores,0,True,5,KLBN,balance_sheet,consolidated
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,0,True,5,KLBN,balance_sheet,consolidated
+2.02.02.02,Outros,3188436000,True,4,KLBN,balance_sheet,consolidated
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,0,True,5,KLBN,balance_sheet,consolidated
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,0,True,5,KLBN,balance_sheet,consolidated
+2.02.02.02.03,Contas a Pagar - Investidores SCPs,189898000,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.04,Provisões Fiscais,0,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.05,Outros contas a pagar e provisões,123369000,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.06,Passivo de arrendamentos,1485620000,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.07,Provisão do passivo atuarial,575155000,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.08,Passivos de bens mantidos para venda,0,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.09,Fornecedores,6053000,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.10,Fornecedor risco sacado florestal,233784000,False,5,KLBN,balance_sheet,consolidated
+2.02.02.02.11,Instrumentos financeiros derivativos,574557000,False,5,KLBN,balance_sheet,consolidated
+2.02.03,Tributos Diferidos,1878984000,True,3,KLBN,balance_sheet,consolidated
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,1878984000,True,4,KLBN,balance_sheet,consolidated
+2.02.04,Provisões,610481000,True,3,KLBN,balance_sheet,consolidated
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,610481000,True,4,KLBN,balance_sheet,consolidated
+2.02.04.01.01,Provisões Fiscais,90300000,True,5,KLBN,balance_sheet,consolidated
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,KLBN,balance_sheet,consolidated
+2.02.04.01.03,Provisões para Benefícios a Empregados,0,True,5,KLBN,balance_sheet,consolidated
+2.02.04.01.04,Provisões Cíveis,0,True,5,KLBN,balance_sheet,consolidated
+2.02.04.01.05,"Provisões Fiscais, Previdenciárias, Trabalhistas e Cíveis",520181000,False,5,KLBN,balance_sheet,consolidated
+2.02.04.02,Outras Provisões,0,True,4,KLBN,balance_sheet,consolidated
+2.02.04.02.01,Provisões para Garantias,0,True,5,KLBN,balance_sheet,consolidated
+2.02.04.02.02,Provisões para Reestruturação,0,True,5,KLBN,balance_sheet,consolidated
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,KLBN,balance_sheet,consolidated
+2.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,KLBN,balance_sheet,consolidated
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,KLBN,balance_sheet,consolidated
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,KLBN,balance_sheet,consolidated
+2.02.06,Lucros e Receitas a Apropriar,0,True,3,KLBN,balance_sheet,consolidated
+2.02.06.01,Lucros a Apropriar,0,True,4,KLBN,balance_sheet,consolidated
+2.02.06.02,Receitas a Apropriar,0,True,4,KLBN,balance_sheet,consolidated
+2.02.06.03,Subvenções de Investimento a Apropriar,0,True,4,KLBN,balance_sheet,consolidated
+2.03,Patrimônio Líquido Consolidado,14401101000,True,2,KLBN,balance_sheet,consolidated
+2.03.01,Capital Social Realizado,6875625000,True,3,KLBN,balance_sheet,consolidated
+2.03.02,Reservas de Capital,-156626000,True,3,KLBN,balance_sheet,consolidated
+2.03.02.01,Ágio na Emissão de Ações,0,True,4,KLBN,balance_sheet,consolidated
+2.03.02.02,Reserva Especial de Ágio na Incorporação,0,True,4,KLBN,balance_sheet,consolidated
+2.03.02.03,Alienação de Bônus de Subscrição,0,True,4,KLBN,balance_sheet,consolidated
+2.03.02.04,Opções Outorgadas,0,True,4,KLBN,balance_sheet,consolidated
+2.03.02.05,Ações em Tesouraria,0,True,4,KLBN,balance_sheet,consolidated
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,0,True,4,KLBN,balance_sheet,consolidated
+2.03.02.07,Reserva de Capital,-156626000,False,4,KLBN,balance_sheet,consolidated
+2.03.03,Reservas de Reavaliação,0,True,3,KLBN,balance_sheet,consolidated
+2.03.04,Reservas de Lucros,2675780000,True,3,KLBN,balance_sheet,consolidated
+2.03.04.01,Reserva Legal,587234000,True,4,KLBN,balance_sheet,consolidated
+2.03.04.02,Reserva Estatutária,0,True,4,KLBN,balance_sheet,consolidated
+2.03.04.03,Reserva para Contingências,0,True,4,KLBN,balance_sheet,consolidated
+2.03.04.04,Reserva de Lucros a Realizar,0,True,4,KLBN,balance_sheet,consolidated
+2.03.04.05,Reserva de Retenção de Lucros,0,True,4,KLBN,balance_sheet,consolidated
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,0,True,4,KLBN,balance_sheet,consolidated
+2.03.04.07,Reserva de Incentivos Fiscais,682767000,True,4,KLBN,balance_sheet,consolidated
+2.03.04.08,Dividendo Adicional Proposto,0,True,4,KLBN,balance_sheet,consolidated
+2.03.04.09,Ações em Tesouraria,-101882000,True,4,KLBN,balance_sheet,consolidated
+2.03.04.10,Reserva de Ativos Biológicos,443722000,False,4,KLBN,balance_sheet,consolidated
+2.03.04.11,Dividendos prescritos,0,False,4,KLBN,balance_sheet,consolidated
+2.03.04.12,Dividendos complementares pagos,0,False,4,KLBN,balance_sheet,consolidated
+2.03.04.13,Reserva de investimento e capital de giro,1063939000,False,4,KLBN,balance_sheet,consolidated
+2.03.05,Lucros/Prejuízos Acumulados,0,True,3,KLBN,balance_sheet,consolidated
+2.03.06,Ajustes de Avaliação Patrimonial,-756896000,True,3,KLBN,balance_sheet,consolidated
+2.03.06.01,Custo Atribuído ao Ativo Imobilizado (Terras),1036661000,False,4,KLBN,balance_sheet,consolidated
+2.03.06.02,Plano Outorga de Ações,0,False,4,KLBN,balance_sheet,consolidated
+2.03.06.03,Passivo Atuarial,-180492000,False,4,KLBN,balance_sheet,consolidated
+2.03.06.04,Ajuste Acumulados de Conversão,-87500000,False,4,KLBN,balance_sheet,consolidated
+2.03.06.05,Reserva de Hedge de fluxo de caixa,-1532621000,False,4,KLBN,balance_sheet,consolidated
+2.03.06.06,Opção de Compra,8059000,False,4,KLBN,balance_sheet,consolidated
+2.03.06.07,Passivo atuarial de controladas,-1003000,False,4,KLBN,balance_sheet,consolidated
+2.03.07,Ajustes Acumulados de Conversão,-751937000,True,3,KLBN,balance_sheet,consolidated
+2.03.08,Outros Resultados Abrangentes,0,True,3,KLBN,balance_sheet,consolidated
+2.03.09,Participação dos Acionistas Não Controladores,6515155000,True,3,KLBN,balance_sheet,consolidated
+1,Ativo Total,9318633000,True,1,CEAB,balance_sheet,consolidated
+1.01,Ativo Circulante,4559829000,True,2,CEAB,balance_sheet,consolidated
+1.01.01,Caixa e Equivalentes de Caixa,774521000,True,3,CEAB,balance_sheet,consolidated
+1.01.02,Aplicações Financeiras,268854000,True,3,CEAB,balance_sheet,consolidated
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,268854000,True,4,CEAB,balance_sheet,consolidated
+1.01.02.01.01,Títulos para Negociação,0,True,5,CEAB,balance_sheet,consolidated
+1.01.02.01.02,Títulos Designados a Valor Justo,0,True,5,CEAB,balance_sheet,consolidated
+1.01.02.01.03,Títulos e valores mobiliários,268854000,False,5,CEAB,balance_sheet,consolidated
+1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,CEAB,balance_sheet,consolidated
+1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,CEAB,balance_sheet,consolidated
+1.01.03,Contas a Receber,1753283000,True,3,CEAB,balance_sheet,consolidated
+1.01.03.01,Clientes,1753283000,True,4,CEAB,balance_sheet,consolidated
+1.01.03.02,Outras Contas a Receber,0,True,4,CEAB,balance_sheet,consolidated
+1.01.04,Estoques,1154866000,True,3,CEAB,balance_sheet,consolidated
+1.01.05,Ativos Biológicos,0,True,3,CEAB,balance_sheet,consolidated
+1.01.06,Tributos a Recuperar,569544000,True,3,CEAB,balance_sheet,consolidated
+1.01.06.01,Tributos Correntes a Recuperar,569544000,True,4,CEAB,balance_sheet,consolidated
+1.01.06.01.01,Imposto de Renda e Contribuição Social a Recuperar,0,False,5,CEAB,balance_sheet,consolidated
+1.01.06.01.02,Outros,569544000,False,5,CEAB,balance_sheet,consolidated
+1.01.07,Despesas Antecipadas,0,True,3,CEAB,balance_sheet,consolidated
+1.01.08,Outros Ativos Circulantes,38761000,True,3,CEAB,balance_sheet,consolidated
+1.01.08.01,Ativos Não-Correntes a Venda,0,True,4,CEAB,balance_sheet,consolidated
+1.01.08.02,Ativos de Operações Descontinuadas,0,True,4,CEAB,balance_sheet,consolidated
+1.01.08.03,Outros,38761000,True,4,CEAB,balance_sheet,consolidated
+1.01.08.03.01,Outros Créditos,36209000,False,5,CEAB,balance_sheet,consolidated
+1.01.08.03.02,Instrumentos Financeiros Derivativos,2552000,False,5,CEAB,balance_sheet,consolidated
+1.01.08.03.03,Partes Relacionadas,0,False,5,CEAB,balance_sheet,consolidated
+1.02,Ativo Não Circulante,4758804000,True,2,CEAB,balance_sheet,consolidated
+1.02.01,Ativo Realizável a Longo Prazo,1377087000,True,3,CEAB,balance_sheet,consolidated
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.01.01,Títulos Designados a Valor Justo,0,True,5,CEAB,balance_sheet,consolidated
+1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.04,Contas a Receber,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.04.01,Clientes,0,False,5,CEAB,balance_sheet,consolidated
+1.02.01.04.02,Outras Contas a Receber,0,False,5,CEAB,balance_sheet,consolidated
+1.02.01.05,Estoques,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.06,Ativos Biológicos,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.07,Tributos Diferidos,489748000,True,4,CEAB,balance_sheet,consolidated
+1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,489748000,False,5,CEAB,balance_sheet,consolidated
+1.02.01.08,Despesas Antecipadas,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.09,Créditos com Partes Relacionadas,0,True,4,CEAB,balance_sheet,consolidated
+1.02.01.09.01,Créditos com Coligadas,0,True,5,CEAB,balance_sheet,consolidated
+1.02.01.09.03,Créditos com Controladores,0,False,5,CEAB,balance_sheet,consolidated
+1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,False,5,CEAB,balance_sheet,consolidated
+1.02.01.10,Outros Ativos Não Circulantes,887339000,True,4,CEAB,balance_sheet,consolidated
+1.02.01.10.01,Ativos Não-Correntes a Venda,0,True,5,CEAB,balance_sheet,consolidated
+1.02.01.10.02,Ativos de Operações Descontinuadas,0,True,5,CEAB,balance_sheet,consolidated
+1.02.01.10.03,Tributos a Recuperar,791364000,False,5,CEAB,balance_sheet,consolidated
+1.02.01.10.04,Depósito Judicial,91360000,False,5,CEAB,balance_sheet,consolidated
+1.02.01.10.05,Outros Créditos,4615000,False,5,CEAB,balance_sheet,consolidated
+1.02.01.10.06,Derivativos,0,False,5,CEAB,balance_sheet,consolidated
+1.02.02,Investimentos,0,True,3,CEAB,balance_sheet,consolidated
+1.02.02.01,Participações Societárias,0,True,4,CEAB,balance_sheet,consolidated
+1.02.02.01.01,Participações em Coligadas,0,True,5,CEAB,balance_sheet,consolidated
+1.02.02.01.04,Participações em Controladas em Conjunto,0,True,5,CEAB,balance_sheet,consolidated
+1.02.02.01.05,Outros Investimentos,0,True,5,CEAB,balance_sheet,consolidated
+1.02.02.02,Propriedades para Investimento,0,True,4,CEAB,balance_sheet,consolidated
+1.02.03,Imobilizado,2531986000,True,3,CEAB,balance_sheet,consolidated
+1.02.03.01,Imobilizado em Operação,1057438000,True,4,CEAB,balance_sheet,consolidated
+1.02.03.02,Direito de Uso em Arrendamento,1474548000,True,4,CEAB,balance_sheet,consolidated
+1.02.03.03,Imobilizado em Andamento,0,True,4,CEAB,balance_sheet,consolidated
+1.02.04,Intangível,849731000,True,3,CEAB,balance_sheet,consolidated
+1.02.04.01,Intangíveis,849731000,True,4,CEAB,balance_sheet,consolidated
+1.02.04.01.01,Contrato de Concessão,0,True,5,CEAB,balance_sheet,consolidated
+1.02.04.01.02,Intangível em operação,849731000,False,5,CEAB,balance_sheet,consolidated
+1.02.04.01.03,Intangível em andamento,0,False,5,CEAB,balance_sheet,consolidated
+1.02.04.02,Goodwill,0,True,4,CEAB,balance_sheet,consolidated
+2,Passivo Total,9318633000,True,1,CEAB,balance_sheet,consolidated
+2.01,Passivo Circulante,3116161000,True,2,CEAB,balance_sheet,consolidated
+2.01.01,Obrigações Sociais e Trabalhistas,293617000,True,3,CEAB,balance_sheet,consolidated
+2.01.01.01,Obrigações Sociais,0,True,4,CEAB,balance_sheet,consolidated
+2.01.01.02,Obrigações Trabalhistas,293617000,True,4,CEAB,balance_sheet,consolidated
+2.01.02,Fornecedores,1746037000,True,3,CEAB,balance_sheet,consolidated
+2.01.02.01,Fornecedores Nacionais,1746037000,True,4,CEAB,balance_sheet,consolidated
+2.01.02.01.01,Fornecedores Nacionais,1324832000,False,5,CEAB,balance_sheet,consolidated
+2.01.02.01.02,Obrigações de Risco Sacado,421205000,False,5,CEAB,balance_sheet,consolidated
+2.01.02.02,Fornecedores Estrangeiros,0,True,4,CEAB,balance_sheet,consolidated
+2.01.03,Obrigações Fiscais,385977000,True,3,CEAB,balance_sheet,consolidated
+2.01.03.01,Obrigações Fiscais Federais,385977000,True,4,CEAB,balance_sheet,consolidated
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,0,True,5,CEAB,balance_sheet,consolidated
+2.01.03.01.02,Outras obrigações fiscais,385977000,False,5,CEAB,balance_sheet,consolidated
+2.01.03.02,Obrigações Fiscais Estaduais,0,True,4,CEAB,balance_sheet,consolidated
+2.01.03.03,Obrigações Fiscais Municipais,0,True,4,CEAB,balance_sheet,consolidated
+2.01.04,Empréstimos e Financiamentos,139796000,True,3,CEAB,balance_sheet,consolidated
+2.01.04.01,Empréstimos e Financiamentos,139796000,True,4,CEAB,balance_sheet,consolidated
+2.01.04.01.01,Em Moeda Nacional,139796000,True,5,CEAB,balance_sheet,consolidated
+2.01.04.01.02,Em Moeda Estrangeira,0,True,5,CEAB,balance_sheet,consolidated
+2.01.04.02,Debêntures,0,True,4,CEAB,balance_sheet,consolidated
+2.01.04.03,Financiamento por Arrendamento,0,True,4,CEAB,balance_sheet,consolidated
+2.01.05,Outras Obrigações,550734000,True,3,CEAB,balance_sheet,consolidated
+2.01.05.01,Passivos com Partes Relacionadas,0,True,4,CEAB,balance_sheet,consolidated
+2.01.05.01.01,Débitos com Coligadas,0,True,5,CEAB,balance_sheet,consolidated
+2.01.05.01.03,Débitos com Controladores,0,True,5,CEAB,balance_sheet,consolidated
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,0,True,5,CEAB,balance_sheet,consolidated
+2.01.05.02,Outros,550734000,True,4,CEAB,balance_sheet,consolidated
+2.01.05.02.01,Dividendos e JCP a Pagar,139779000,True,5,CEAB,balance_sheet,consolidated
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,0,True,5,CEAB,balance_sheet,consolidated
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,0,True,5,CEAB,balance_sheet,consolidated
+2.01.05.02.04,Operações com derivativos,1760000,False,5,CEAB,balance_sheet,consolidated
+2.01.05.02.05,Outros Passivos,36452000,False,5,CEAB,balance_sheet,consolidated
+2.01.05.02.06,Financiamento por Arrendamento,372743000,False,5,CEAB,balance_sheet,consolidated
+2.01.06,Provisões,0,True,3,CEAB,balance_sheet,consolidated
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,CEAB,balance_sheet,consolidated
+2.01.06.01.01,Provisões Fiscais,0,True,5,CEAB,balance_sheet,consolidated
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,CEAB,balance_sheet,consolidated
+2.01.06.01.03,Provisões para Benefícios a Empregados,0,True,5,CEAB,balance_sheet,consolidated
+2.01.06.01.04,Provisões Cíveis,0,True,5,CEAB,balance_sheet,consolidated
+2.01.06.02,Outras Provisões,0,True,4,CEAB,balance_sheet,consolidated
+2.01.06.02.01,Provisões para Garantias,0,True,5,CEAB,balance_sheet,consolidated
+2.01.06.02.02,Provisões para Reestruturação,0,True,5,CEAB,balance_sheet,consolidated
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,CEAB,balance_sheet,consolidated
+2.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,CEAB,balance_sheet,consolidated
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,CEAB,balance_sheet,consolidated
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,CEAB,balance_sheet,consolidated
+2.02,Passivo Não Circulante,2495416000,True,2,CEAB,balance_sheet,consolidated
+2.02.01,Empréstimos e Financiamentos,820676000,True,3,CEAB,balance_sheet,consolidated
+2.02.01.01,Empréstimos e Financiamentos,820676000,True,4,CEAB,balance_sheet,consolidated
+2.02.01.01.01,Em Moeda Nacional,820676000,True,5,CEAB,balance_sheet,consolidated
+2.02.01.01.02,Em Moeda Estrangeira,0,True,5,CEAB,balance_sheet,consolidated
+2.02.01.02,Debêntures,0,True,4,CEAB,balance_sheet,consolidated
+2.02.01.03,Financiamento por Arrendamento,0,True,4,CEAB,balance_sheet,consolidated
+2.02.02,Outras Obrigações,1488186000,True,3,CEAB,balance_sheet,consolidated
+2.02.02.01,Passivos com Partes Relacionadas,0,True,4,CEAB,balance_sheet,consolidated
+2.02.02.01.01,Débitos com Coligadas,0,True,5,CEAB,balance_sheet,consolidated
+2.02.02.01.03,Débitos com Controladores,0,True,5,CEAB,balance_sheet,consolidated
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,0,True,5,CEAB,balance_sheet,consolidated
+2.02.02.02,Outros,1488186000,True,4,CEAB,balance_sheet,consolidated
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,0,True,5,CEAB,balance_sheet,consolidated
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,0,True,5,CEAB,balance_sheet,consolidated
+2.02.02.02.03,Impostos a Recolher,14325000,False,5,CEAB,balance_sheet,consolidated
+2.02.02.02.04,Outros,50209000,False,5,CEAB,balance_sheet,consolidated
+2.02.02.02.05,Obrigações Trabalhistas,16152000,False,5,CEAB,balance_sheet,consolidated
+2.02.02.02.06,Financiamento por Arrendamento,1407500000,False,5,CEAB,balance_sheet,consolidated
+2.02.02.02.07,Fornecedores,0,False,5,CEAB,balance_sheet,consolidated
+2.02.02.02.08,Fornecedor Bradescard,0,False,5,CEAB,balance_sheet,consolidated
+2.02.03,Tributos Diferidos,0,True,3,CEAB,balance_sheet,consolidated
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,0,True,4,CEAB,balance_sheet,consolidated
+2.02.04,Provisões,186554000,True,3,CEAB,balance_sheet,consolidated
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,186554000,True,4,CEAB,balance_sheet,consolidated
+2.02.04.01.01,Provisões Fiscais,0,True,5,CEAB,balance_sheet,consolidated
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,CEAB,balance_sheet,consolidated
+2.02.04.01.03,Provisões para Benefícios a Empregados,0,True,5,CEAB,balance_sheet,consolidated
+2.02.04.01.04,Provisões Cíveis,0,True,5,CEAB,balance_sheet,consolidated
+2.02.04.01.05,"Provisão para riscos tributários, cíveis e trabalhistas",186554000,False,5,CEAB,balance_sheet,consolidated
+2.02.04.02,Outras Provisões,0,True,4,CEAB,balance_sheet,consolidated
+2.02.04.02.01,Provisões para Garantias,0,True,5,CEAB,balance_sheet,consolidated
+2.02.04.02.02,Provisões para Reestruturação,0,True,5,CEAB,balance_sheet,consolidated
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,CEAB,balance_sheet,consolidated
+2.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,CEAB,balance_sheet,consolidated
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,CEAB,balance_sheet,consolidated
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,CEAB,balance_sheet,consolidated
+2.02.06,Lucros e Receitas a Apropriar,0,True,3,CEAB,balance_sheet,consolidated
+2.02.06.01,Lucros a Apropriar,0,True,4,CEAB,balance_sheet,consolidated
+2.02.06.02,Receitas a Apropriar,0,True,4,CEAB,balance_sheet,consolidated
+2.02.06.03,Subvenções de Investimento a Apropriar,0,True,4,CEAB,balance_sheet,consolidated
+2.03,Patrimônio Líquido Consolidado,3707056000,True,2,CEAB,balance_sheet,consolidated
+2.03.01,Capital Social Realizado,1847177000,True,3,CEAB,balance_sheet,consolidated
+2.03.02,Reservas de Capital,-8947000,True,3,CEAB,balance_sheet,consolidated
+2.03.02.01,Ágio na Emissão de Ações,0,True,4,CEAB,balance_sheet,consolidated
+2.03.02.02,Reserva Especial de Ágio na Incorporação,0,True,4,CEAB,balance_sheet,consolidated
+2.03.02.03,Alienação de Bônus de Subscrição,0,True,4,CEAB,balance_sheet,consolidated
+2.03.02.04,Opções Outorgadas,0,True,4,CEAB,balance_sheet,consolidated
+2.03.02.05,Ações em Tesouraria,-48190000,True,4,CEAB,balance_sheet,consolidated
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,0,True,4,CEAB,balance_sheet,consolidated
+2.03.02.07,Reserva de Capital,39243000,False,4,CEAB,balance_sheet,consolidated
+2.03.03,Reservas de Reavaliação,0,True,3,CEAB,balance_sheet,consolidated
+2.03.04,Reservas de Lucros,1868222000,True,3,CEAB,balance_sheet,consolidated
+2.03.04.01,Reserva Legal,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.02,Reserva Estatutária,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.03,Reserva para Contingências,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.04,Reserva de Lucros a Realizar,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.05,Reserva de Retenção de Lucros,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.07,Reserva de Incentivos Fiscais,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.08,Dividendo Adicional Proposto,0,True,4,CEAB,balance_sheet,consolidated
+2.03.04.09,Ações em Tesouraria,0,True,4,CEAB,balance_sheet,consolidated
+2.03.05,Lucros/Prejuízos Acumulados,0,True,3,CEAB,balance_sheet,consolidated
+2.03.06,Ajustes de Avaliação Patrimonial,0,True,3,CEAB,balance_sheet,consolidated
+2.03.07,Ajustes Acumulados de Conversão,0,True,3,CEAB,balance_sheet,consolidated
+2.03.08,Outros Resultados Abrangentes,602000,True,3,CEAB,balance_sheet,consolidated
+2.03.09,Participação dos Acionistas Não Controladores,2000,True,3,CEAB,balance_sheet,consolidated
+1,Ativo Total,9920927000,True,1,PGMN,balance_sheet,consolidated
+1.01,Ativo Circulante,5688716000,True,2,PGMN,balance_sheet,consolidated
+1.01.01,Caixa e Equivalentes de Caixa,185757000,True,3,PGMN,balance_sheet,consolidated
+1.01.02,Aplicações Financeiras,37000,True,3,PGMN,balance_sheet,consolidated
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,PGMN,balance_sheet,consolidated
+1.01.02.01.01,Títulos para Negociação,0,True,5,PGMN,balance_sheet,consolidated
+1.01.02.01.02,Títulos Designados a Valor Justo,0,True,5,PGMN,balance_sheet,consolidated
+1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,PGMN,balance_sheet,consolidated
+1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,37000,True,4,PGMN,balance_sheet,consolidated
+1.01.03,Contas a Receber,1504816000,True,3,PGMN,balance_sheet,consolidated
+1.01.03.01,Clientes,1234010000,True,4,PGMN,balance_sheet,consolidated
+1.01.03.01.01,Contas a Receber de Clientes - Cartões de Créditos,1089742000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.01.02,Convenios a Receber,169655000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.01.03,Comissoes a Receber,8964000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.01.04,Programa de Beneficios de Medicamentos - PBM,0,False,5,PGMN,balance_sheet,consolidated
+1.01.03.01.05,Provisão para Créditos de Liquidação Duvidosa,-11617000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.01.06,Ajuste a Valor Presente,-22734000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.01.08,Contas a receber - atacado,0,False,5,PGMN,balance_sheet,consolidated
+1.01.03.02,Outras Contas a Receber,270806000,True,4,PGMN,balance_sheet,consolidated
+1.01.03.02.01,Acordos Comerciais,216391000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.02.02,Despesas antecipadas,10934000,False,5,PGMN,balance_sheet,consolidated
+1.01.03.02.03,Outras,43481000,False,5,PGMN,balance_sheet,consolidated
+1.01.04,Estoques,3697341000,True,3,PGMN,balance_sheet,consolidated
+1.01.05,Ativos Biológicos,0,True,3,PGMN,balance_sheet,consolidated
+1.01.06,Tributos a Recuperar,296613000,True,3,PGMN,balance_sheet,consolidated
+1.01.06.01,Tributos Correntes a Recuperar,296613000,True,4,PGMN,balance_sheet,consolidated
+1.01.07,Despesas Antecipadas,0,True,3,PGMN,balance_sheet,consolidated
+1.01.08,Outros Ativos Circulantes,4152000,True,3,PGMN,balance_sheet,consolidated
+1.01.08.01,Ativos Não-Correntes a Venda,0,True,4,PGMN,balance_sheet,consolidated
+1.01.08.02,Ativos de Operações Descontinuadas,0,True,4,PGMN,balance_sheet,consolidated
+1.01.08.03,Outros,4152000,True,4,PGMN,balance_sheet,consolidated
+1.01.08.03.01,Operações com Derivativos,4152000,False,5,PGMN,balance_sheet,consolidated
+1.02,Ativo Não Circulante,4232211000,True,2,PGMN,balance_sheet,consolidated
+1.02.01,Ativo Realizável a Longo Prazo,1372752000,True,3,PGMN,balance_sheet,consolidated
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.01.01,Títulos Designados a Valor Justo,0,True,5,PGMN,balance_sheet,consolidated
+1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,2014000,True,4,PGMN,balance_sheet,consolidated
+1.02.01.04,Contas a Receber,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.04.01,Clientes,0,False,5,PGMN,balance_sheet,consolidated
+1.02.01.04.02,Outras Contas a Receber,0,False,5,PGMN,balance_sheet,consolidated
+1.02.01.05,Estoques,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.06,Ativos Biológicos,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.07,Tributos Diferidos,709122000,True,4,PGMN,balance_sheet,consolidated
+1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,709122000,False,5,PGMN,balance_sheet,consolidated
+1.02.01.08,Despesas Antecipadas,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.09,Créditos com Partes Relacionadas,0,True,4,PGMN,balance_sheet,consolidated
+1.02.01.09.01,Créditos com Coligadas,0,True,5,PGMN,balance_sheet,consolidated
+1.02.01.09.03,Créditos com Controladores,0,False,5,PGMN,balance_sheet,consolidated
+1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,False,5,PGMN,balance_sheet,consolidated
+1.02.01.10,Outros Ativos Não Circulantes,661616000,True,4,PGMN,balance_sheet,consolidated
+1.02.01.10.01,Ativos Não-Correntes a Venda,0,True,5,PGMN,balance_sheet,consolidated
+1.02.01.10.02,Ativos de Operações Descontinuadas,0,True,5,PGMN,balance_sheet,consolidated
+1.02.01.10.03,Impostos e Contribuições a Recuperar,615514000,False,5,PGMN,balance_sheet,consolidated
+1.02.01.10.04,Depósitos Judiciais,28798000,False,5,PGMN,balance_sheet,consolidated
+1.02.01.10.05,Outros créditos,0,False,5,PGMN,balance_sheet,consolidated
+1.02.01.10.06,Operações com derivativos,4328000,False,5,PGMN,balance_sheet,consolidated
+1.02.01.10.07,Ativos de indenização,12976000,False,5,PGMN,balance_sheet,consolidated
+1.02.02,Investimentos,80899000,True,3,PGMN,balance_sheet,consolidated
+1.02.02.01,Participações Societárias,80899000,True,4,PGMN,balance_sheet,consolidated
+1.02.02.01.01,Participações em Coligadas,0,True,5,PGMN,balance_sheet,consolidated
+1.02.02.01.04,Participações em Controladas em Conjunto,80899000,True,5,PGMN,balance_sheet,consolidated
+1.02.02.01.05,Outros Investimentos,0,True,5,PGMN,balance_sheet,consolidated
+1.02.02.02,Propriedades para Investimento,0,True,4,PGMN,balance_sheet,consolidated
+1.02.03,Imobilizado,2594063000,True,3,PGMN,balance_sheet,consolidated
+1.02.03.01,Imobilizado em Operação,920283000,True,4,PGMN,balance_sheet,consolidated
+1.02.03.02,Direito de Uso em Arrendamento,1673780000,True,4,PGMN,balance_sheet,consolidated
+1.02.03.03,Imobilizado em Andamento,0,True,4,PGMN,balance_sheet,consolidated
+1.02.04,Intangível,184497000,True,3,PGMN,balance_sheet,consolidated
+1.02.04.01,Intangíveis,184497000,True,4,PGMN,balance_sheet,consolidated
+1.02.04.01.01,Contrato de Concessão,0,True,5,PGMN,balance_sheet,consolidated
+1.02.04.01.03,Intangíveis,184497000,False,5,PGMN,balance_sheet,consolidated
+1.02.04.02,Goodwill,0,True,4,PGMN,balance_sheet,consolidated
+2,Passivo Total,9920927000,True,1,PGMN,balance_sheet,consolidated
+2.01,Passivo Circulante,3577888000,True,2,PGMN,balance_sheet,consolidated
+2.01.01,Obrigações Sociais e Trabalhistas,229302000,True,3,PGMN,balance_sheet,consolidated
+2.01.01.01,Obrigações Sociais,0,True,4,PGMN,balance_sheet,consolidated
+2.01.01.02,Obrigações Trabalhistas,229302000,True,4,PGMN,balance_sheet,consolidated
+2.01.01.02.01,Salários e Férias a Pagar,229302000,False,5,PGMN,balance_sheet,consolidated
+2.01.02,Fornecedores,2607505000,True,3,PGMN,balance_sheet,consolidated
+2.01.02.01,Fornecedores Nacionais,2607505000,True,4,PGMN,balance_sheet,consolidated
+2.01.02.02,Fornecedores Estrangeiros,0,True,4,PGMN,balance_sheet,consolidated
+2.01.03,Obrigações Fiscais,191405000,True,3,PGMN,balance_sheet,consolidated
+2.01.03.01,Obrigações Fiscais Federais,63675000,True,4,PGMN,balance_sheet,consolidated
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,0,True,5,PGMN,balance_sheet,consolidated
+2.01.03.02,Obrigações Fiscais Estaduais,124049000,True,4,PGMN,balance_sheet,consolidated
+2.01.03.03,Obrigações Fiscais Municipais,3681000,True,4,PGMN,balance_sheet,consolidated
+2.01.04,Empréstimos e Financiamentos,188701000,True,3,PGMN,balance_sheet,consolidated
+2.01.04.01,Empréstimos e Financiamentos,123399000,True,4,PGMN,balance_sheet,consolidated
+2.01.04.01.01,Em Moeda Nacional,94031000,True,5,PGMN,balance_sheet,consolidated
+2.01.04.01.02,Em Moeda Estrangeira,29368000,True,5,PGMN,balance_sheet,consolidated
+2.01.04.02,Debêntures,65302000,True,4,PGMN,balance_sheet,consolidated
+2.01.04.03,Financiamento por Arrendamento,0,True,4,PGMN,balance_sheet,consolidated
+2.01.05,Outras Obrigações,360975000,True,3,PGMN,balance_sheet,consolidated
+2.01.05.01,Passivos com Partes Relacionadas,0,True,4,PGMN,balance_sheet,consolidated
+2.01.05.01.01,Débitos com Coligadas,0,True,5,PGMN,balance_sheet,consolidated
+2.01.05.01.03,Débitos com Controladores,0,True,5,PGMN,balance_sheet,consolidated
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,0,True,5,PGMN,balance_sheet,consolidated
+2.01.05.02,Outros,360975000,True,4,PGMN,balance_sheet,consolidated
+2.01.05.02.01,Dividendos e JCP a Pagar,0,True,5,PGMN,balance_sheet,consolidated
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,0,True,5,PGMN,balance_sheet,consolidated
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,0,True,5,PGMN,balance_sheet,consolidated
+2.01.05.02.04,Arrecadação de Recursos de Terceiros,0,False,5,PGMN,balance_sheet,consolidated
+2.01.05.02.05,Outras Contas a Pagar,29401000,False,5,PGMN,balance_sheet,consolidated
+2.01.05.02.06,Arrecadação de Recursos de Terceiros - Partes relacionadas,0,False,5,PGMN,balance_sheet,consolidated
+2.01.05.02.07,Outras Contas a Pagar - Partes relacionadas,0,False,5,PGMN,balance_sheet,consolidated
+2.01.05.02.08,Operações com Derivativos,770000,False,5,PGMN,balance_sheet,consolidated
+2.01.05.02.09,Aluguéis a Pagar,41440000,False,5,PGMN,balance_sheet,consolidated
+2.01.05.02.10,Arrendamento Mercantil,289364000,False,5,PGMN,balance_sheet,consolidated
+2.01.06,Provisões,0,True,3,PGMN,balance_sheet,consolidated
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,PGMN,balance_sheet,consolidated
+2.01.06.01.01,Provisões Fiscais,0,True,5,PGMN,balance_sheet,consolidated
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,PGMN,balance_sheet,consolidated
+2.01.06.01.03,Provisões para Benefícios a Empregados,0,True,5,PGMN,balance_sheet,consolidated
+2.01.06.01.04,Provisões Cíveis,0,True,5,PGMN,balance_sheet,consolidated
+2.01.06.02,Outras Provisões,0,True,4,PGMN,balance_sheet,consolidated
+2.01.06.02.01,Provisões para Garantias,0,True,5,PGMN,balance_sheet,consolidated
+2.01.06.02.02,Provisões para Reestruturação,0,True,5,PGMN,balance_sheet,consolidated
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,PGMN,balance_sheet,consolidated
+2.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,PGMN,balance_sheet,consolidated
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,PGMN,balance_sheet,consolidated
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,PGMN,balance_sheet,consolidated
+2.02,Passivo Não Circulante,3249651000,True,2,PGMN,balance_sheet,consolidated
+2.02.01,Empréstimos e Financiamentos,1544416000,True,3,PGMN,balance_sheet,consolidated
+2.02.01.01,Empréstimos e Financiamentos,169673000,True,4,PGMN,balance_sheet,consolidated
+2.02.01.01.01,Em Moeda Nacional,18318000,True,5,PGMN,balance_sheet,consolidated
+2.02.01.01.02,Em Moeda Estrangeira,151355000,True,5,PGMN,balance_sheet,consolidated
+2.02.01.02,Debêntures,1374743000,True,4,PGMN,balance_sheet,consolidated
+2.02.01.03,Financiamento por Arrendamento,0,True,4,PGMN,balance_sheet,consolidated
+2.02.02,Outras Obrigações,1672068000,True,3,PGMN,balance_sheet,consolidated
+2.02.02.01,Passivos com Partes Relacionadas,0,True,4,PGMN,balance_sheet,consolidated
+2.02.02.01.01,Débitos com Coligadas,0,True,5,PGMN,balance_sheet,consolidated
+2.02.02.01.03,Débitos com Controladores,0,True,5,PGMN,balance_sheet,consolidated
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,0,True,5,PGMN,balance_sheet,consolidated
+2.02.02.02,Outros,1672068000,True,4,PGMN,balance_sheet,consolidated
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,0,True,5,PGMN,balance_sheet,consolidated
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,0,True,5,PGMN,balance_sheet,consolidated
+2.02.02.02.03,Programa de Recuparação Fiscal - REFIS,0,False,5,PGMN,balance_sheet,consolidated
+2.02.02.02.04,Impostos e Contribuições a recolher,2180000,False,5,PGMN,balance_sheet,consolidated
+2.02.02.02.05,Arrendamento Mercantil,1667528000,False,5,PGMN,balance_sheet,consolidated
+2.02.02.02.06,Outras Contas a Pagar,2360000,False,5,PGMN,balance_sheet,consolidated
+2.02.02.02.07,Operações com derivativos,0,False,5,PGMN,balance_sheet,consolidated
+2.02.03,Tributos Diferidos,0,True,3,PGMN,balance_sheet,consolidated
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,0,True,4,PGMN,balance_sheet,consolidated
+2.02.04,Provisões,33167000,True,3,PGMN,balance_sheet,consolidated
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,33167000,True,4,PGMN,balance_sheet,consolidated
+2.02.04.01.01,Provisões Fiscais,4934000,True,5,PGMN,balance_sheet,consolidated
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,12237000,True,5,PGMN,balance_sheet,consolidated
+2.02.04.01.03,Provisões para Benefícios a Empregados,0,True,5,PGMN,balance_sheet,consolidated
+2.02.04.01.04,Provisões Cíveis,1957000,True,5,PGMN,balance_sheet,consolidated
+2.02.04.01.05,Provisões administrativas,1063000,False,5,PGMN,balance_sheet,consolidated
+2.02.04.01.06,Passivo de indenização,12976000,False,5,PGMN,balance_sheet,consolidated
+2.02.04.02,Outras Provisões,0,True,4,PGMN,balance_sheet,consolidated
+2.02.04.02.01,Provisões para Garantias,0,True,5,PGMN,balance_sheet,consolidated
+2.02.04.02.02,Provisões para Reestruturação,0,True,5,PGMN,balance_sheet,consolidated
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,PGMN,balance_sheet,consolidated
+2.02.04.02.04,Passivos contingentes assumidos em combinação de negócios,0,False,5,PGMN,balance_sheet,consolidated
+2.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,PGMN,balance_sheet,consolidated
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,PGMN,balance_sheet,consolidated
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,PGMN,balance_sheet,consolidated
+2.02.06,Lucros e Receitas a Apropriar,0,True,3,PGMN,balance_sheet,consolidated
+2.02.06.01,Lucros a Apropriar,0,True,4,PGMN,balance_sheet,consolidated
+2.02.06.02,Receitas a Apropriar,0,True,4,PGMN,balance_sheet,consolidated
+2.02.06.03,Subvenções de Investimento a Apropriar,0,True,4,PGMN,balance_sheet,consolidated
+2.03,Patrimônio Líquido Consolidado,3093388000,True,2,PGMN,balance_sheet,consolidated
+2.03.01,Capital Social Realizado,1974758000,True,3,PGMN,balance_sheet,consolidated
+2.03.02,Reservas de Capital,383440000,True,3,PGMN,balance_sheet,consolidated
+2.03.02.01,Ágio na Emissão de Ações,0,True,4,PGMN,balance_sheet,consolidated
+2.03.02.02,Reserva Especial de Ágio na Incorporação,375590000,True,4,PGMN,balance_sheet,consolidated
+2.03.02.03,Alienação de Bônus de Subscrição,0,True,4,PGMN,balance_sheet,consolidated
+2.03.02.04,Opções Outorgadas,0,True,4,PGMN,balance_sheet,consolidated
+2.03.02.05,Ações em Tesouraria,-13257000,True,4,PGMN,balance_sheet,consolidated
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,0,True,4,PGMN,balance_sheet,consolidated
+2.03.02.07,Plano de Ações Restritas,21107000,False,4,PGMN,balance_sheet,consolidated
+2.03.03,Reservas de Reavaliação,0,True,3,PGMN,balance_sheet,consolidated
+2.03.04,Reservas de Lucros,726976000,True,3,PGMN,balance_sheet,consolidated
+2.03.04.01,Reserva Legal,43961000,True,4,PGMN,balance_sheet,consolidated
+2.03.04.02,Reserva Estatutária,0,True,4,PGMN,balance_sheet,consolidated
+2.03.04.03,Reserva para Contingências,0,True,4,PGMN,balance_sheet,consolidated
+2.03.04.04,Reserva de Lucros a Realizar,0,True,4,PGMN,balance_sheet,consolidated
+2.03.04.05,Reserva de Retenção de Lucros,0,True,4,PGMN,balance_sheet,consolidated
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,0,True,4,PGMN,balance_sheet,consolidated
+2.03.04.07,Reserva de Incentivos Fiscais,683015000,True,4,PGMN,balance_sheet,consolidated
+2.03.04.08,Dividendo Adicional Proposto,0,True,4,PGMN,balance_sheet,consolidated
+2.03.04.09,Ações em Tesouraria,0,True,4,PGMN,balance_sheet,consolidated
+2.03.05,Lucros/Prejuízos Acumulados,0,True,3,PGMN,balance_sheet,consolidated
+2.03.06,Ajustes de Avaliação Patrimonial,0,True,3,PGMN,balance_sheet,consolidated
+2.03.07,Ajustes Acumulados de Conversão,0,True,3,PGMN,balance_sheet,consolidated
+2.03.08,Outros Resultados Abrangentes,0,True,3,PGMN,balance_sheet,consolidated
+2.03.09,Participação dos Acionistas Não Controladores,8214000,True,3,PGMN,balance_sheet,consolidated
+1,Ativo Total,16249000000,True,1,AMER,balance_sheet,consolidated
+1.01,Ativo Circulante,7771000000,True,2,AMER,balance_sheet,consolidated
+1.01.01,Caixa e Equivalentes de Caixa,879000000,True,3,AMER,balance_sheet,consolidated
+1.01.02,Aplicações Financeiras,175000000,True,3,AMER,balance_sheet,consolidated
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,175000000,True,4,AMER,balance_sheet,consolidated
+1.01.02.01.01,Títulos para Negociação,0,True,5,AMER,balance_sheet,consolidated
+1.01.02.01.02,Títulos Designados a Valor Justo,0,True,5,AMER,balance_sheet,consolidated
+1.01.02.01.03,Títulos e valores mobiliários,175000000,False,5,AMER,balance_sheet,consolidated
+1.01.02.01.04,Outros ativos financeiros,0,False,5,AMER,balance_sheet,consolidated
+1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,AMER,balance_sheet,consolidated
+1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,AMER,balance_sheet,consolidated
+1.01.03,Contas a Receber,1467000000,True,3,AMER,balance_sheet,consolidated
+1.01.03.01,Clientes,1467000000,True,4,AMER,balance_sheet,consolidated
+1.01.03.02,Outras Contas a Receber,0,True,4,AMER,balance_sheet,consolidated
+1.01.04,Estoques,1850000000,True,3,AMER,balance_sheet,consolidated
+1.01.04.01,Estoques,1850000000,False,4,AMER,balance_sheet,consolidated
+1.01.05,Ativos Biológicos,0,True,3,AMER,balance_sheet,consolidated
+1.01.06,Tributos a Recuperar,1045000000,True,3,AMER,balance_sheet,consolidated
+1.01.06.01,Tributos Correntes a Recuperar,1045000000,True,4,AMER,balance_sheet,consolidated
+1.01.06.01.01,Impostos a Recuperar,1010000000,False,5,AMER,balance_sheet,consolidated
+1.01.06.01.02,Imposto de renda e contribuição social,35000000,False,5,AMER,balance_sheet,consolidated
+1.01.07,Despesas Antecipadas,165000000,True,3,AMER,balance_sheet,consolidated
+1.01.07.01,Despesas Antecipadas,165000000,False,4,AMER,balance_sheet,consolidated
+1.01.08,Outros Ativos Circulantes,2190000000,True,3,AMER,balance_sheet,consolidated
+1.01.08.01,Ativos Não-Correntes a Venda,0,True,4,AMER,balance_sheet,consolidated
+1.01.08.02,Ativos de Operações Descontinuadas,1846000000,True,4,AMER,balance_sheet,consolidated
+1.01.08.03,Outros,344000000,True,4,AMER,balance_sheet,consolidated
+1.01.08.03.01,Outros,344000000,False,5,AMER,balance_sheet,consolidated
+1.01.08.03.02,Contas a receber - Partes relacionadas,0,False,5,AMER,balance_sheet,consolidated
+1.02,Ativo Não Circulante,8478000000,True,2,AMER,balance_sheet,consolidated
+1.02.01,Ativo Realizável a Longo Prazo,4052000000,True,3,AMER,balance_sheet,consolidated
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.01.01,Títulos Designados a Valor Justo,0,True,5,AMER,balance_sheet,consolidated
+1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.03.01,Clientes,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.03.02,Outras Contas a Receber,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.04,Contas a Receber,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.04.01,Clientes,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.04.02,Outras Contas a Receber,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.05,Estoques,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.05.03,Depósitos Judiciais,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.05.04,Impostos a recuperar,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.05.05,Outros Ativos Não Circulantes,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.06,Ativos Biológicos,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.07,Tributos Diferidos,74000000,True,4,AMER,balance_sheet,consolidated
+1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,74000000,False,5,AMER,balance_sheet,consolidated
+1.02.01.08,Despesas Antecipadas,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.09,Créditos com Partes Relacionadas,0,True,4,AMER,balance_sheet,consolidated
+1.02.01.09.01,Créditos com Coligadas,0,True,5,AMER,balance_sheet,consolidated
+1.02.01.09.03,Créditos com Controladores,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.09.04,Créditos com Outras Partes Relacionadas,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.09.05,Contas a receber de acionistas - Plano de subscrição de ações,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.10,Outros Ativos Não Circulantes,3978000000,True,4,AMER,balance_sheet,consolidated
+1.02.01.10.01,Ativos Não-Correntes a Venda,0,True,5,AMER,balance_sheet,consolidated
+1.02.01.10.02,Ativos de Operações Descontinuadas,0,True,5,AMER,balance_sheet,consolidated
+1.02.01.10.03,Depósitos Judiciais,739000000,False,5,AMER,balance_sheet,consolidated
+1.02.01.10.04,Impostos a recuperar,2883000000,False,5,AMER,balance_sheet,consolidated
+1.02.01.10.05,Outros Ativos Não Circulantes,15000000,False,5,AMER,balance_sheet,consolidated
+1.02.01.10.06,Contas a receber - Partes relacionadas,0,False,5,AMER,balance_sheet,consolidated
+1.02.01.10.07,Imposto de renda e contribuição social,341000000,False,5,AMER,balance_sheet,consolidated
+1.02.02,Investimentos,32000000,True,3,AMER,balance_sheet,consolidated
+1.02.02.01,Participações Societárias,32000000,True,4,AMER,balance_sheet,consolidated
+1.02.02.01.01,Participações em Coligadas,32000000,True,5,AMER,balance_sheet,consolidated
+1.02.02.01.04,Participações em Controladas em Conjunto,0,True,5,AMER,balance_sheet,consolidated
+1.02.02.01.05,Outros Investimentos,0,True,5,AMER,balance_sheet,consolidated
+1.02.02.02,Propriedades para Investimento,0,True,4,AMER,balance_sheet,consolidated
+1.02.03,Imobilizado,4222000000,True,3,AMER,balance_sheet,consolidated
+1.02.03.01,Imobilizado em Operação,1464000000,True,4,AMER,balance_sheet,consolidated
+1.02.03.02,Direito de Uso em Arrendamento,2758000000,True,4,AMER,balance_sheet,consolidated
+1.02.03.02.01,Ativo de Direito de Uso,2758000000,False,5,AMER,balance_sheet,consolidated
+1.02.03.03,Imobilizado em Andamento,0,True,4,AMER,balance_sheet,consolidated
+1.02.04,Intangível,172000000,True,3,AMER,balance_sheet,consolidated
+1.02.04.01,Intangíveis,172000000,True,4,AMER,balance_sheet,consolidated
+1.02.04.01.01,Contrato de Concessão,0,True,5,AMER,balance_sheet,consolidated
+1.02.04.02,Goodwill,0,True,4,AMER,balance_sheet,consolidated
+2,Passivo Total,16249000000,True,1,AMER,balance_sheet,consolidated
+2.01,Passivo Circulante,4664000000,True,2,AMER,balance_sheet,consolidated
+2.01.01,Obrigações Sociais e Trabalhistas,262000000,True,3,AMER,balance_sheet,consolidated
+2.01.01.01,Obrigações Sociais,0,True,4,AMER,balance_sheet,consolidated
+2.01.01.02,Obrigações Trabalhistas,262000000,True,4,AMER,balance_sheet,consolidated
+2.01.01.02.01,"Salários, encargos e contribuições",262000000,False,5,AMER,balance_sheet,consolidated
+2.01.02,Fornecedores,2461000000,True,3,AMER,balance_sheet,consolidated
+2.01.02.01,Fornecedores Nacionais,2461000000,True,4,AMER,balance_sheet,consolidated
+2.01.02.01.01,Fornecedores Nacionais,2461000000,False,5,AMER,balance_sheet,consolidated
+2.01.02.02,Fornecedores Estrangeiros,0,True,4,AMER,balance_sheet,consolidated
+2.01.03,Obrigações Fiscais,345000000,True,3,AMER,balance_sheet,consolidated
+2.01.03.01,Obrigações Fiscais Federais,75000000,True,4,AMER,balance_sheet,consolidated
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,2000000,True,5,AMER,balance_sheet,consolidated
+2.01.03.01.02,Imposto sobre Produtos Industrializados (IPI),5000000,False,5,AMER,balance_sheet,consolidated
+2.01.03.01.03,PIS e Cofins,0,False,5,AMER,balance_sheet,consolidated
+2.01.03.01.04,Imposto de Renda Retido na Fonte,0,False,5,AMER,balance_sheet,consolidated
+2.01.03.01.05,Outros,14000000,False,5,AMER,balance_sheet,consolidated
+2.01.03.01.06,Parcelamento Federal,54000000,False,5,AMER,balance_sheet,consolidated
+2.01.03.02,Obrigações Fiscais Estaduais,265000000,True,4,AMER,balance_sheet,consolidated
+2.01.03.02.01,Imposto sobre Circulação de Mercadorias Serviços - ICMS,206000000,False,5,AMER,balance_sheet,consolidated
+2.01.03.02.02,Parcelamento Estadual,59000000,False,5,AMER,balance_sheet,consolidated
+2.01.03.03,Obrigações Fiscais Municipais,5000000,True,4,AMER,balance_sheet,consolidated
+2.01.03.03.01,Imposto sobre Serviços - ISS,5000000,False,5,AMER,balance_sheet,consolidated
+2.01.04,Empréstimos e Financiamentos,0,True,3,AMER,balance_sheet,consolidated
+2.01.04.01,Empréstimos e Financiamentos,0,True,4,AMER,balance_sheet,consolidated
+2.01.04.01.01,Em Moeda Nacional,0,True,5,AMER,balance_sheet,consolidated
+2.01.04.01.02,Em Moeda Estrangeira,0,True,5,AMER,balance_sheet,consolidated
+2.01.04.02,Debêntures,0,True,4,AMER,balance_sheet,consolidated
+2.01.04.02.01,Debêntures,0,False,5,AMER,balance_sheet,consolidated
+2.01.04.03,Financiamento por Arrendamento,0,True,4,AMER,balance_sheet,consolidated
+2.01.05,Outras Obrigações,992000000,True,3,AMER,balance_sheet,consolidated
+2.01.05.01,Passivos com Partes Relacionadas,0,True,4,AMER,balance_sheet,consolidated
+2.01.05.01.01,Débitos com Coligadas,0,True,5,AMER,balance_sheet,consolidated
+2.01.05.01.03,Débitos com Controladores,0,True,5,AMER,balance_sheet,consolidated
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,0,True,5,AMER,balance_sheet,consolidated
+2.01.05.02,Outros,992000000,True,4,AMER,balance_sheet,consolidated
+2.01.05.02.01,Dividendos e JCP a Pagar,0,True,5,AMER,balance_sheet,consolidated
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,0,True,5,AMER,balance_sheet,consolidated
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,0,True,5,AMER,balance_sheet,consolidated
+2.01.05.02.04,Outras Obrigações,287000000,False,5,AMER,balance_sheet,consolidated
+2.01.05.02.05,Contas a Pagar - Combinação de Negócios,0,False,5,AMER,balance_sheet,consolidated
+2.01.05.02.06,Adiantamento Recebido de Clientes,32000000,False,5,AMER,balance_sheet,consolidated
+2.01.05.02.07,Passivo de arrendamento,365000000,False,5,AMER,balance_sheet,consolidated
+2.01.05.02.08,Dividendos e participações propostos,0,False,5,AMER,balance_sheet,consolidated
+2.01.05.02.09,Risco Sacado,308000000,False,5,AMER,balance_sheet,consolidated
+2.01.06,Provisões,0,True,3,AMER,balance_sheet,consolidated
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,AMER,balance_sheet,consolidated
+2.01.06.01.01,Provisões Fiscais,0,True,5,AMER,balance_sheet,consolidated
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,AMER,balance_sheet,consolidated
+2.01.06.01.03,Provisões para Benefícios a Empregados,0,True,5,AMER,balance_sheet,consolidated
+2.01.06.01.04,Provisões Cíveis,0,True,5,AMER,balance_sheet,consolidated
+2.01.06.01.05,Provisões Imobiliário,0,False,5,AMER,balance_sheet,consolidated
+2.01.06.02,Outras Provisões,0,True,4,AMER,balance_sheet,consolidated
+2.01.06.02.01,Provisões para Garantias,0,True,5,AMER,balance_sheet,consolidated
+2.01.06.02.02,Provisões para Reestruturação,0,True,5,AMER,balance_sheet,consolidated
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,AMER,balance_sheet,consolidated
+2.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,604000000,True,3,AMER,balance_sheet,consolidated
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,AMER,balance_sheet,consolidated
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,604000000,True,4,AMER,balance_sheet,consolidated
+2.02,Passivo Não Circulante,6826000000,True,2,AMER,balance_sheet,consolidated
+2.02.01,Empréstimos e Financiamentos,1995000000,True,3,AMER,balance_sheet,consolidated
+2.02.01.01,Empréstimos e Financiamentos,0,True,4,AMER,balance_sheet,consolidated
+2.02.01.01.01,Em Moeda Nacional,0,True,5,AMER,balance_sheet,consolidated
+2.02.01.01.02,Em Moeda Estrangeira,0,True,5,AMER,balance_sheet,consolidated
+2.02.01.02,Debêntures,1995000000,True,4,AMER,balance_sheet,consolidated
+2.02.01.02.01,Debêntures,1995000000,False,5,AMER,balance_sheet,consolidated
+2.02.01.03,Financiamento por Arrendamento,0,True,4,AMER,balance_sheet,consolidated
+2.02.02,Outras Obrigações,4130000000,True,3,AMER,balance_sheet,consolidated
+2.02.02.01,Passivos com Partes Relacionadas,0,True,4,AMER,balance_sheet,consolidated
+2.02.02.01.01,Débitos com Coligadas,0,True,5,AMER,balance_sheet,consolidated
+2.02.02.01.03,Débitos com Controladores,0,True,5,AMER,balance_sheet,consolidated
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,0,True,5,AMER,balance_sheet,consolidated
+2.02.02.02,Outros,4130000000,True,4,AMER,balance_sheet,consolidated
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,0,True,5,AMER,balance_sheet,consolidated
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,0,True,5,AMER,balance_sheet,consolidated
+2.02.02.02.03,Outras Obrigações,387000000,False,5,AMER,balance_sheet,consolidated
+2.02.02.02.04,Contas a Pagar - Combinação de Negócios,0,False,5,AMER,balance_sheet,consolidated
+2.02.02.02.05,Passivo de arrendamento,3218000000,False,5,AMER,balance_sheet,consolidated
+2.02.02.02.06,Provisão para perdas em investimentos,0,False,5,AMER,balance_sheet,consolidated
+2.02.02.02.07,Plano de Assistência Médica,195000000,False,5,AMER,balance_sheet,consolidated
+2.02.02.02.08,Tributos a recolher,71000000,False,5,AMER,balance_sheet,consolidated
+2.02.02.02.09,Fornecedores,259000000,False,5,AMER,balance_sheet,consolidated
+2.02.03,Tributos Diferidos,0,True,3,AMER,balance_sheet,consolidated
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,0,True,4,AMER,balance_sheet,consolidated
+2.02.04,Provisões,701000000,True,3,AMER,balance_sheet,consolidated
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,701000000,True,4,AMER,balance_sheet,consolidated
+2.02.04.01.01,Provisões Fiscais,226000000,True,5,AMER,balance_sheet,consolidated
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,179000000,True,5,AMER,balance_sheet,consolidated
+2.02.04.01.03,Provisões para Benefícios a Empregados,0,True,5,AMER,balance_sheet,consolidated
+2.02.04.01.04,Provisões Cíveis,68000000,True,5,AMER,balance_sheet,consolidated
+2.02.04.01.05,Provisões Imobiliário,228000000,False,5,AMER,balance_sheet,consolidated
+2.02.04.02,Outras Provisões,0,True,4,AMER,balance_sheet,consolidated
+2.02.04.02.01,Provisões para Garantias,0,True,5,AMER,balance_sheet,consolidated
+2.02.04.02.02,Provisões para Reestruturação,0,True,5,AMER,balance_sheet,consolidated
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,AMER,balance_sheet,consolidated
+2.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,AMER,balance_sheet,consolidated
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,AMER,balance_sheet,consolidated
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,AMER,balance_sheet,consolidated
+2.02.06,Lucros e Receitas a Apropriar,0,True,3,AMER,balance_sheet,consolidated
+2.02.06.01,Lucros a Apropriar,0,True,4,AMER,balance_sheet,consolidated
+2.02.06.02,Receitas a Apropriar,0,True,4,AMER,balance_sheet,consolidated
+2.02.06.03,Subvenções de Investimento a Apropriar,0,True,4,AMER,balance_sheet,consolidated
+2.03,Patrimônio Líquido Consolidado,4759000000,True,2,AMER,balance_sheet,consolidated
+2.03.01,Capital Social Realizado,39891000000,True,3,AMER,balance_sheet,consolidated
+2.03.02,Reservas de Capital,0,True,3,AMER,balance_sheet,consolidated
+2.03.02.01,Ágio na Emissão de Ações,0,True,4,AMER,balance_sheet,consolidated
+2.03.02.02,Reserva Especial de Ágio na Incorporação,0,True,4,AMER,balance_sheet,consolidated
+2.03.02.03,Alienação de Bônus de Subscrição,0,True,4,AMER,balance_sheet,consolidated
+2.03.02.04,Opções Outorgadas,0,True,4,AMER,balance_sheet,consolidated
+2.03.02.05,Ações em Tesouraria,0,True,4,AMER,balance_sheet,consolidated
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,0,True,4,AMER,balance_sheet,consolidated
+2.03.02.07,Plano de Opção de Ações,0,False,4,AMER,balance_sheet,consolidated
+2.03.02.08,Plano de subscrição de ações,0,False,4,AMER,balance_sheet,consolidated
+2.03.03,Reservas de Reavaliação,0,True,3,AMER,balance_sheet,consolidated
+2.03.04,Reservas de Lucros,0,True,3,AMER,balance_sheet,consolidated
+2.03.04.01,Reserva Legal,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.02,Reserva Estatutária,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.03,Reserva para Contingências,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.04,Reserva de Lucros a Realizar,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.05,Reserva de Retenção de Lucros,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.07,Reserva de Incentivos Fiscais,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.08,Dividendo Adicional Proposto,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.09,Ações em Tesouraria,0,True,4,AMER,balance_sheet,consolidated
+2.03.04.10,Acervo Líquido incorporado,0,False,4,AMER,balance_sheet,consolidated
+2.03.04.11,Reserva para novos empreendimentos,0,False,4,AMER,balance_sheet,consolidated
+2.03.05,Lucros/Prejuízos Acumulados,-35125000000,True,3,AMER,balance_sheet,consolidated
+2.03.06,Ajustes de Avaliação Patrimonial,0,True,3,AMER,balance_sheet,consolidated
+2.03.07,Ajustes Acumulados de Conversão,0,True,3,AMER,balance_sheet,consolidated
+2.03.08,Outros Resultados Abrangentes,-7000000,True,3,AMER,balance_sheet,consolidated
+2.03.09,Participação dos Acionistas Não Controladores,0,True,3,AMER,balance_sheet,consolidated
+1,Ativo Total,47825000000,True,1,ASAI,balance_sheet,individual
+1.01,Ativo Circulante,17800000000,True,2,ASAI,balance_sheet,individual
+1.01.01,Caixa e Equivalentes de Caixa,5854000000,True,3,ASAI,balance_sheet,individual
+1.01.02,Aplicações Financeiras,0,True,3,ASAI,balance_sheet,individual
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,ASAI,balance_sheet,individual
+1.01.02.01.01,Títulos para Negociação,0,True,5,ASAI,balance_sheet,individual
+1.01.02.01.02,Títulos Designados a Valor Justo,0,True,5,ASAI,balance_sheet,individual
+1.01.02.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,ASAI,balance_sheet,individual
+1.01.02.02.01,Títulos Mantidos até o Vencimento,0,False,5,ASAI,balance_sheet,individual
+1.01.02.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,ASAI,balance_sheet,individual
+1.01.03,Contas a Receber,3056000000,True,3,ASAI,balance_sheet,individual
+1.01.03.01,Clientes,3056000000,True,4,ASAI,balance_sheet,individual
+1.01.03.02,Outras Contas a Receber,0,True,4,ASAI,balance_sheet,individual
+1.01.04,Estoques,7504000000,True,3,ASAI,balance_sheet,individual
+1.01.05,Ativos Biológicos,0,True,3,ASAI,balance_sheet,individual
+1.01.06,Tributos a Recuperar,1139000000,True,3,ASAI,balance_sheet,individual
+1.01.06.01,Tributos Correntes a Recuperar,0,True,4,ASAI,balance_sheet,individual
+1.01.07,Despesas Antecipadas,0,True,3,ASAI,balance_sheet,individual
+1.01.08,Outros Ativos Circulantes,247000000,True,3,ASAI,balance_sheet,individual
+1.01.08.01,Ativos Não-Correntes a Venda,18000000,True,4,ASAI,balance_sheet,individual
+1.01.08.01.01,Ativos Mantidos para Venda,18000000,False,5,ASAI,balance_sheet,individual
+1.01.08.01.03,Outros,0,False,5,ASAI,balance_sheet,individual
+1.01.08.01.06,Instrumento,0,False,5,ASAI,balance_sheet,individual
+1.01.08.02,Ativos de Operações Descontinuadas,0,True,4,ASAI,balance_sheet,individual
+1.01.08.03,Outros,229000000,True,4,ASAI,balance_sheet,individual
+1.01.08.03.01,Instrumentos Financeiros Derivativos,7000000,False,5,ASAI,balance_sheet,individual
+1.01.08.03.02,Dividendos a Receber,0,False,5,ASAI,balance_sheet,individual
+1.01.08.03.03,Outras Contas a Receber,111000000,False,5,ASAI,balance_sheet,individual
+1.01.08.03.04,Despesas Antecipadas,111000000,False,5,ASAI,balance_sheet,individual
+1.02,Ativo Não Circulante,30025000000,True,2,ASAI,balance_sheet,individual
+1.02.01,Ativo Realizável a Longo Prazo,2510000000,True,3,ASAI,balance_sheet,individual
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo através do Resultado,0,True,4,ASAI,balance_sheet,individual
+1.02.01.01.01,Títulos Designados a Valor Justo,0,True,5,ASAI,balance_sheet,individual
+1.02.01.02,Aplicações Financeiras Avaliadas a Valor Justo através de Outros Resultados Abrangentes,0,True,4,ASAI,balance_sheet,individual
+1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,0,True,4,ASAI,balance_sheet,individual
+1.02.01.04,Contas a Receber,0,True,4,ASAI,balance_sheet,individual
+1.02.01.04.01,Clientes,0,False,5,ASAI,balance_sheet,individual
+1.02.01.04.02,Outras Contas a Receber,0,False,5,ASAI,balance_sheet,individual
+1.02.01.05,Estoques,0,True,4,ASAI,balance_sheet,individual
+1.02.01.06,Ativos Biológicos,0,True,4,ASAI,balance_sheet,individual
+1.02.01.07,Tributos Diferidos,443000000,True,4,ASAI,balance_sheet,individual
+1.02.01.07.01,Imposto de Renda e Contribuição Social Diferidos,0,False,5,ASAI,balance_sheet,individual
+1.02.01.08,Despesas Antecipadas,0,True,4,ASAI,balance_sheet,individual
+1.02.01.09,Créditos com Partes Relacionadas,30000000,True,4,ASAI,balance_sheet,individual
+1.02.01.09.01,Créditos com Coligadas,0,True,5,ASAI,balance_sheet,individual
+1.02.01.09.02,Créditos com Controladas,0,True,5,ASAI,balance_sheet,individual
+1.02.01.09.03,Créditos com Controladores,0,False,5,ASAI,balance_sheet,individual
+1.02.01.09.04,Créditos com Outras Partes Relacionadas,30000000,False,5,ASAI,balance_sheet,individual
+1.02.01.10,Outros Ativos Não Circulantes,2037000000,True,4,ASAI,balance_sheet,individual
+1.02.01.10.01,Ativos Não-Correntes a Venda,0,True,5,ASAI,balance_sheet,individual
+1.02.01.10.02,Ativos de Operações Descontinuadas,0,True,5,ASAI,balance_sheet,individual
+1.02.01.10.04,Tributos a Recuperar,943000000,False,5,ASAI,balance_sheet,individual
+1.02.01.10.05,Depósitos Judiciais,22000000,False,5,ASAI,balance_sheet,individual
+1.02.01.10.06,Instrumentos Financeiros Derivativos,448000000,False,5,ASAI,balance_sheet,individual
+1.02.01.10.07,Outras Contas a Receber,605000000,False,5,ASAI,balance_sheet,individual
+1.02.01.10.08,Despesas Antecipadas,19000000,False,5,ASAI,balance_sheet,individual
+1.02.02,Investimentos,326000000,True,3,ASAI,balance_sheet,individual
+1.02.02.01,Participações Societárias,326000000,True,4,ASAI,balance_sheet,individual
+1.02.02.01.01,Participações em Coligadas,0,True,5,ASAI,balance_sheet,individual
+1.02.02.01.02,Participações em Controladas,0,True,5,ASAI,balance_sheet,individual
+1.02.02.01.03,Participações em Controladas em Conjunto,326000000,True,5,ASAI,balance_sheet,individual
+1.02.02.01.04,Outros Investimentos,0,True,5,ASAI,balance_sheet,individual
+1.02.02.02,Propriedades para Investimento,0,True,4,ASAI,balance_sheet,individual
+1.02.03,Imobilizado,21987000000,True,3,ASAI,balance_sheet,individual
+1.02.03.01,Imobilizado em Operação,13073000000,True,4,ASAI,balance_sheet,individual
+1.02.03.02,Direito de Uso em Arrendamento,8914000000,True,4,ASAI,balance_sheet,individual
+1.02.03.03,Imobilizado em Andamento,0,True,4,ASAI,balance_sheet,individual
+1.02.04,Intangível,5202000000,True,3,ASAI,balance_sheet,individual
+1.02.04.01,Intangíveis,0,True,4,ASAI,balance_sheet,individual
+1.02.04.01.01,Contrato de Concessão,0,True,5,ASAI,balance_sheet,individual
+1.02.04.01.02,Intangíveis,0,False,5,ASAI,balance_sheet,individual
+1.02.04.01.03,Direito de Uso Intangível,0,False,5,ASAI,balance_sheet,individual
+2,Passivo Total,47825000000,True,1,ASAI,balance_sheet,individual
+2.01,Passivo Circulante,16817000000,True,2,ASAI,balance_sheet,individual
+2.01.01,Obrigações Sociais e Trabalhistas,753000000,True,3,ASAI,balance_sheet,individual
+2.01.01.01,Obrigações Sociais,90000000,True,4,ASAI,balance_sheet,individual
+2.01.01.02,Obrigações Trabalhistas,663000000,True,4,ASAI,balance_sheet,individual
+2.01.02,Fornecedores,12427000000,True,3,ASAI,balance_sheet,individual
+2.01.02.01,Fornecedores Nacionais,12427000000,True,4,ASAI,balance_sheet,individual
+2.01.02.01.01,Fornecedores,11437000000,False,5,ASAI,balance_sheet,individual
+2.01.02.01.02,Fornecedores - Convênios,990000000,False,5,ASAI,balance_sheet,individual
+2.01.02.01.03,Fornecedores - Convênios - Aquisição de hipermercado,0,False,5,ASAI,balance_sheet,individual
+2.01.02.02,Fornecedores Estrangeiros,0,True,4,ASAI,balance_sheet,individual
+2.01.03,Obrigações Fiscais,518000000,True,3,ASAI,balance_sheet,individual
+2.01.03.01,Obrigações Fiscais Federais,0,True,4,ASAI,balance_sheet,individual
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,0,True,5,ASAI,balance_sheet,individual
+2.01.03.01.02,Demais Impostos a Recolher,0,False,5,ASAI,balance_sheet,individual
+2.01.03.02,Obrigações Fiscais Estaduais,0,True,4,ASAI,balance_sheet,individual
+2.01.03.02.01,Demais Impostos a Recolher,0,False,5,ASAI,balance_sheet,individual
+2.01.03.03,Obrigações Fiscais Municipais,0,True,4,ASAI,balance_sheet,individual
+2.01.03.03.01,Demais Impostos a Recolher,0,False,5,ASAI,balance_sheet,individual
+2.01.04,Empréstimos e Financiamentos,1719000000,True,3,ASAI,balance_sheet,individual
+2.01.04.01,Empréstimos e Financiamentos,1202000000,True,4,ASAI,balance_sheet,individual
+2.01.04.01.01,Em Moeda Nacional,0,True,5,ASAI,balance_sheet,individual
+2.01.04.01.02,Em Moeda Estrangeira,0,True,5,ASAI,balance_sheet,individual
+2.01.04.02,Debêntures,517000000,True,4,ASAI,balance_sheet,individual
+2.01.04.03,Financiamento por Arrendamento,0,True,4,ASAI,balance_sheet,individual
+2.01.05,Outras Obrigações,1400000000,True,3,ASAI,balance_sheet,individual
+2.01.05.01,Passivos com Partes Relacionadas,0,True,4,ASAI,balance_sheet,individual
+2.01.05.01.01,Débitos com Coligadas,0,True,5,ASAI,balance_sheet,individual
+2.01.05.01.02,Débitos com Controladas,0,True,5,ASAI,balance_sheet,individual
+2.01.05.01.03,Débitos com Controladores,0,True,5,ASAI,balance_sheet,individual
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,0,True,5,ASAI,balance_sheet,individual
+2.01.05.02,Outros,1400000000,True,4,ASAI,balance_sheet,individual
+2.01.05.02.01,Dividendos e JCP a Pagar,123000000,True,5,ASAI,balance_sheet,individual
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,0,True,5,ASAI,balance_sheet,individual
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,0,True,5,ASAI,balance_sheet,individual
+2.01.05.02.04,Outros passivos circulantes,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.05,Aluguéis a pagar,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.06,Outros passivos circulantes,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.07,Repasse a Terceiros,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.08,Fornecedores - Convênios - Aquisição de imobilizado,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.09,Receitas a Apropriar,507000000,False,5,ASAI,balance_sheet,individual
+2.01.05.02.11,Aquisição de Sociedades,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.12,Outros Passivos Circulantes,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.13,Outros passivos circulantes,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.14,Multisservicos a Pagar,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.15,IPTU a Pagar,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.16,Demais Contas a Pagar,0,False,5,ASAI,balance_sheet,individual
+2.01.05.02.17,Passivo de Arrendamento,461000000,False,5,ASAI,balance_sheet,individual
+2.01.05.02.19,Outras Contas a Pagar,309000000,False,5,ASAI,balance_sheet,individual
+2.01.06,Provisões,0,True,3,ASAI,balance_sheet,individual
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,ASAI,balance_sheet,individual
+2.01.06.01.01,Provisões Fiscais,0,True,5,ASAI,balance_sheet,individual
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,ASAI,balance_sheet,individual
+2.01.06.01.03,Provisões para Benefícios a Empregados,0,True,5,ASAI,balance_sheet,individual
+2.01.06.01.04,Provisões Cíveis,0,True,5,ASAI,balance_sheet,individual
+2.01.06.02,Outras Provisões,0,True,4,ASAI,balance_sheet,individual
+2.01.06.02.01,Provisões para Garantias,0,True,5,ASAI,balance_sheet,individual
+2.01.06.02.02,Provisões para Reestruturação,0,True,5,ASAI,balance_sheet,individual
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,ASAI,balance_sheet,individual
+2.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,ASAI,balance_sheet,individual
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,ASAI,balance_sheet,individual
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,ASAI,balance_sheet,individual
+2.02,Passivo Não Circulante,25454000000,True,2,ASAI,balance_sheet,individual
+2.02.01,Empréstimos e Financiamentos,14580000000,True,3,ASAI,balance_sheet,individual
+2.02.01.01,Empréstimos e Financiamentos,2414000000,True,4,ASAI,balance_sheet,individual
+2.02.01.01.01,Em Moeda Nacional,0,True,5,ASAI,balance_sheet,individual
+2.02.01.01.02,Em Moeda Estrangeira,0,True,5,ASAI,balance_sheet,individual
+2.02.01.02,Debêntures,12166000000,True,4,ASAI,balance_sheet,individual
+2.02.01.03,Financiamento por Arrendamento,0,True,4,ASAI,balance_sheet,individual
+2.02.02,Outras Obrigações,10090000000,True,3,ASAI,balance_sheet,individual
+2.02.02.01,Passivos com Partes Relacionadas,0,True,4,ASAI,balance_sheet,individual
+2.02.02.01.01,Débitos com Coligadas,0,True,5,ASAI,balance_sheet,individual
+2.02.02.01.02,Débitos com Controladas,0,True,5,ASAI,balance_sheet,individual
+2.02.02.01.03,Débitos com Controladores,0,True,5,ASAI,balance_sheet,individual
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,0,True,5,ASAI,balance_sheet,individual
+2.02.02.02,Outros,10090000000,True,4,ASAI,balance_sheet,individual
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,0,True,5,ASAI,balance_sheet,individual
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,0,True,5,ASAI,balance_sheet,individual
+2.02.02.02.03,Impostos Parcelados,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.04,Fornecedores - Convênios - Aquisição de hipermercado,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.05,Fornecedores,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.06,Plano de Pensão,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.07,Outros Passivos Não Circulantes,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.08,Provisão para perdas de Investimentos em associadas,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.09,Passivo de Arrendamento,10017000000,False,5,ASAI,balance_sheet,individual
+2.02.02.02.10,Provisao p/ Perdas com Investimentos,0,False,5,ASAI,balance_sheet,individual
+2.02.02.02.11,Outras Contas a Pagar,61000000,False,5,ASAI,balance_sheet,individual
+2.02.02.02.12,Plano de ações liquidadas em caixa,12000000,False,5,ASAI,balance_sheet,individual
+2.02.03,Tributos Diferidos,0,True,3,ASAI,balance_sheet,individual
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,0,True,4,ASAI,balance_sheet,individual
+2.02.04,Provisões,266000000,True,3,ASAI,balance_sheet,individual
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,0,True,4,ASAI,balance_sheet,individual
+2.02.04.01.01,Provisões Fiscais,0,True,5,ASAI,balance_sheet,individual
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,0,True,5,ASAI,balance_sheet,individual
+2.02.04.01.03,Provisões para Benefícios a Empregados,0,True,5,ASAI,balance_sheet,individual
+2.02.04.01.04,Provisões Cíveis,0,True,5,ASAI,balance_sheet,individual
+2.02.04.02,Outras Provisões,0,True,4,ASAI,balance_sheet,individual
+2.02.04.02.01,Provisões para Garantias,0,True,5,ASAI,balance_sheet,individual
+2.02.04.02.02,Provisões para Reestruturação,0,True,5,ASAI,balance_sheet,individual
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,0,True,5,ASAI,balance_sheet,individual
+2.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,0,True,3,ASAI,balance_sheet,individual
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,0,True,4,ASAI,balance_sheet,individual
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,0,True,4,ASAI,balance_sheet,individual
+2.02.06,Lucros e Receitas a Apropriar,518000000,True,3,ASAI,balance_sheet,individual
+2.02.06.01,Lucros a Apropriar,0,True,4,ASAI,balance_sheet,individual
+2.02.06.02,Receitas a Apropriar,518000000,True,4,ASAI,balance_sheet,individual
+2.02.06.03,Subvenções de Investimento a Apropriar,0,True,4,ASAI,balance_sheet,individual
+2.03,Patrimônio Líquido,5554000000,True,2,ASAI,balance_sheet,individual
+2.03.01,Capital Social Realizado,1456000000,True,3,ASAI,balance_sheet,individual
+2.03.02,Reservas de Capital,11000000,True,3,ASAI,balance_sheet,individual
+2.03.02.01,Ágio na Emissão de Ações,0,True,4,ASAI,balance_sheet,individual
+2.03.02.02,Reserva Especial de Ágio na Incorporação,0,True,4,ASAI,balance_sheet,individual
+2.03.02.03,Alienação de Bônus de Subscrição,0,True,4,ASAI,balance_sheet,individual
+2.03.02.04,Opções Outorgadas,0,True,4,ASAI,balance_sheet,individual
+2.03.02.05,Ações em Tesouraria,0,True,4,ASAI,balance_sheet,individual
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,0,True,4,ASAI,balance_sheet,individual
+2.03.02.07,Reserva de Capital,0,False,4,ASAI,balance_sheet,individual
+2.03.03,Reservas de Reavaliação,0,True,3,ASAI,balance_sheet,individual
+2.03.04,Reservas de Lucros,4106000000,True,3,ASAI,balance_sheet,individual
+2.03.04.01,Reserva Legal,0,True,4,ASAI,balance_sheet,individual
+2.03.04.02,Reserva Estatutária,0,True,4,ASAI,balance_sheet,individual
+2.03.04.03,Reserva para Contingências,0,True,4,ASAI,balance_sheet,individual
+2.03.04.04,Reserva de Lucros a Realizar,0,True,4,ASAI,balance_sheet,individual
+2.03.04.05,Reserva de Retenção de Lucros,0,True,4,ASAI,balance_sheet,individual
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,0,True,4,ASAI,balance_sheet,individual
+2.03.04.07,Reserva de Incentivos Fiscais,0,True,4,ASAI,balance_sheet,individual
+2.03.04.08,Dividendo Adicional Proposto,0,True,4,ASAI,balance_sheet,individual
+2.03.04.09,Ações em Tesouraria,0,True,4,ASAI,balance_sheet,individual
+2.03.04.10,Reserva de Expansão,0,False,4,ASAI,balance_sheet,individual
+2.03.04.12,Transação com não Controladores,0,False,4,ASAI,balance_sheet,individual
+2.03.04.14,Liquidação de Instrumento Patrimonial,0,False,4,ASAI,balance_sheet,individual
+2.03.05,Lucros/Prejuízos Acumulados,0,True,3,ASAI,balance_sheet,individual
+2.03.06,Ajustes de Avaliação Patrimonial,0,True,3,ASAI,balance_sheet,individual
+2.03.07,Ajustes Acumulados de Conversão,0,True,3,ASAI,balance_sheet,individual
+2.03.08,Outros Resultados Abrangentes,-19000000,True,3,ASAI,balance_sheet,individual
+3.01,Receita de Venda de Bens e/ou Serviços,40804110000,True,2,WEG,income_statement,consolidated
+3.02,Custo dos Bens e/ou Serviços Vendidos,-27122477000,True,2,WEG,income_statement,consolidated
+3.03,Resultado Bruto,13681633000,True,2,WEG,income_statement,consolidated
+3.04,Despesas/Receitas Operacionais,-5682892000,True,2,WEG,income_statement,consolidated
+3.04.01,Despesas com Vendas,-3353431000,True,3,WEG,income_statement,consolidated
+3.04.01.01,(Provisão) reversão ao valor recuperável de clientes,-74335000,False,4,WEG,income_statement,consolidated
+3.04.01.02,Outras Despesas de Vendas,-3279096000,False,4,WEG,income_statement,consolidated
+3.04.02,Despesas Gerais e Administrativas,-1513882000,True,3,WEG,income_statement,consolidated
+3.04.02.01,Honorários dos Administradores,-21427000,False,4,WEG,income_statement,consolidated
+3.04.02.02,Outras,-1492455000,False,4,WEG,income_statement,consolidated
+3.04.03,Perdas pela Não Recuperabilidade de Ativos,0,True,3,WEG,income_statement,consolidated
+3.04.04,Outras Receitas Operacionais,222777000,True,3,WEG,income_statement,consolidated
+3.04.05,Outras Despesas Operacionais,-1026740000,True,3,WEG,income_statement,consolidated
+3.04.06,Resultado de Equivalência Patrimonial,-11616000,True,3,WEG,income_statement,consolidated
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,7998741000,True,2,WEG,income_statement,consolidated
+3.06,Resultado Financeiro,148936000,True,2,WEG,income_statement,consolidated
+3.06.01,Receitas Financeiras,2322314000,True,3,WEG,income_statement,consolidated
+3.06.02,Despesas Financeiras,-2173378000,True,3,WEG,income_statement,consolidated
+3.07,Resultado Antes dos Tributos sobre o Lucro,8147677000,True,2,WEG,income_statement,consolidated
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,-1371719000,True,2,WEG,income_statement,consolidated
+3.08.01,Corrente,-1270231000,True,3,WEG,income_statement,consolidated
+3.08.02,Diferido,-101488000,True,3,WEG,income_statement,consolidated
+3.09,Resultado Líquido das Operações Continuadas,6775958000,True,2,WEG,income_statement,consolidated
+3.10,Resultado Líquido de Operações Descontinuadas,0,True,2,WEG,income_statement,consolidated
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,0,True,3,WEG,income_statement,consolidated
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,0,True,3,WEG,income_statement,consolidated
+3.11,Lucro/Prejuízo Consolidado do Período,6775958000,True,2,WEG,income_statement,consolidated
+3.11.01,Atribuído a Sócios da Empresa Controladora,6376219000,True,3,WEG,income_statement,consolidated
+3.11.02,Atribuído a Sócios Não Controladores,399739000,True,3,WEG,income_statement,consolidated
+3.99,Lucro por Ação - (Reais / Ação),0,False,2,WEG,income_statement,consolidated
+3.99.01,Lucro Básico por Ação,0,False,3,WEG,income_statement,consolidated
+3.99.01.01,ON,1519.7100000000,False,4,WEG,income_statement,consolidated
+3.99.02,Lucro Diluído por Ação,0,False,3,WEG,income_statement,consolidated
+3.99.02.01,ON,1519.4000000000,False,4,WEG,income_statement,consolidated
+3.01,Receita de Venda de Bens e/ou Serviços,20697507000,True,2,KLBN,income_statement,consolidated
+3.02,Custo dos Bens e/ou Serviços Vendidos,-13372597000,True,2,KLBN,income_statement,consolidated
+3.02.01,Custo dos Produtos Vendidos,-15043958000,False,3,KLBN,income_statement,consolidated
+3.02.02,Variação do Valor Justo dos Ativos Biológicos,1671361000,False,3,KLBN,income_statement,consolidated
+3.03,Resultado Bruto,7324910000,True,2,KLBN,income_statement,consolidated
+3.04,Despesas/Receitas Operacionais,-2844561000,True,2,KLBN,income_statement,consolidated
+3.04.01,Despesas com Vendas,-1819080000,True,3,KLBN,income_statement,consolidated
+3.04.02,Despesas Gerais e Administrativas,-1217691000,True,3,KLBN,income_statement,consolidated
+3.04.03,Perdas pela Não Recuperabilidade de Ativos,0,True,3,KLBN,income_statement,consolidated
+3.04.04,Outras Receitas Operacionais,0,True,3,KLBN,income_statement,consolidated
+3.04.05,Outras Despesas Operacionais,192643000,True,3,KLBN,income_statement,consolidated
+3.04.06,Resultado de Equivalência Patrimonial,-433000,True,3,KLBN,income_statement,consolidated
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,4480349000,True,2,KLBN,income_statement,consolidated
+3.06,Resultado Financeiro,-2100946000,True,2,KLBN,income_statement,consolidated
+3.06.01,Receitas Financeiras,527597000,True,3,KLBN,income_statement,consolidated
+3.06.01.01,Receitas Financeiras,872367000,False,4,KLBN,income_statement,consolidated
+3.06.01.02,Variação cambial de ativos,-344770000,False,4,KLBN,income_statement,consolidated
+3.06.02,Despesas Financeiras,-2628543000,True,3,KLBN,income_statement,consolidated
+3.06.02.01,Despesas Financeiras,-3098523000,False,4,KLBN,income_statement,consolidated
+3.06.02.02,Variação cambial de passivos,469980000,False,4,KLBN,income_statement,consolidated
+3.07,Resultado Antes dos Tributos sobre o Lucro,2379403000,True,2,KLBN,income_statement,consolidated
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,-701192000,True,2,KLBN,income_statement,consolidated
+3.08.01,Corrente,-241654000,True,3,KLBN,income_statement,consolidated
+3.08.02,Diferido,-459538000,True,3,KLBN,income_statement,consolidated
+3.09,Resultado Líquido das Operações Continuadas,1678211000,True,2,KLBN,income_statement,consolidated
+3.10,Resultado Líquido de Operações Descontinuadas,0,True,2,KLBN,income_statement,consolidated
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,0,True,3,KLBN,income_statement,consolidated
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,0,True,3,KLBN,income_statement,consolidated
+3.11,Lucro/Prejuízo Consolidado do Período,1678211000,True,2,KLBN,income_statement,consolidated
+3.11.01,Atribuído a Sócios da Empresa Controladora,0,True,3,KLBN,income_statement,consolidated
+3.11.02,Atribuído a Sócios Não Controladores,0,True,3,KLBN,income_statement,consolidated
+3.99,Lucro por Ação - (Reais / Ação),0,False,2,KLBN,income_statement,consolidated
+3.99.01,Lucro Básico por Ação,0,False,3,KLBN,income_statement,consolidated
+3.99.01.01,ON,228.6000000000,False,4,KLBN,income_statement,consolidated
+3.99.01.02,PN,228.6000000000,False,4,KLBN,income_statement,consolidated
+3.99.02,Lucro Diluído por Ação,0,False,3,KLBN,income_statement,consolidated
+3.99.02.01,ON,228.6000000000,False,4,KLBN,income_statement,consolidated
+3.99.02.02,PN,228.6000000000,False,4,KLBN,income_statement,consolidated
+3.01,Receita de Venda de Bens e/ou Serviços,7982958000,True,2,CEAB,income_statement,consolidated
+3.02,Custo dos Bens e/ou Serviços Vendidos,-3550502000,True,2,CEAB,income_statement,consolidated
+3.03,Resultado Bruto,4432456000,True,2,CEAB,income_statement,consolidated
+3.04,Despesas/Receitas Operacionais,-3387907000,True,2,CEAB,income_statement,consolidated
+3.04.01,Despesas com Vendas,-2511645000,True,3,CEAB,income_statement,consolidated
+3.04.02,Despesas Gerais e Administrativas,-959532000,True,3,CEAB,income_statement,consolidated
+3.04.03,Perdas pela Não Recuperabilidade de Ativos,0,True,3,CEAB,income_statement,consolidated
+3.04.04,Outras Receitas Operacionais,0,True,3,CEAB,income_statement,consolidated
+3.04.05,Outras Despesas Operacionais,83270000,True,3,CEAB,income_statement,consolidated
+3.04.05.01,Outras Despesas Operacionais,217571000,False,4,CEAB,income_statement,consolidated
+3.04.05.02,"Perdas em créditos, líquidas",-134301000,False,4,CEAB,income_statement,consolidated
+3.04.06,Resultado de Equivalência Patrimonial,0,True,3,CEAB,income_statement,consolidated
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,1044549000,True,2,CEAB,income_statement,consolidated
+3.06,Resultado Financeiro,-317568000,True,2,CEAB,income_statement,consolidated
+3.06.01,Receitas Financeiras,256275000,True,3,CEAB,income_statement,consolidated
+3.06.01.01,Receitas Financeiras,256275000,False,4,CEAB,income_statement,consolidated
+3.06.01.02,Resultado com Variação Cambial,0,False,4,CEAB,income_statement,consolidated
+3.06.01.03,Resultado com títulos e valores mobiliários,0,False,4,CEAB,income_statement,consolidated
+3.06.02,Despesas Financeiras,-573843000,True,3,CEAB,income_statement,consolidated
+3.06.02.01,Despesas Financeiras,-564671000,False,4,CEAB,income_statement,consolidated
+3.06.02.02,Resultado com Derivativos,0,False,4,CEAB,income_statement,consolidated
+3.06.02.03,Resultado com Variação Cambial,-9172000,False,4,CEAB,income_statement,consolidated
+3.07,Resultado Antes dos Tributos sobre o Lucro,726981000,True,2,CEAB,income_statement,consolidated
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,-139894000,True,2,CEAB,income_statement,consolidated
+3.08.01,Corrente,-95838000,True,3,CEAB,income_statement,consolidated
+3.08.02,Diferido,-44056000,True,3,CEAB,income_statement,consolidated
+3.09,Resultado Líquido das Operações Continuadas,587087000,True,2,CEAB,income_statement,consolidated
+3.10,Resultado Líquido de Operações Descontinuadas,0,True,2,CEAB,income_statement,consolidated
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,0,True,3,CEAB,income_statement,consolidated
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,0,True,3,CEAB,income_statement,consolidated
+3.11,Lucro/Prejuízo Consolidado do Período,587087000,True,2,CEAB,income_statement,consolidated
+3.11.01,Atribuído a Sócios da Empresa Controladora,587087000,True,3,CEAB,income_statement,consolidated
+3.11.02,Atribuído a Sócios Não Controladores,-2000,True,3,CEAB,income_statement,consolidated
+3.99,Lucro por Ação - (Reais / Ação),0,False,2,CEAB,income_statement,consolidated
+3.99.01,Lucro Básico por Ação,0,False,3,CEAB,income_statement,consolidated
+3.99.01.01,ON,1938.1000000000,False,4,CEAB,income_statement,consolidated
+3.99.02,Lucro Diluído por Ação,0,False,3,CEAB,income_statement,consolidated
+3.99.02.01,ON,1891.3000000000,False,4,CEAB,income_statement,consolidated
+3.01,Receita de Venda de Bens e/ou Serviços,14906429000,True,2,PGMN,income_statement,consolidated
+3.02,Custo dos Bens e/ou Serviços Vendidos,-10143331000,True,2,PGMN,income_statement,consolidated
+3.03,Resultado Bruto,4763098000,True,2,PGMN,income_statement,consolidated
+3.04,Despesas/Receitas Operacionais,-3901925000,True,2,PGMN,income_statement,consolidated
+3.04.01,Despesas com Vendas,-3464032000,True,3,PGMN,income_statement,consolidated
+3.04.02,Despesas Gerais e Administrativas,-449659000,True,3,PGMN,income_statement,consolidated
+3.04.03,Perdas pela Não Recuperabilidade de Ativos,0,True,3,PGMN,income_statement,consolidated
+3.04.04,Outras Receitas Operacionais,7637000,True,3,PGMN,income_statement,consolidated
+3.04.05,Outras Despesas Operacionais,-3219000,True,3,PGMN,income_statement,consolidated
+3.04.06,Resultado de Equivalência Patrimonial,7348000,True,3,PGMN,income_statement,consolidated
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,861173000,True,2,PGMN,income_statement,consolidated
+3.06,Resultado Financeiro,-686199000,True,2,PGMN,income_statement,consolidated
+3.06.01,Receitas Financeiras,270439000,True,3,PGMN,income_statement,consolidated
+3.06.02,Despesas Financeiras,-956638000,True,3,PGMN,income_statement,consolidated
+3.07,Resultado Antes dos Tributos sobre o Lucro,174974000,True,2,PGMN,income_statement,consolidated
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,85956000,True,2,PGMN,income_statement,consolidated
+3.08.01,Corrente,0,True,3,PGMN,income_statement,consolidated
+3.08.02,Diferido,85956000,True,3,PGMN,income_statement,consolidated
+3.09,Resultado Líquido das Operações Continuadas,260930000,True,2,PGMN,income_statement,consolidated
+3.10,Resultado Líquido de Operações Descontinuadas,0,True,2,PGMN,income_statement,consolidated
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,0,True,3,PGMN,income_statement,consolidated
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,0,True,3,PGMN,income_statement,consolidated
+3.11,Lucro/Prejuízo Consolidado do Período,260930000,True,2,PGMN,income_statement,consolidated
+3.11.01,Atribuído a Sócios da Empresa Controladora,260282000,True,3,PGMN,income_statement,consolidated
+3.11.02,Atribuído a Sócios Não Controladores,648000,True,3,PGMN,income_statement,consolidated
+3.99,Lucro por Ação - (Reais / Ação),0,False,2,PGMN,income_statement,consolidated
+3.99.01,Lucro Básico por Ação,0,False,3,PGMN,income_statement,consolidated
+3.99.01.01,ON,420,False,4,PGMN,income_statement,consolidated
+3.99.02,Lucro Diluído por Ação,0,False,3,PGMN,income_statement,consolidated
+3.01,Receita de Venda de Bens e/ou Serviços,12305000000,True,2,AMER,income_statement,consolidated
+3.02,Custo dos Bens e/ou Serviços Vendidos,-8981000000,True,2,AMER,income_statement,consolidated
+3.03,Resultado Bruto,3324000000,True,2,AMER,income_statement,consolidated
+3.04,Despesas/Receitas Operacionais,-2993000000,True,2,AMER,income_statement,consolidated
+3.04.01,Despesas com Vendas,-2720000000,True,3,AMER,income_statement,consolidated
+3.04.02,Despesas Gerais e Administrativas,-1462000000,True,3,AMER,income_statement,consolidated
+3.04.03,Perdas pela Não Recuperabilidade de Ativos,0,True,3,AMER,income_statement,consolidated
+3.04.04,Outras Receitas Operacionais,0,True,3,AMER,income_statement,consolidated
+3.04.05,Outras Despesas Operacionais,1189000000,True,3,AMER,income_statement,consolidated
+3.04.05.02,Honorários Administradores,0,False,4,AMER,income_statement,consolidated
+3.04.05.03,Outras (despesas) receitas operacionais,1189000000,False,4,AMER,income_statement,consolidated
+3.04.06,Resultado de Equivalência Patrimonial,0,True,3,AMER,income_statement,consolidated
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,331000000,True,2,AMER,income_statement,consolidated
+3.06,Resultado Financeiro,-164000000,True,2,AMER,income_statement,consolidated
+3.06.01,Receitas Financeiras,963000000,True,3,AMER,income_statement,consolidated
+3.06.02,Despesas Financeiras,-1127000000,True,3,AMER,income_statement,consolidated
+3.07,Resultado Antes dos Tributos sobre o Lucro,167000000,True,2,AMER,income_statement,consolidated
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,-69000000,True,2,AMER,income_statement,consolidated
+3.08.01,Corrente,-14000000,True,3,AMER,income_statement,consolidated
+3.08.02,Diferido,-55000000,True,3,AMER,income_statement,consolidated
+3.09,Resultado Líquido das Operações Continuadas,98000000,True,2,AMER,income_statement,consolidated
+3.10,Resultado Líquido de Operações Descontinuadas,-369000000,True,2,AMER,income_statement,consolidated
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,-369000000,True,3,AMER,income_statement,consolidated
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,0,True,3,AMER,income_statement,consolidated
+3.11,Lucro/Prejuízo Consolidado do Período,-271000000,True,2,AMER,income_statement,consolidated
+3.11.01,Atribuído a Sócios da Empresa Controladora,-271000000,True,3,AMER,income_statement,consolidated
+3.11.02,Atribuído a Sócios Não Controladores,0,True,3,AMER,income_statement,consolidated
+3.99,Lucro por Ação - (Reais / Ação),0,False,2,AMER,income_statement,consolidated
+3.99.01,Lucro Básico por Ação,0,False,3,AMER,income_statement,consolidated
+3.99.01.01,ON,0,False,4,AMER,income_statement,consolidated
+3.99.02,Lucro Diluído por Ação,0,False,3,AMER,income_statement,consolidated
+3.99.02.01,ON,0,False,4,AMER,income_statement,consolidated
+3.01,Receita de Venda de Bens e/ou Serviços,77307000000,True,2,ASAI,income_statement,individual
+3.02,Custo dos Bens e/ou Serviços Vendidos,-64266000000,True,2,ASAI,income_statement,individual
+3.03,Resultado Bruto,13041000000,True,2,ASAI,income_statement,individual
+3.04,Despesas/Receitas Operacionais,-9418000000,True,2,ASAI,income_statement,individual
+3.04.01,Despesas com Vendas,-6264000000,True,3,ASAI,income_statement,individual
+3.04.02,Despesas Gerais e Administrativas,-1011000000,True,3,ASAI,income_statement,individual
+3.04.03,Perdas pela Não Recuperabilidade de Ativos,0,True,3,ASAI,income_statement,individual
+3.04.04,Outras Receitas Operacionais,0,True,3,ASAI,income_statement,individual
+3.04.05,Outras Despesas Operacionais,-2203000000,True,3,ASAI,income_statement,individual
+3.04.05.01,Depreciação/Amortização,-1643000000,False,4,ASAI,income_statement,individual
+3.04.05.02,Ganho/Perda na Alienação de Imobilizado,0,False,4,ASAI,income_statement,individual
+3.04.05.03,"Outras (Despesas) Receitas Operacionais, Líquidas",-560000000,False,4,ASAI,income_statement,individual
+3.04.06,Resultado de Equivalência Patrimonial,60000000,True,3,ASAI,income_statement,individual
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,3623000000,True,2,ASAI,income_statement,individual
+3.06,Resultado Financeiro,-3389000000,True,2,ASAI,income_statement,individual
+3.06.01,Receitas Financeiras,428000000,True,3,ASAI,income_statement,individual
+3.06.02,Despesas Financeiras,-3817000000,True,3,ASAI,income_statement,individual
+3.07,Resultado Antes dos Tributos sobre o Lucro,234000000,True,2,ASAI,income_statement,individual
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,263000000,True,2,ASAI,income_statement,individual
+3.08.01,Corrente,-36000000,True,3,ASAI,income_statement,individual
+3.08.02,Diferido,299000000,True,3,ASAI,income_statement,individual
+3.09,Resultado Líquido das Operações Continuadas,497000000,True,2,ASAI,income_statement,individual
+3.10,Resultado Líquido de Operações Descontinuadas,0,True,2,ASAI,income_statement,individual
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,0,True,3,ASAI,income_statement,individual
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,0,True,3,ASAI,income_statement,individual
+3.11,Lucro/Prejuízo do Período,497000000,True,2,ASAI,income_statement,individual
+3.99,Lucro por Ação - (Reais / Ação),0,False,2,ASAI,income_statement,individual
+3.99.01,Lucro Básico por Ação,0,False,3,ASAI,income_statement,individual
+3.99.01.01,ON,369.1100000000,False,4,ASAI,income_statement,individual
+3.99.01.02,PN,0,False,4,ASAI,income_statement,individual
+3.99.02,Lucro Diluído por Ação,0,False,3,ASAI,income_statement,individual
+3.99.02.01,ON,367.8600000000,False,4,ASAI,income_statement,individual
+3.99.02.02,PN,0,False,4,ASAI,income_statement,individual

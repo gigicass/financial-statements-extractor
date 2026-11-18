@@ -1,0 +1,851 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13 
+ 
+WEG S.A.     CNPJ 84.429.695/0001-11   |   CVM 00541-0 Companhia Aberta 
+ 
+DEMONSTRAÇÕES FINANCEIRAS 2025 
+Balanço Patrimonial em 31 de dezembro de 2025 e 2024 
+Em milhares de reais, exceto quando indicado de outra forma 
+ 
+ 
+CONTROLADORA
+CONSOLIDADO
+Notas
+31/12/25
+31/12/24
+31/12/25
+31/12/24
+Ativo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ativo Circulante 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Caixa e equivalentes de caixa 
+4 
+ 
+413.983 
+ 
+810.170 
+ 
+6.296.498 
+ 
+ 7.347.599 
+  Aplicações financeiras 
+5 
+ 
+983.179 
+ 
+648.477 
+ 
+983.367 
+ 
+ 648.477 
+  Instrumentos financeiros derivativos 
+28 
+ 
+- 
+ 
+- 
+ 
+25.146 
+ 
+ 210.749 
+  Clientes 
+6 
+ 
+- 
+ 
+- 
+ 
+7.837.018 
+ 
+ 7.394.411 
+  Estoques 
+7 
+ 
+- 
+ 
+- 
+ 
+9.911.053 
+ 
+ 9.903.951 
+  Tributos a recuperar 
+8 
+ 
+- 
+ 
+- 
+ 
+762.068 
+ 
+ 685.536 
+  Imposto de renda/contribuição 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    social a recuperar 
+ 
+23.365 
+ 
+14.710 
+ 
+221.894 
+ 
+131.878 
+  Dividendos e juros sobre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    capital próprio a receber 
+ 
+ 
+101.818 
+ 
+540.273 
+ 
+- 
+ 
+- 
+  Outros ativos circulantes 
+ 
+ 
+4 
+ 
+753 
+ 
+873.801 
+ 
+898.758 
+ 
+ 
+ 
+1.522.349 
+ 
+2.014.383 
+ 
+26.910.845 
+ 
+27.221.359 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ativo Não Circulante 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Aplicações financeiras 
+5 
+ 
+- 
+ 
+- 
+ 
+14.263 
+ 
+ 17.134 
+  Instrumentos financeiros derivativos 
+28 
+ 
+- 
+ 
+- 
+ 
+- 
+ 
+ 6.166 
+  Depósitos judiciais 
+17.d 
+ 
+- 
+ 
+857 
+ 
+58.623 
+ 
+ 58.279 
+  Tributos diferidos 
+10 
+ 
+8.206 
+ 
+7.679 
+ 
+981.841 
+ 
+ 1.141.821 
+  Tributos a recuperar 
+8 
+ 
+- 
+ 
+- 
+ 
+167.197 
+ 
+ 115.193 
+  Imposto de renda/contribuição 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    social a recuperar 
+ 
+- 
+ 
+- 
+ 
+1.552 
+ 
+ 8.394 
+  Outros ativos não circulantes 
+ 
+ 
+- 
+ 
+- 
+ 
+146.892 
+ 
+ 95.233 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Investimentos 
+11 
+ 
+21.155.655 
+ 
+20.773.166 
+ 
+67.026 
+ 
+ 71.808 
+  Imobilizado 
+12 
+ 
+3.698 
+ 
+3.785 
+ 
+10.625.487 
+ 
+ 9.035.224 
+  Direito de uso em arrendamento 
+13 
+ 
+- 
+ 
+- 
+ 
+886.315 
+ 
+ 898.435 
+  Intangível 
+14 
+ 
+10 
+ 
+10 
+ 
+2.784.989 
+ 
+ 2.820.655 
+ 
+ 
+ 
+21.167.569 
+ 
+20.785.497 
+ 
+15.734.185 
+ 
+14.268.342 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL DO ATIVO 
+ 
+ 
+22.689.918 
+ 
+22.799.880 
+ 
+42.645.030 
+ 
+41.489.701 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+As notas explicativas são parte integrante das demonstrações financeiras. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14 
+ 
+WEG S.A.     CNPJ 84.429.695/0001-11   |   CVM 00541-0 Companhia Aberta 
+ 
+DEMONSTRAÇÕES FINANCEIRAS 2025 
+Balanço Patrimonial em 31 de dezembro de 2025 e 2024 
+Em milhares de reais, exceto quando indicado de outra forma 
+ 
+ 
+CONTROLADORA
+CONSOLIDADO
+Notas
+31/12/25
+31/12/24
+31/12/25
+31/12/24
+Passivo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Passivo Circulante 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Fornecedores 
+15 
+ 
+322 
+ 
+325 
+ 
+2.789.346 
+ 
+ 3.778.116 
+  Empréstimos e financiamentos 
+16 
+ 
+- 
+ 
+- 
+ 
+ 3.549.314 
+ 
+ 2.850.956 
+  Instrumentos financeiros derivativos 
+28 
+ 
+- 
+ 
+- 
+ 
+ 75.075 
+ 
+ 26.237 
+  Obrigações sociais e tributárias 
+ 
+ 
+43.378 
+ 
+31.652 
+ 
+ 1.170.206 
+ 
+ 1.053.539 
+  Imposto de renda e contribuição social 
+ 
+ 
+292 
+ 
+- 
+ 
+ 321.188 
+ 
+ 474.494 
+  Dividendos e juros sobre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    capital próprio a pagar 
+19.b 
+ 
+1.747.393 
+ 
+548.144 
+ 
+ 1.759.319 
+ 
+ 561.679 
+  Adiantamento de clientes 
+ 
+ 
+- 
+ 
+- 
+ 
+ 4.693.390 
+ 
+ 4.040.292 
+  Participação nos lucros 
+ 
+ 
+- 
+ 
+- 
+ 
+ 621.573 
+ 
+ 569.328 
+  Arrendamentos 
+ 
+ 
+- 
+ 
+- 
+ 
+ 221.934 
+ 
+ 107.668 
+  Faturamento para entrega futura 
+ 
+ 
+- 
+ 
+- 
+ 
+ 200.215 
+ 
+ 77.589 
+  Provisão para garantia de produtos 
+ 
+ 
+- 
+ 
+- 
+ 
+ 578.055 
+ 
+ 579.009 
+  Outros passivos circulantes 
+ 
+ 
+12.400 
+ 
+11.208 
+ 
+1.406.786   
+1.335.358 
+ 
+ 
+ 
+1.803.785 
+ 
+591.329 
+ 
+ 17.386.401 
+ 
+15.454.265 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Passivo Não Circulante 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Empréstimos e financiamentos 
+16 
+ 
+- 
+ 
+- 
+ 
+ 1.041.508 
+ 
+ 744.281 
+  Instrumentos financeiros derivativos 
+28 
+ 
+- 
+ 
+- 
+ 
+1.367 
+ 
+ -  
+  Arrendamentos 
+ 
+ 
+- 
+ 
+- 
+ 
+625.219 
+ 
+ 715.450 
+  Provisão para contingências 
+17.a 
+ 
+- 
+ 
+- 
+ 
+812.188 
+ 
+ 783.034 
+  Tributos diferidos 
+10 
+ 
+- 
+ 
+- 
+ 
+220.971 
+ 
+ 170.520 
+  Obrigações tributárias 
+ 
+ 
+- 
+ 
+- 
+ 
+33.314 
+ 
+ 23.647 
+  Dividendos a pagar 
+19.b 
+ 
+3.464.232 
+ 
+- 
+ 
+3.464.232 
+ 
+- 
+  Outros passivos não circulantes 
+ 
+ 
+4.716 
+ 
+4.330 
+ 
+506.466 
+ 
+ 473.287 
+ 
+ 
+ 
+3.468.948 
+ 
+4.330 
+ 
+6.705.265 
+ 
+2.910.219 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Total do Passivo 
+ 
+ 
+5.272.733 
+ 
+595.659 
+ 
+24.091.666 
+ 
+18.364.484 
+Patrimônio Líquido 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Acionistas controladores 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    Capital Social 
+19.a 
+ 
+12.504.517 
+ 
+ 7.504.517 
+ 
+12.504.517 
+ 
+ 7.504.517 
+    Reservas de capital 
+ 
+ 
+(145.575) 
+ 
+ (121.178) 
+ 
+(145.575) 
+ 
+ (121.178) 
+    Plano de opções de ações 
+20 
+ 
+20.215 
+ 
+ 17.458 
+ 
+20.215 
+ 
+ 17.458 
+    Ações em tesouraria 
+19.d 
+ 
+(43.579) 
+ 
+ (47.840) 
+ 
+(43.579) 
+ 
+ (47.840) 
+    Reservas de lucros 
+ 
+ 
+2.575.748 
+ 
+ 10.196.349 
+ 
+2.575.748 
+ 
+ 10.196.349 
+    Ajuste de avaliação patrimonial 
+ 
+ 
+267.222 
+ 
+ 277.498 
+ 
+267.222 
+ 
+ 277.498 
+    Outros resultados abrangentes 
+ 
+ 
+2.238.637 
+ 
+ 3.107.626 
+ 
+2.238.637 
+ 
+ 3.107.626 
+    Dividendos adicionais propostos 
+ 
+ 
+- 
+ 
+ 1.269.791 
+ 
+- 
+ 
+ 1.269.791 
+ 
+ 
+ 
+17.417.185 
+ 
+22.204.221 
+ 
+17.417.185 
+ 
+22.204.221 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Acionistas não controladores 
+ 
+ 
+- 
+ 
+- 
+ 
+1.136.179 
+ 
+920.996 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Total do Patrimônio Líquido 
+ 
+ 
+17.417.185 
+ 
+22.204.221 
+ 
+18.553.364 
+ 
+23.125.217 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL DO PASSIVO E PATRIMÔNIO LÍQUIDO 
+ 
+22.689.918 
+ 
+22.799.880 
+ 
+42.645.030 
+ 
+41.489.701 
+ 
+ 
+ 
+ 
+ 
+ 
+As notas explicativas são parte integrante das demonstrações financeiras.

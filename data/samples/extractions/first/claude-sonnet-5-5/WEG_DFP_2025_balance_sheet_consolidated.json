@@ -1,0 +1,310 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 5265,
+    "output_tokens": 1522,
+    "seconds": 8.0,
+    "cost_usd": "0.02575",
+    "source_pdf": "data/raw/WEG_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "WEG S.A.",
+    "statement_type": "balance_sheet",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Caixa e equivalentes de caixa",
+        "value": "6296498",
+        "is_total": false
+      },
+      {
+        "account_name": "Aplicações financeiras",
+        "value": "983367",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "25146",
+        "is_total": false
+      },
+      {
+        "account_name": "Clientes",
+        "value": "7837018",
+        "is_total": false
+      },
+      {
+        "account_name": "Estoques",
+        "value": "9911053",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "762068",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda/contribuição social a recuperar",
+        "value": "221894",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos e juros sobre capital próprio a receber",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos circulantes",
+        "value": "873801",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativo Circulante",
+        "value": "26910845",
+        "is_total": true
+      },
+      {
+        "account_name": "Aplicações financeiras",
+        "value": "14263",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Depósitos judiciais",
+        "value": "58623",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos diferidos",
+        "value": "981841",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "167197",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda/contribuição social a recuperar",
+        "value": "1552",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos não circulantes",
+        "value": "146892",
+        "is_total": false
+      },
+      {
+        "account_name": "Investimentos",
+        "value": "67026",
+        "is_total": false
+      },
+      {
+        "account_name": "Imobilizado",
+        "value": "10625487",
+        "is_total": false
+      },
+      {
+        "account_name": "Direito de uso em arrendamento",
+        "value": "886315",
+        "is_total": false
+      },
+      {
+        "account_name": "Intangível",
+        "value": "2784989",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativo Não Circulante",
+        "value": "15734185",
+        "is_total": true
+      },
+      {
+        "account_name": "TOTAL DO ATIVO",
+        "value": "42645030",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "2789346",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos e financiamentos",
+        "value": "3549314",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "75075",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações sociais e tributárias",
+        "value": "1170206",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social",
+        "value": "321188",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos e juros sobre capital próprio a pagar",
+        "value": "1759319",
+        "is_total": false
+      },
+      {
+        "account_name": "Adiantamento de clientes",
+        "value": "4693390",
+        "is_total": false
+      },
+      {
+        "account_name": "Participação nos lucros",
+        "value": "621573",
+        "is_total": false
+      },
+      {
+        "account_name": "Arrendamentos",
+        "value": "221934",
+        "is_total": false
+      },
+      {
+        "account_name": "Faturamento para entrega futura",
+        "value": "200215",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para garantia de produtos",
+        "value": "578055",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros passivos circulantes",
+        "value": "1406786",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo Circulante",
+        "value": "17386401",
+        "is_total": true
+      },
+      {
+        "account_name": "Empréstimos e financiamentos",
+        "value": "1041508",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "1367",
+        "is_total": false
+      },
+      {
+        "account_name": "Arrendamentos",
+        "value": "625219",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para contingências",
+        "value": "812188",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos diferidos",
+        "value": "220971",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações tributárias",
+        "value": "33314",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos a pagar",
+        "value": "3464232",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros passivos não circulantes",
+        "value": "506466",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo Não Circulante",
+        "value": "6705265",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do Passivo",
+        "value": "24091666",
+        "is_total": true
+      },
+      {
+        "account_name": "Capital Social",
+        "value": "12504517",
+        "is_total": false
+      },
+      {
+        "account_name": "Reservas de capital",
+        "value": "-145575",
+        "is_total": false
+      },
+      {
+        "account_name": "Plano de opções de ações",
+        "value": "20215",
+        "is_total": false
+      },
+      {
+        "account_name": "Ações em tesouraria",
+        "value": "-43579",
+        "is_total": false
+      },
+      {
+        "account_name": "Reservas de lucros",
+        "value": "2575748",
+        "is_total": false
+      },
+      {
+        "account_name": "Ajuste de avaliação patrimonial",
+        "value": "267222",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros resultados abrangentes",
+        "value": "2238637",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos adicionais propostos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Acionistas controladores",
+        "value": "17417185",
+        "is_total": true
+      },
+      {
+        "account_name": "Acionistas não controladores",
+        "value": "1136179",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do Patrimônio Líquido",
+        "value": "18553364",
+        "is_total": true
+      },
+      {
+        "account_name": "TOTAL DO PASSIVO E PATRIMÔNIO LÍQUIDO",
+        "value": "42645030",
+        "is_total": true
+      }
+    ]
+  }
+}

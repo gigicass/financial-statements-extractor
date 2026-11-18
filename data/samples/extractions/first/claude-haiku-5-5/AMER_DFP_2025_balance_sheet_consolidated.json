@@ -1,0 +1,285 @@
+{
+  "run": {
+    "model": "claude-haiku-5-5",
+    "input_tokens": 3541,
+    "output_tokens": 4686,
+    "seconds": 17.9,
+    "cost_usd": "0.0026971",
+    "source_pdf": "data/raw/hard_cases/AMER_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "Americanas S.A. - Em Recuperação Judicial",
+    "statement_type": "balance_sheet",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MILHAO",
+    "lines": [
+      {
+        "account_name": "Caixa e equivalentes de caixa",
+        "value": "879",
+        "is_total": false
+      },
+      {
+        "account_name": "Títulos e valores mobiliários",
+        "value": "175",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber de clientes",
+        "value": "1467",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber - partes relacionadas",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Estoques",
+        "value": "1850",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "1010",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social",
+        "value": "35",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas antecipadas",
+        "value": "165",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos circulantes",
+        "value": "344",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativos mantidos para venda",
+        "value": "1846",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo circulante",
+        "value": "7771",
+        "is_total": true
+      },
+      {
+        "account_name": "Títulos e valores mobiliários",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "2883",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social",
+        "value": "341",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social diferidos",
+        "value": "74",
+        "is_total": false
+      },
+      {
+        "account_name": "Depósitos judiciais",
+        "value": "739",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber - partes relacionadas",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos não circulantes",
+        "value": "15",
+        "is_total": false
+      },
+      {
+        "account_name": "Investimentos",
+        "value": "32",
+        "is_total": false
+      },
+      {
+        "account_name": "Imobilizado",
+        "value": "1464",
+        "is_total": false
+      },
+      {
+        "account_name": "Intangível",
+        "value": "172",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativo de direito de uso",
+        "value": "2758",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo não circulante",
+        "value": "8478",
+        "is_total": true
+      },
+      {
+        "account_name": "TOTAL DO ATIVO",
+        "value": "16249",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "2461",
+        "is_total": false
+      },
+      {
+        "account_name": "Risco sacado",
+        "value": "308",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos e financiamentos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a pagar - partes relacionadas",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Salários, provisões e contribuições sociais",
+        "value": "262",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recolher",
+        "value": "343",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social",
+        "value": "2",
+        "is_total": false
+      },
+      {
+        "account_name": "Adiantamento recebido de clientes",
+        "value": "32",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo de arrendamento",
+        "value": "365",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros passivos circulantes",
+        "value": "287",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivos associados a ativos mantidos para venda",
+        "value": "604",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo circulante",
+        "value": "4664",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "259",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos e financiamentos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Debêntures",
+        "value": "1995",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recolher",
+        "value": "71",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social diferidos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para processos judiciais e contingências",
+        "value": "701",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a pagar - Partes relacionadas",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo de arrendamento",
+        "value": "3218",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para perdas em investimentos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Plano de assistência médica",
+        "value": "195",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros passivos não circulantes",
+        "value": "387",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo não circulante",
+        "value": "6826",
+        "is_total": true
+      },
+      {
+        "account_name": "Capital social",
+        "value": "39891",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros resultados abrangentes",
+        "value": "-7",
+        "is_total": false
+      },
+      {
+        "account_name": "Prejuízos acumulados",
+        "value": "-35125",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do patrimônio líquido",
+        "value": "4759",
+        "is_total": true
+      },
+      {
+        "account_name": "TOTAL DO PASSIVO E DO PATRIMÔNIO LÍQUIDO",
+        "value": "16249",
+        "is_total": true
+      }
+    ]
+  }
+}

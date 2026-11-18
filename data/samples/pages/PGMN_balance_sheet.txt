@@ -1,0 +1,282 @@
+Empreendimentos Pague Menos S.A.
+Balanços patrimoniais em 31 de dezembro de 2025 e 2024
+(Em milhares de Reais)
+Controladora
+Consolidado
+Controladora
+Consolidado
+Ativo
+Nota
+31/12/2025
+31/12/2024
+31/12/2025
+31/12/2024
+Passivo
+Nota
+31/12/2025
+31/12/2024
+31/12/2025
+31/12/2024
+Circulante
+Circulante
+Caixa e equivalentes de caixa
+3
+144.992
+126.430
+185.757
+149.126
+Fornecedores
+13
+2.192.559
+1.842.120
+2.607.505
+2.340.346
+Aplicações financeiras
+37
+260
+37
+260
+Empréstimos, financiamentos e debêntures
+14
+188.465
+369.751
+188.701
+369.751
+Contas a receber de clientes
+4
+1.089.831
+478.105
+1.234.010
+577.814
+Operações com derivativos
+26
+770
+7.718
+770
+7.718
+Estoques
+5
+2.800.757
+2.567.692
+3.697.341
+3.359.412
+Arrendamentos
+15
+219.388
+217.182
+289.364
+298.749
+Acordos comerciais
+187.527
+190.033
+216.391
+223.135
+Tributos a recolher
+16
+153.654
+100.150
+191.405
+126.733
+Tributos a recuperar
+6
+266.491
+203.323
+296.613
+263.764
+Obrigações sociais e trabalhistas
+184.714
+147.318
+229.302
+188.213
+Despesas antecipadas
+8.837
+7.455
+10.934
+9.729
+Outras contas a pagar
+88.986
+42.775
+70.841
+49.917
+Operações com derivativos
+14
+4.152
+-
+                     
+4.152
+-
+                     
+Total do passivo circulante
+3.028.536
+        
+2.727.014
+        
+3.577.888
+        
+3.381.427
+        
+Outras contas a receber
+17.284
+19.306
+43.481
+31.424
+Total do ativo circulante
+4.519.908
+3.592.604
+5.688.716
+4.614.664
+Não circulante
+Empréstimos, financiamentos e debêntures
+14
+1.393.061
+         
+1.046.625
+1.544.416
+         
+1.046.625
+Arrendamentos
+15
+1.496.657
+1.576.369
+1.667.528
+1.791.972
+Não circulante
+Tributos a recolher
+16
+2.180
+3.339
+2.180
+3.339
+Aplicações financeiras
+2.014
+1.986
+2.014
+1.986
+Provisão para contingências
+17
+11.129
+24.945
+20.191
+33.150
+Tributos a recuperar
+6
+510.506
+598.298
+615.514
+715.995
+Passivo de indenização
+17
+12.976
+36.263
+12.976
+36.263
+Operações com derivativos
+14
+-
+                     
+37.911
+4.328
+37.911
+Outras contas a pagar
+1.440
+4.888
+2.360
+6.421
+Tributos diferidos
+7
+558.280
+467.791
+709.122
+623.075
+Total do passivo não circulante
+2.917.443
+        
+2.692.429
+        
+3.249.651
+        
+2.917.770
+        
+Ativos de indenização
+12.976
+36.263
+12.976
+36.263
+Depósitos judiciais
+23.944
+26.147
+28.798
+30.581
+Total do passivo
+5.945.979
+5.419.443
+6.827.539
+6.299.197
+Investimentos
+9
+1.053.432
+990.324
+80.899
+80.115
+Patrimônio líquido
+18
+Imobilizado
+10
+790.101
+734.070
+920.283
+872.050
+Capital social
+1.974.758
+1.721.858
+1.974.758
+1.721.858
+Intangível
+11
+101.113
+83.561
+184.497
+171.608
+Reserva de capital
+383.440
+374.967
+383.440
+374.967
+Direito de uso
+12
+1.458.879
+1.565.331
+1.673.780
+1.837.358
+Reservas de lucros
+726.976
+618.018
+726.976
+618.018
+Total do ativo não circulante
+4.511.245
+4.541.682
+4.232.211
+4.406.942
+Total do patrimônio líquido atribuído aos controladores
+3.085.174
+2.714.843
+3.085.174
+2.714.843
+Participação de não controladores
+-
+                     
+-
+                     
+8.214
+7.566
+Total do ativo
+9.031.153
+8.134.286
+9.920.927
+9.021.606
+Total do passivo e patrimônio líquido
+9.031.153
+8.134.286
+9.920.927
+9.021.606

@@ -1,0 +1,125 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2743,
+    "output_tokens": 689,
+    "seconds": 3.9,
+    "cost_usd": "0.012376",
+    "source_pdf": "data/raw/PGMN_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "Empreendimentos Pague Menos S.A.",
+    "statement_type": "income_statement",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Receita líquida",
+        "value": "14906429",
+        "is_total": false
+      },
+      {
+        "account_name": "Custos das mercadorias vendidas",
+        "value": "-10143331",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro bruto",
+        "value": "4763098",
+        "is_total": true
+      },
+      {
+        "account_name": "Despesas com vendas",
+        "value": "-3464032",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas gerais e administrativas",
+        "value": "-449659",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado de equivalência patrimonial",
+        "value": "7348",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras receitas operacionais",
+        "value": "7637",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras despesas operacionais",
+        "value": "-3219",
+        "is_total": false
+      },
+      {
+        "account_name": "(Despesas) receitas operacionais",
+        "value": "-3901925",
+        "is_total": true
+      },
+      {
+        "account_name": "Resultado antes das receitas (despesas) financeiras",
+        "value": "861173",
+        "is_total": true
+      },
+      {
+        "account_name": "Receitas financeiras",
+        "value": "270439",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas financeiras",
+        "value": "-956638",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado financeiro",
+        "value": "-686199",
+        "is_total": true
+      },
+      {
+        "account_name": "Resultado antes dos impostos",
+        "value": "174974",
+        "is_total": true
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social diferidos",
+        "value": "85956",
+        "is_total": false
+      },
+      {
+        "account_name": "Total de imposto de renda e contribuição social",
+        "value": "85956",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro do exercício",
+        "value": "260930",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro Líquido atribuivel a não controladores",
+        "value": "648",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro Líquido atribuivel  controladores",
+        "value": "260282",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado por ação básico (em R$)",
+        "value": "0.42",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado por ação diluído (em R$)",
+        "value": "0.42",
+        "is_total": false
+      }
+    ]
+  }
+}

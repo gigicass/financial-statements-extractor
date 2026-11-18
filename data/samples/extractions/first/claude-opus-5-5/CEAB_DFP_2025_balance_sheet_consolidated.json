@@ -1,0 +1,265 @@
+{
+  "run": {
+    "model": "claude-opus-5-5",
+    "input_tokens": 3470,
+    "output_tokens": 1232,
+    "seconds": 9.2,
+    "cost_usd": "0.03852",
+    "source_pdf": "data/raw/CEAB_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "C&A Modas S.A.",
+    "statement_type": "balance_sheet",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Caixa e equivalentes de caixa",
+        "value": "774521",
+        "is_total": false
+      },
+      {
+        "account_name": "Títulos e valores mobiliários",
+        "value": "268854",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber",
+        "value": "1753283",
+        "is_total": false
+      },
+      {
+        "account_name": "Estoques",
+        "value": "1154866",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "569544",
+        "is_total": false
+      },
+      {
+        "account_name": "Derivativos",
+        "value": "2552",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos",
+        "value": "36209",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo circulante",
+        "value": "4559829",
+        "is_total": true
+      },
+      {
+        "account_name": "Títulos e valores mobiliários",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos diferidos",
+        "value": "489748",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "791364",
+        "is_total": false
+      },
+      {
+        "account_name": "Depósitos judiciais",
+        "value": "91360",
+        "is_total": false
+      },
+      {
+        "account_name": "Derivativos",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros ativos",
+        "value": "4615",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo realizável a longo prazo",
+        "value": "1377087",
+        "is_total": true
+      },
+      {
+        "account_name": "Investimento",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Imobilizado",
+        "value": "1057438",
+        "is_total": false
+      },
+      {
+        "account_name": "Direito de uso – arrendamento mercantil",
+        "value": "1474548",
+        "is_total": false
+      },
+      {
+        "account_name": "Intangível",
+        "value": "849731",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo não circulante",
+        "value": "4758804",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do ativo",
+        "value": "9318633",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "1324832",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações de risco sacado",
+        "value": "421205",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos e debêntures",
+        "value": "139796",
+        "is_total": false
+      },
+      {
+        "account_name": "Arrendamentos",
+        "value": "372743",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações trabalhistas",
+        "value": "293617",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos e juros sobre capital próprio a pagar",
+        "value": "139779",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recolher",
+        "value": "385977",
+        "is_total": false
+      },
+      {
+        "account_name": "Derivativos",
+        "value": "1760",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros passivos",
+        "value": "36452",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo circulante",
+        "value": "3116161",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos e debêntures",
+        "value": "820676",
+        "is_total": false
+      },
+      {
+        "account_name": "Arrendamentos",
+        "value": "1407500",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações trabalhistas",
+        "value": "16152",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recolher",
+        "value": "14325",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para riscos tributários, cíveis e trabalhistas",
+        "value": "186554",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros passivos",
+        "value": "50209",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo não circulante",
+        "value": "2495416",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do passivo",
+        "value": "5611577",
+        "is_total": true
+      },
+      {
+        "account_name": "Capital social",
+        "value": "1847177",
+        "is_total": false
+      },
+      {
+        "account_name": "Ações em tesouraria",
+        "value": "-48190",
+        "is_total": false
+      },
+      {
+        "account_name": "Reserva de capital",
+        "value": "39243",
+        "is_total": false
+      },
+      {
+        "account_name": "Reserva de lucros",
+        "value": "1868222",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultados abrangentes",
+        "value": "602",
+        "is_total": false
+      },
+      {
+        "account_name": "Total participação de controladores",
+        "value": "3707054",
+        "is_total": true
+      },
+      {
+        "account_name": "Participação dos acionistas não controladores",
+        "value": "2",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do patrimônio líquido",
+        "value": "3707056",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do passivo e do patrimônio líquido",
+        "value": "9318633",
+        "is_total": true
+      }
+    ]
+  }
+}

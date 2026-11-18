@@ -1,0 +1,240 @@
+{
+  "run": {
+    "model": "claude-opus-5-5",
+    "input_tokens": 3186,
+    "output_tokens": 2155,
+    "seconds": 23.7,
+    "cost_usd": "0.055844",
+    "source_pdf": "data/raw/PGMN_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "Empreendimentos Pague Menos S.A.",
+    "statement_type": "balance_sheet",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Caixa e equivalentes de caixa",
+        "value": "185757",
+        "is_total": false
+      },
+      {
+        "account_name": "Aplicações financeiras",
+        "value": "37",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber de clientes",
+        "value": "1234010",
+        "is_total": false
+      },
+      {
+        "account_name": "Estoques",
+        "value": "3697341",
+        "is_total": false
+      },
+      {
+        "account_name": "Acordos comerciais",
+        "value": "216391",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "296613",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas antecipadas",
+        "value": "10934",
+        "is_total": false
+      },
+      {
+        "account_name": "Operações com derivativos",
+        "value": "4152",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a receber",
+        "value": "43481",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo circulante",
+        "value": "5688716",
+        "is_total": true
+      },
+      {
+        "account_name": "Aplicações financeiras",
+        "value": "2014",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "615514",
+        "is_total": false
+      },
+      {
+        "account_name": "Operações com derivativos",
+        "value": "4328",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos diferidos",
+        "value": "709122",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativos de indenização",
+        "value": "12976",
+        "is_total": false
+      },
+      {
+        "account_name": "Depósitos judiciais",
+        "value": "28798",
+        "is_total": false
+      },
+      {
+        "account_name": "Investimentos",
+        "value": "80899",
+        "is_total": false
+      },
+      {
+        "account_name": "Imobilizado",
+        "value": "920283",
+        "is_total": false
+      },
+      {
+        "account_name": "Intangível",
+        "value": "184497",
+        "is_total": false
+      },
+      {
+        "account_name": "Direito de uso",
+        "value": "1673780",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo não circulante",
+        "value": "4232211",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do ativo",
+        "value": "9920927",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "2607505",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos, financiamentos e debêntures",
+        "value": "188701",
+        "is_total": false
+      },
+      {
+        "account_name": "Operações com derivativos",
+        "value": "770",
+        "is_total": false
+      },
+      {
+        "account_name": "Arrendamentos",
+        "value": "289364",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recolher",
+        "value": "191405",
+        "is_total": false
+      },
+      {
+        "account_name": "Obrigações sociais e trabalhistas",
+        "value": "229302",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a pagar",
+        "value": "70841",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo circulante",
+        "value": "3577888",
+        "is_total": true
+      },
+      {
+        "account_name": "Empréstimos, financiamentos e debêntures",
+        "value": "1544416",
+        "is_total": false
+      },
+      {
+        "account_name": "Arrendamentos",
+        "value": "1667528",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recolher",
+        "value": "2180",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para contingências",
+        "value": "20191",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo de indenização",
+        "value": "12976",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a pagar",
+        "value": "2360",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo não circulante",
+        "value": "3249651",
+        "is_total": true
+      },
+      {
+        "account_name": "Total do passivo",
+        "value": "6827539",
+        "is_total": true
+      },
+      {
+        "account_name": "Capital social",
+        "value": "1974758",
+        "is_total": false
+      },
+      {
+        "account_name": "Reserva de capital",
+        "value": "383440",
+        "is_total": false
+      },
+      {
+        "account_name": "Reservas de lucros",
+        "value": "726976",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do patrimônio líquido atribuído aos controladores",
+        "value": "3085174",
+        "is_total": true
+      },
+      {
+        "account_name": "Participação de não controladores",
+        "value": "8214",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo e patrimônio líquido",
+        "value": "9920927",
+        "is_total": true
+      }
+    ]
+  }
+}

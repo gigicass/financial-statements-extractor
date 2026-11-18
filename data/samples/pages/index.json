@@ -1,0 +1,42 @@
+{
+ "WEG_balance_sheet": [
+  "pages/WEG_balance_sheet_p13.jpg",
+  "pages/WEG_balance_sheet_p14.jpg"
+ ],
+ "KLBN_balance_sheet": [
+  "pages/KLBN_balance_sheet_p43.jpg",
+  "pages/KLBN_balance_sheet_p44.jpg"
+ ],
+ "CEAB_balance_sheet": [
+  "pages/CEAB_balance_sheet_p24.jpg"
+ ],
+ "PGMN_balance_sheet": [
+  "pages/PGMN_balance_sheet_p8.jpg"
+ ],
+ "AMER_balance_sheet": [
+  "pages/AMER_balance_sheet_p31.jpg",
+  "pages/AMER_balance_sheet_p32.jpg"
+ ],
+ "ASAI_balance_sheet": [
+  "pages/ASAI_balance_sheet_p36.jpg",
+  "pages/ASAI_balance_sheet_p37.jpg"
+ ],
+ "WEG_income_statement": [
+  "pages/WEG_income_statement_p15.jpg"
+ ],
+ "KLBN_income_statement": [
+  "pages/KLBN_income_statement_p45.jpg"
+ ],
+ "CEAB_income_statement": [
+  "pages/CEAB_income_statement_p25.jpg"
+ ],
+ "PGMN_income_statement": [
+  "pages/PGMN_income_statement_p9.jpg"
+ ],
+ "AMER_income_statement": [
+  "pages/AMER_income_statement_p33.jpg"
+ ],
+ "ASAI_income_statement": [
+  "pages/ASAI_income_statement_p38.jpg"
+ ]
+}

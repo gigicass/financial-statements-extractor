@@ -1,0 +1,120 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3176,
+    "output_tokens": 629,
+    "seconds": 4.5,
+    "cost_usd": "0.012642",
+    "source_pdf": "data/raw/WEG_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "WEG S.A.",
+    "statement_type": "income_statement",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Receita líquida",
+        "value": "40804110",
+        "is_total": false
+      },
+      {
+        "account_name": "Custo dos produtos e serviços vendidos",
+        "value": "-27122477",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro bruto",
+        "value": "13681633",
+        "is_total": true
+      },
+      {
+        "account_name": "(Provisão) ao valor recuperável de clientes",
+        "value": "-74336",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras despesas de vendas",
+        "value": "-3279095",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas com vendas",
+        "value": "-3353431",
+        "is_total": true
+      },
+      {
+        "account_name": "Despesas administrativas",
+        "value": "-1513882",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros resultados operacionais",
+        "value": "-803963",
+        "is_total": false
+      },
+      {
+        "account_name": "Equivalência patrimonial",
+        "value": "-11616",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro antes do resultado financeiro e impostos",
+        "value": "7998741",
+        "is_total": true
+      },
+      {
+        "account_name": "Receitas financeiras",
+        "value": "2322314",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas financeiras",
+        "value": "-2173378",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro antes dos impostos",
+        "value": "8147677",
+        "is_total": true
+      },
+      {
+        "account_name": "Impostos correntes",
+        "value": "-1270231",
+        "is_total": false
+      },
+      {
+        "account_name": "Impostos diferidos",
+        "value": "-101488",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro líquido do exercício",
+        "value": "6775958",
+        "is_total": true
+      },
+      {
+        "account_name": "Acionistas controladores",
+        "value": "6376219",
+        "is_total": false
+      },
+      {
+        "account_name": "Acionistas não controladores",
+        "value": "399739",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro básico por ação (Em R$)",
+        "value": "1.51971",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro diluído por ação (Em R$)",
+        "value": "1.51940",
+        "is_total": false
+      }
+    ]
+  }
+}

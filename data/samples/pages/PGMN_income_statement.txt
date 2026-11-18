@@ -1,0 +1,187 @@
+Empreendimentos Pague Menos S.A.
+Demonstrações de resultados
+Exercícios findos em 31 de dezembro de 2025 e 2024
+(Em milhares de Reais, exceto pelo resultado por ação)
+Controladora
+Consolidado
+Demonstrações dos resultados
+Nota
+31/12/2025
+31/12/2024
+31/12/2025
+31/12/2024
+Receita líquida
+22
+12.877.379
+10.906.110
+14.906.429
+12.641.825
+Custos das mercadorias vendidas
+23
+(9.053.234)
+         
+(7.654.137)
+         
+(10.143.331)
+       
+(8.615.709)
+         
+Lucro bruto
+3.824.145
+3.251.973
+4.763.098
+4.026.116
+(Despesas) receitas operacionais
+(3.090.503)
+        
+(2.781.048)
+        
+(3.901.925)
+        
+(3.451.844)
+        
+Despesas com vendas
+23
+(2.752.437)
+         
+(2.429.312)
+         
+(3.464.032)
+         
+(3.072.840)
+         
+Despesas gerais e administrativas
+23
+(409.910)
+            
+(353.177)
+            
+(449.659)
+            
+(386.182)
+            
+Resultado de equivalência patrimonial
+9
+69.672
+               
+102
+                     
+7.348
+                  
+6.507
+                  
+Outras receitas operacionais
+4.627
+3.192
+7.637
+3.190
+Outras despesas operacionais
+(2.455)
+                
+(1.853)
+                 
+(3.219)
+                 
+(2.519)
+                
+Resultado antes das receitas (despesas) financeiras
+733.642
+470.925
+861.173
+574.272
+Receitas financeiras
+24
+235.405
+177.559
+270.439
+186.076
+Despesas financeiras
+24
+(799.253)
+            
+(640.248)
+            
+(956.638)
+            
+(757.957)
+            
+Resultado financeiro
+(563.848)
+           
+(462.689)
+            
+(686.199)
+            
+(571.881)
+           
+Resultado antes dos impostos
+169.794
+            
+8.236
+                 
+174.974
+             
+2.391
+                 
+Imposto de renda e contribuição social diferidos
+90.488
+94.863
+85.956
+100.757
+Total de imposto de renda e contribuição social 
+7
+90.488
+               
+94.863
+                
+85.956
+                
+100.757
+             
+Lucro do exercício
+260.282
+            
+103.099
+             
+260.930
+             
+103.148
+             
+Lucro Líquido atribuivel a não controladores
+-
+                     
+-
+                      
+648
+                     
+49
+                       
+Lucro Líquido atribuivel  controladores
+260.282
+            
+103.099
+             
+260.282
+             
+103.099
+             
+Resultado por ação
+Resultado por ação básico (em R$)
+20
+0,42
+                   
+0,18
+                    
+0,42
+                    
+0,18
+                    
+Resultado por ação diluído (em R$)
+0,42
+                   
+0,17
+                    
+0,42
+                    
+0,17
+                    

@@ -1,0 +1,238 @@
+ 
+ 
+Notas explicativas da Administração às Demonstrações Financeiras individuais e consolidadas em 31 de dezembro de 2025 e de 
+2024 
+(em milhares de reais, exceto quando indicado de outra forma)  
+KLBN3  KLBN4  KLBN11 
+ 
+ 
+3 
+BALANÇO PATRIMONIAL 
+ 
+ 
+As notas explicativas da Administração são parte integrante das Demonstrações Financeiras individuais e 
+consolidadas. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Nota 
+Controladora
+Consolidado
+ATIVO
+Explicativa
+31.12.2025
+31.12.2024
+31.12.2025
+31.12.2024
+Circulante
+Caixa e equivalentes de caixa
+6.1
+          5.579.331           4.709.506         10.106.016           6.736.171 
+Títulos e valores mobiliários
+6.2
+             785.369              794.037              785.369              794.037 
+Contas a receber de clientes
+7
+          2.049.229           1.589.164           2.404.326           1.815.129 
+Partes relacionadas
+8
+          1.991.343           1.151.816                   7.981                          - 
+Estoques
+9
+          3.308.002           3.234.340           3.683.984           3.215.938 
+Instrumentos financeiros derivativos
+27
+             110.015                          -                110.015                          - 
+Imposto de renda e contribuição social a recuperar
+10
+             324.534              561.468              361.972              631.518 
+Tributos a recuperar
+10
+             334.691              370.061              356.450              414.462 
+Outros ativos
+             215.949              198.561              233.572              211.589 
+Total do ativo circulante
+     14.698.463      12.608.953      18.049.685      13.818.844 
+Não circulante
+Instrumentos financeiros derivativos
+27
+             544.521                          -                544.521                          - 
+Imposto de renda e contribuição social diferidos
+11
+                         -                500.158              103.138              524.572 
+Depósitos judiciais
+19
+             215.108              196.977              216.005              198.561 
+Imposto de renda e contribuição social a recuperar
+10
+             212.535              192.668              212.535              192.668 
+Tributos a recuperar
+10
+             212.774              247.889              213.790              247.889 
+Partes relacionadas
+8
+                26.172           2.185.649                 23.741                          - 
+Outros ativos
+             222.393              199.933              280.145              200.343 
+        1.433.503         3.523.274         1.593.875         1.364.033 
+Investimentos
+Participação em controladas e controladas em conjunto
+12
+          8.465.819           8.513.176                 76.072              121.819 
+Outros investimentos
+                20.819                 17.410                 20.819                 17.410 
+Imobilizado
+13
+        23.495.161         23.967.911         28.648.316         28.965.380 
+Ativos biológicos
+15
+          6.234.258           6.587.178         13.242.376         12.887.297 
+Ativos de direito de uso
+16
+          1.599.305           1.495.013           1.659.808           1.787.971 
+Intangível
+14
+             314.015              235.543              505.826              428.078 
+     40.129.377      40.816.231      44.153.217      44.207.955 
+Total do ativo não circulante
+     41.562.880      44.339.505      45.747.092      45.571.988 
+Total do ativo
+     56.261.343      56.948.458      63.796.777      59.390.832 
+Docusign Envelope ID: DCB88FF8-7B38-417C-9D8F-30809C909794
+
+ 
+ 
+Notas explicativas da Administração às Demonstrações Financeiras individuais e consolidadas em 31 de dezembro de 2025 e de 
+2024 
+(em milhares de reais, exceto quando indicado de outra forma)  
+KLBN3  KLBN4  KLBN11 
+ 
+ 
+4 
+ 
+ 
+As notas explicativas da Administração são parte integrante das Demonstrações Financeiras individuais e 
+consolidadas. 
+ 
+ 
+Nota 
+(Reapresentado 
+Nota 2.1)
+(Reapresentado 
+Nota 2.1)
+PASSIVO
+Explicativa
+31.12.2025
+31.12.2024
+31.12.2025
+31.12.2024
+Circulante
+Fornecedores
+17
+               2.237.150                2.027.185                2.362.018                2.101.712 
+Fornecedor risco sacado
+17
+                  658.466                    601.448                   658.466                   601.448 
+Fornecedor risco sacado florestal 
+17
+               1.118.187                    236.661                1.118.187                   236.661 
+Passivos de arrendamentos
+16
+                  251.498                    276.478                   251.911                   313.164 
+Obrigações fiscais
+                  250.831                    298.822                   285.544                   347.744 
+Obrigações sociais e trabalhistas
+                  543.886                    512.225                   556.251                   527.336 
+Empréstimos, financiamentos e debêntures
+18
+               1.589.287                1.573.201                1.770.665                1.813.049 
+Instrumentos financeiros derivativos
+27
+                              -                      584.212                               -                     584.212 
+Provisão para imposto de renda e contribuição social correntes
+11
+                              -                                 -                        87.913                      67.148 
+Partes relacionadas
+8
+                  337.299                    527.203                               -                                 - 
+Dividendos e juros sobre capital próprio a pagar
+20.6
+               1.112.000                    223.376                1.112.000                   223.376 
+Outras contas a pagar e provisões
+                  484.980                    285.878                   564.443                   347.493 
+ Total do passivo circulante 
+             8.583.584              7.146.689              8.767.398              7.163.343 
+Não circulante
+Fornecedores
+17
+                       5.722                      35.497                        6.053                      35.497 
+Fornecedor risco sacado florestal 
+17
+                  233.784                    588.901                   233.784                   588.901 
+Passivos de arrendamentos
+16
+               1.424.640                1.283.837                1.485.620                1.545.039 
+Empréstimos, financiamentos e debêntures
+18
+             23.044.212              21.740.010              34.950.377              37.891.188 
+Instrumentos financeiros derivativos
+27
+                  574.557                1.594.293                   574.557                1.594.293 
+Participação de passivo a descoberto de controlada
+12
+                          507                    201.675                               -                                 - 
+Imposto de renda e contribuição social diferidos
+11
+               1.107.378 
+                              -                  1.878.984                   559.186 
+Partes relacionadas
+8
+             12.180.124              16.617.812                               -                                 - 
+Contas a pagar - investidores de sociedade em conta de participação
+                              -                                 -                     189.898                   198.520 
+Provisões fiscais, previdenciárias, trabalhistas e cíveis
+19
+                  501.271                    385.547                   520.181                   404.740 
+Provisão do passivo atuarial
+29.1
+                  572.334                    495.119                   575.155                   497.939 
+Obrigações fiscais
+                     90.300                    160.697                      90.300                   160.697 
+Outras contas a pagar e provisões
+                     56.984                      46.528                   123.369                   114.289 
+ Total do passivo não circulante 
+          39.791.813           43.149.916           40.628.278           43.590.289 
+ Total do passivo 
+          48.375.397           50.296.605           49.395.676           50.753.632 
+Patrimônio líquido
+Capital social 
+               6.875.625                6.075.625                6.875.625                6.075.625 
+Reservas de capital
+                (156.626)                 (193.610)                (156.626)                (193.610)
+Ações em tesouraria
+                (101.882)                 (123.421)                (101.882)                (123.421)
+Reservas de lucros
+               2.777.662                4.242.843                2.777.662                4.242.843 
+Ajustes de avaliação patrimonial
+             (1.508.833)             (3.349.584)             (1.508.833)             (3.349.584)
+ Patrimônio líquido dos acionistas da Klabin 
+20
+             7.885.946              6.651.853              7.885.946              6.651.853 
+ Participação dos acionistas não controladores 
+20.7
+                              -                                 -                6.515.155              1.985.347 
+ Patrimônio líquido consolidado 
+20
+             7.885.946              6.651.853           14.401.101              8.637.200 
+ Total do passivo e patrimônio líquido 
+          56.261.343           56.948.458           63.796.777           59.390.832 
+Consolidado
+Controladora
+Docusign Envelope ID: DCB88FF8-7B38-417C-9D8F-30809C909794

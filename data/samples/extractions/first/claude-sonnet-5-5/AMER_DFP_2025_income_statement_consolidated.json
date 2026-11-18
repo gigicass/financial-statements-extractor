@@ -1,0 +1,125 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2625,
+    "output_tokens": 1271,
+    "seconds": 8.0,
+    "cost_usd": "0.01796",
+    "source_pdf": "data/raw/hard_cases/AMER_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "Americanas S.A. - Em Recuperação Judicial",
+    "statement_type": "income_statement",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MILHAO",
+    "lines": [
+      {
+        "account_name": "Receita operacional líquida",
+        "value": "12305",
+        "is_total": false
+      },
+      {
+        "account_name": "Custo das mercadorias vendidas e serviços prestados",
+        "value": "-8981",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro bruto",
+        "value": "3324",
+        "is_total": true
+      },
+      {
+        "account_name": "Vendas",
+        "value": "-2720",
+        "is_total": false
+      },
+      {
+        "account_name": "Gerais e administrativas",
+        "value": "-1462",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado de equivalência patrimonial",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras receitas (despesas) operacionais, líquidas",
+        "value": "1189",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro (Prejuízo) operacional antes do resultado financeiro",
+        "value": "331",
+        "is_total": true
+      },
+      {
+        "account_name": "Receitas financeiras",
+        "value": "963",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas financeiras",
+        "value": "-1127",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado financeiro",
+        "value": "-164",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro antes do Imposto de renda e da contribuição social",
+        "value": "167",
+        "is_total": true
+      },
+      {
+        "account_name": "Correntes",
+        "value": "-14",
+        "is_total": false
+      },
+      {
+        "account_name": "Diferidos",
+        "value": "-55",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro do exercício das operações continuadas",
+        "value": "98",
+        "is_total": true
+      },
+      {
+        "account_name": "Prejuízo do exercício das operações descontinuadas",
+        "value": "-369",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro líquido (Prejuízo) do exercício",
+        "value": "-271",
+        "is_total": true
+      },
+      {
+        "account_name": "Básico – em R$",
+        "value": "0.67",
+        "is_total": false
+      },
+      {
+        "account_name": "Diluído – em R$",
+        "value": "0.67",
+        "is_total": false
+      },
+      {
+        "account_name": "Básico – em R$",
+        "value": "-1.86",
+        "is_total": false
+      },
+      {
+        "account_name": "Diluído – em R$",
+        "value": "-1.86",
+        "is_total": false
+      }
+    ]
+  }
+}

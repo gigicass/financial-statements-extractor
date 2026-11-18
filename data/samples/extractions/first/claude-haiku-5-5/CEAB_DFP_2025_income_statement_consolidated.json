@@ -1,0 +1,145 @@
+{
+  "run": {
+    "model": "claude-haiku-5-5",
+    "input_tokens": 2857,
+    "output_tokens": 2471,
+    "seconds": 10.8,
+    "cost_usd": "0.0015212",
+    "source_pdf": "data/raw/CEAB_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "C&A Modas S.A.",
+    "statement_type": "income_statement",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Receita líquida",
+        "value": "7982958",
+        "is_total": true
+      },
+      {
+        "account_name": "Venda de mercadorias e serviços",
+        "value": "7665846",
+        "is_total": false
+      },
+      {
+        "account_name": "Produtos e serviços financeiros",
+        "value": "317112",
+        "is_total": false
+      },
+      {
+        "account_name": "Venda de mercadorias e serviços",
+        "value": "-3550167",
+        "is_total": false
+      },
+      {
+        "account_name": "Produtos e serviços financeiros",
+        "value": "-335",
+        "is_total": false
+      },
+      {
+        "account_name": "Custo das mercadorias vendidas e dos serviços prestados",
+        "value": "-3550502",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro bruto",
+        "value": "4432456",
+        "is_total": true
+      },
+      {
+        "account_name": "Vendas",
+        "value": "-2511645",
+        "is_total": false
+      },
+      {
+        "account_name": "Gerais e administrativas",
+        "value": "-959532",
+        "is_total": false
+      },
+      {
+        "account_name": "Perdas em créditos, líquida",
+        "value": "-134301",
+        "is_total": false
+      },
+      {
+        "account_name": "Equivalência patrimonial",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras receitas (despesas) operacionais, líquidas",
+        "value": "217571",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro antes do resultado financeiro",
+        "value": "1044549",
+        "is_total": true
+      },
+      {
+        "account_name": "Resultado de variação cambial",
+        "value": "-9172",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas financeiras",
+        "value": "-564671",
+        "is_total": false
+      },
+      {
+        "account_name": "Receitas financeiras",
+        "value": "256275",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado FIDC C&A Pay",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado financeiro",
+        "value": "-317568",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro antes dos impostos sobre o lucro",
+        "value": "726981",
+        "is_total": true
+      },
+      {
+        "account_name": "Impostos sobre o lucro",
+        "value": "-139894",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro líquido do exercício",
+        "value": "587087",
+        "is_total": true
+      },
+      {
+        "account_name": "Não controladores",
+        "value": "-2",
+        "is_total": false
+      },
+      {
+        "account_name": "Controladores",
+        "value": "587089",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro básico por ação - em R$",
+        "value": "1.9381",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro básico por ação diluído - em R$",
+        "value": "1.8913",
+        "is_total": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2462,
+    "output_tokens": 583,
+    "seconds": 3.9,
+    "cost_usd": "0.010754",
+    "source_pdf": "data/raw/hard_cases/ASAI_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "SENDAS DISTRIBUIDORA S.A.",
+    "statement_type": "income_statement",
+    "scope": "individual",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MILHAO",
+    "lines": [
+      {
+        "account_name": "Receita operacional líquida",
+        "value": "77307",
+        "is_total": false
+      },
+      {
+        "account_name": "Custo das mercadorias vendidas",
+        "value": "-64266",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro bruto",
+        "value": "13041",
+        "is_total": true
+      },
+      {
+        "account_name": "Despesas com vendas",
+        "value": "-6264",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas gerais e administrativas",
+        "value": "-1011",
+        "is_total": false
+      },
+      {
+        "account_name": "Depreciações e amortizações",
+        "value": "-1643",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado de equivalência patrimonial",
+        "value": "60",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras despesas operacionais, líquidas",
+        "value": "-560",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas operacionais",
+        "value": "-9418",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro operacional antes do resultado financeiro líquido",
+        "value": "3623",
+        "is_total": true
+      },
+      {
+        "account_name": "Receitas financeiras",
+        "value": "428",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas financeiras",
+        "value": "-3817",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado financeiro líquido",
+        "value": "-3389",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro antes do imposto de renda e da contribuição social",
+        "value": "234",
+        "is_total": true
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social",
+        "value": "263",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro líquido do exercício",
+        "value": "497",
+        "is_total": true
+      },
+      {
+        "account_name": "Ordinárias",
+        "value": "0.369114",
+        "is_total": false
+      },
+      {
+        "account_name": "Ordinárias",
+        "value": "0.367865",
+        "is_total": false
+      }
+    ]
+  }
+}

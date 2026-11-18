@@ -1,0 +1,270 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3324,
+    "output_tokens": 1339,
+    "seconds": 7.6,
+    "cost_usd": "0.020038",
+    "source_pdf": "data/raw/hard_cases/ASAI_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "SENDAS DISTRIBUIDORA S.A.",
+    "statement_type": "balance_sheet",
+    "scope": "individual",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MILHAO",
+    "lines": [
+      {
+        "account_name": "Caixa e equivalentes de caixa",
+        "value": "5854",
+        "is_total": false
+      },
+      {
+        "account_name": "Contas a receber",
+        "value": "3056",
+        "is_total": false
+      },
+      {
+        "account_name": "Estoques",
+        "value": "7504",
+        "is_total": false
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "1139",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "7",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas antecipadas",
+        "value": "111",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a receber",
+        "value": "111",
+        "is_total": false
+      },
+      {
+        "account_name": "Ativos mantidos para venda",
+        "value": "18",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo circulante",
+        "value": "17800",
+        "is_total": true
+      },
+      {
+        "account_name": "Tributos a recuperar",
+        "value": "943",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social diferidos",
+        "value": "443",
+        "is_total": false
+      },
+      {
+        "account_name": "Instrumentos financeiros derivativos",
+        "value": "448",
+        "is_total": false
+      },
+      {
+        "account_name": "Partes relacionadas",
+        "value": "30",
+        "is_total": false
+      },
+      {
+        "account_name": "Depósitos judiciais",
+        "value": "22",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas antecipadas",
+        "value": "19",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a receber",
+        "value": "605",
+        "is_total": false
+      },
+      {
+        "account_name": "Investimentos",
+        "value": "326",
+        "is_total": false
+      },
+      {
+        "account_name": "Imobilizado",
+        "value": "13073",
+        "is_total": false
+      },
+      {
+        "account_name": "Intangível",
+        "value": "5202",
+        "is_total": false
+      },
+      {
+        "account_name": "Direito de uso",
+        "value": "8914",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do ativo não circulante",
+        "value": "30025",
+        "is_total": true
+      },
+      {
+        "account_name": "TOTAL DO ATIVO",
+        "value": "47825",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "11437",
+        "is_total": false
+      },
+      {
+        "account_name": "Fornecedores - Convênios",
+        "value": "990",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos",
+        "value": "1202",
+        "is_total": false
+      },
+      {
+        "account_name": "Debêntures e notas promissórias",
+        "value": "517",
+        "is_total": false
+      },
+      {
+        "account_name": "Salários e encargos sociais",
+        "value": "753",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo de arrendamento",
+        "value": "461",
+        "is_total": false
+      },
+      {
+        "account_name": "Demais impostos a recolher",
+        "value": "473",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social a pagar",
+        "value": "45",
+        "is_total": false
+      },
+      {
+        "account_name": "Receitas a apropriar",
+        "value": "507",
+        "is_total": false
+      },
+      {
+        "account_name": "Dividendos e juros sobre capital próprio a pagar",
+        "value": "123",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a pagar",
+        "value": "309",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo circulante",
+        "value": "16817",
+        "is_total": true
+      },
+      {
+        "account_name": "Fornecedores",
+        "value": "0",
+        "is_total": false
+      },
+      {
+        "account_name": "Empréstimos",
+        "value": "2414",
+        "is_total": false
+      },
+      {
+        "account_name": "Debêntures e notas promissórias",
+        "value": "12166",
+        "is_total": false
+      },
+      {
+        "account_name": "Provisão para demandas judiciais",
+        "value": "266",
+        "is_total": false
+      },
+      {
+        "account_name": "Passivo de arrendamento",
+        "value": "10017",
+        "is_total": false
+      },
+      {
+        "account_name": "Receitas a apropriar",
+        "value": "518",
+        "is_total": false
+      },
+      {
+        "account_name": "Plano de ações liquidadas em caixa",
+        "value": "12",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras contas a pagar",
+        "value": "61",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do passivo não circulante",
+        "value": "25454",
+        "is_total": true
+      },
+      {
+        "account_name": "Capital social",
+        "value": "1456",
+        "is_total": false
+      },
+      {
+        "account_name": "Reserva de capital",
+        "value": "115",
+        "is_total": false
+      },
+      {
+        "account_name": "Reservas de lucros",
+        "value": "4106",
+        "is_total": false
+      },
+      {
+        "account_name": "Ações em tesouraria",
+        "value": "-104",
+        "is_total": false
+      },
+      {
+        "account_name": "Outros resultados abrangentes",
+        "value": "-19",
+        "is_total": false
+      },
+      {
+        "account_name": "Total do patrimônio líquido",
+        "value": "5554",
+        "is_total": true
+      },
+      {
+        "account_name": "TOTAL DO PASSIVO E PATRIMÔNIO LÍQUIDO",
+        "value": "47825",
+        "is_total": true
+      }
+    ]
+  }
+}

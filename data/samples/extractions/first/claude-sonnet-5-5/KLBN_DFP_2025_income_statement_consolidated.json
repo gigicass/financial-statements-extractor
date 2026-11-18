@@ -1,0 +1,135 @@
+{
+  "run": {
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3053,
+    "output_tokens": 749,
+    "seconds": 4.7,
+    "cost_usd": "0.013596",
+    "source_pdf": "data/raw/KLBN_DFP_2025.pdf",
+    "prompt_version": "v2"
+  },
+  "statement": {
+    "company": "Klabin S.A.",
+    "statement_type": "income_statement",
+    "scope": "consolidated",
+    "reference_date": "2025-12-31",
+    "currency_scale": "MIL",
+    "lines": [
+      {
+        "account_name": "Receita líquida de vendas",
+        "value": "20697507",
+        "is_total": false
+      },
+      {
+        "account_name": "Variação do valor justo dos ativos biológicos",
+        "value": "1671361",
+        "is_total": false
+      },
+      {
+        "account_name": "Custo dos produtos vendidos",
+        "value": "-15043958",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro bruto",
+        "value": "7324910",
+        "is_total": true
+      },
+      {
+        "account_name": "Vendas",
+        "value": "-1819080",
+        "is_total": false
+      },
+      {
+        "account_name": "Gerais e administrativas",
+        "value": "-1217691",
+        "is_total": false
+      },
+      {
+        "account_name": "Outras receitas (despesas) operacionais, líquidas",
+        "value": "192643",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas/receitas operacionais",
+        "value": "-2844128",
+        "is_total": true
+      },
+      {
+        "account_name": "Resultados de equivalência patrimonial",
+        "value": "-433",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro antes do resultado financeiro e dos tributos",
+        "value": "4480349",
+        "is_total": true
+      },
+      {
+        "account_name": "Receitas financeiras",
+        "value": "872367",
+        "is_total": false
+      },
+      {
+        "account_name": "Despesas financeiras",
+        "value": "-3098523",
+        "is_total": false
+      },
+      {
+        "account_name": "Variações cambiais, líquidas",
+        "value": "125210",
+        "is_total": false
+      },
+      {
+        "account_name": "Resultado financeiro",
+        "value": "-2100946",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro antes dos tributos sobre o lucro",
+        "value": "2379403",
+        "is_total": true
+      },
+      {
+        "account_name": "Correntes",
+        "value": "-241654",
+        "is_total": false
+      },
+      {
+        "account_name": "Diferidos",
+        "value": "-459538",
+        "is_total": false
+      },
+      {
+        "account_name": "Imposto de renda e contribuição social",
+        "value": "-701192",
+        "is_total": true
+      },
+      {
+        "account_name": "Lucro líquido do exercício",
+        "value": "1678211",
+        "is_total": true
+      },
+      {
+        "account_name": "Atribuído aos acionistas da Klabin",
+        "value": "1403135",
+        "is_total": false
+      },
+      {
+        "account_name": "Atribuído aos acionistas não controladores",
+        "value": "275076",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro básico e diluído por ação – R$",
+        "value": "0.2286",
+        "is_total": false
+      },
+      {
+        "account_name": "Lucro básico/diluído por ação PN – R$",
+        "value": "0.2286",
+        "is_total": false
+      }
+    ]
+  }
+}

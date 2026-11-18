@@ -1,0 +1,115 @@
+Nota
+31/12/2025
+31/12/2024
+Receita operacional líquida
+21
+77.307
+                  
+73.819
+                
+Custo das mercadorias vendidas
+22
+(64.266)
+                 
+(61.598)
+              
+Lucro bruto
+13.041
+                  
+12.221
+                
+Despesas operacionais
+Despesas com vendas
+22
+(6.264)
+                   
+(5.995)
+                
+Despesas gerais e administrativas
+22
+(1.011)
+                   
+(878)
+                   
+Depreciações e amortizações
+(1.643)
+                   
+(1.547)
+                
+Resultado de equivalência patrimonial
+11
+60
+                         
+64
+                       
+Outras despesas operacionais, líquidas
+23
+(560)
+                      
+(21)
+                     
+(9.418)
+                   
+(8.377)
+                
+Lucro operacional antes do resultado financeiro líquido
+3.623
+                    
+3.844
+                  
+Receitas financeiras
+24
+428
+                       
+324
+                     
+Despesas financeiras
+24
+(3.817)
+                   
+(3.233)
+                
+Resultado financeiro líquido
+(3.389)
+                   
+(2.909)
+                
+Lucro antes do imposto de renda e da contribuição social
+234
+                       
+935
+                     
+Imposto de renda e contribuição social
+19.1
+263
+                       
+(166)
+                   
+Lucro líquido do exercício
+497
+                       
+769
+                     
+Lucro básico por milhões de ações em reais
+(média ponderada do exercício - R$)
+Ordinárias
+25
+0,369114
+              
+0,569164
+           
+Lucro diluído por milhões de ações em reais
+(média ponderada do exercício - R$)
+Ordinárias
+25
+0,367865
+              
+0,567277
+           
+ As notas explicativas são parte integrante das demonstrações financeiras. 
+SENDAS DISTRIBUIDORA S.A.
+DEMONSTRAÇÕES DO RESULTADO 
+EXERCÍCIO FINDO EM 31 DE DEZEMBRO DE 2025
+(Em milhões de reais, exceto quando especificado de outra forma)
+37
+#Este conteú
