@@ -26,7 +26,7 @@ from src.extraction.schemas import FinancialStatement  # noqa: E402
 
 SAMPLES = ROOT / "data" / "samples"
 FIGURES = ROOT / "docs" / "figures"
-REPO_URL = "https://github.com/"  # replaced by the repository URL once published
+REPO_URL = "https://github.com/gigicass/financial-statements-extractor"
 
 COMPANY_NAMES = {"WEG": "WEG", "KLBN": "Klabin", "CEAB": "C&A", "PGMN": "Pague Menos",
                  "AMER": "Americanas (hard case)", "ASAI": "Assaí (hard case)"}
