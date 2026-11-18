@@ -10,9 +10,8 @@ from src.extraction.schemas import StatementType
 
 logger = logging.getLogger(__name__)
 
-# A page belongs to a statement when it contains the title AND at least one marker.
-# Requiring a marker (a line that only appears inside the statement itself) filters out
-# the table of contents and the explanatory notes, which also mention the titles.
+# A statement starts on a page that contains the title AND at least one marker (a line
+# that only appears inside the statement itself, which rules out the table of contents).
 # All strings are normalized (lowercase, no accents) - see `normalize`.
 STATEMENT_KEYWORDS: dict[StatementType, dict[str, list[str]]] = {
     StatementType.BALANCE_SHEET: {
@@ -28,9 +27,6 @@ STATEMENT_KEYWORDS: dict[StatementType, dict[str, list[str]]] = {
         "markers": ["atividades operacionais", "atividades de investimento"],
     },
 }
-
-# Header of the explanatory notes pages; they quote statement lines but are not statements.
-NOTES_HEADER = "notas explicativas as demonstracoes financeiras em"
 
 
 def read_pages(pdf_path: str | Path) -> list[str]:
@@ -49,16 +45,27 @@ def normalize(text: str) -> str:
 
 
 def find_statement_pages(pages: list[str], statement_type: StatementType) -> list[int]:
-    """Return the 0-based indexes of the pages that contain the given statement."""
+    """Return the 0-based indexes of the pages that contain the given statement.
+
+    Takes the FIRST page with title + marker, plus the following pages that still have
+    a marker (a statement split across pages often omits the title on the second page).
+    Later matches are ignored: the statements come before the explanatory notes, and
+    notes often repeat the title and totals (e.g. restatement tables).
+    """
     keywords = STATEMENT_KEYWORDS[statement_type]
-    found = []
-    for index, page_text in enumerate(pages):
-        text = normalize(page_text)
-        if NOTES_HEADER in text:
-            continue
-        has_title = any(title in text for title in keywords["titles"])
-        has_marker = any(marker in text for marker in keywords["markers"])
-        if has_title and has_marker:
-            found.append(index)
+    texts = [normalize(page) for page in pages]
+
+    def has_marker(text: str) -> bool:
+        return any(marker in text for marker in keywords["markers"])
+
+    start = next((i for i, text in enumerate(texts)
+                  if has_marker(text) and any(t in text for t in keywords["titles"])), None)
+    if start is None:
+        logger.info("%s not found", statement_type.value)
+        return []
+
+    found = [start]
+    while found[-1] + 1 < len(texts) and has_marker(texts[found[-1] + 1]):
+        found.append(found[-1] + 1)
     logger.info("%s found on pages %s", statement_type.value, [i + 1 for i in found])
     return found
