@@ -31,12 +31,15 @@ SCALE_MULTIPLIER = {"UNIDADE": 1, "MIL": 1000}
 
 CURRENT_PERIOD = "ÚLTIMO"  # ORDEM_EXERC: ÚLTIMO = current year, PENÚLTIMO = prior year
 
-# CVM code of the companies in the study (CD_CVM column).
+# CVM code (CD_CVM column) of the companies in the study, keyed by ticker prefix.
 COMPANIES: dict[str, str] = {
-    "WEG": "005410",
-    "VALE": "004170",
-    "AMBEV": "023264",
-    "MGLU": "022470",
+    "WEG": "005410",   # WEG - capital goods
+    "KLBN": "012653",  # Klabin - pulp, paper and packaging
+    "CEAB": "024848",  # C&A Modas - apparel retail
+    "PGMN": "022608",  # Pague Menos - pharmacy retail
+    # Hard cases for later experiments (phase 4)
+    "ASAI": "025372",  # Sendas (Assaí) - PDF mixes earnings release and standardized DFP
+    "AMER": "020990",  # Americanas - under judicial recovery
 }
 
 
