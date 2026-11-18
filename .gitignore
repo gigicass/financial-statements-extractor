@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+
+# Data (raw/processed stay local; only small samples are versioned)
+data/*
+!data/samples/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
