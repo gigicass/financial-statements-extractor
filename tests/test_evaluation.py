@@ -117,3 +117,28 @@ def test_evaluate_lines_uses_section_for_repeated_names():
     assert by_key[("1.02", "Conta que o modelo pulou")].extracted_value is None
     assert ("1.02", "Linha sem código") not in by_key
     assert extras == ["Linha inventada"]
+
+
+def test_unlabeled_subtotal_is_paired_by_position_when_names_differ():
+    # The PDF prints this subtotal without a label; another model named it differently.
+    statement = FinancialStatement.model_validate({
+        "company": "X", "statement_type": "balance_sheet", "scope": "consolidated",
+        "reference_date": "2025-12-31", "currency_scale": "MIL",
+        "lines": [
+            {"account_name": "Depósitos judiciais", "value": "3"},
+            {"account_name": "Não circulante", "value": "3", "is_total": True},
+            {"account_name": "Imobilizado", "value": "2"},
+            {"account_name": "Ativo Não Circulante", "value": "5", "is_total": True},
+        ],
+    })
+    cvm = pd.DataFrame({"code": ["1.02", "1.02.01", "1.02.03"], "name": [""] * 3,
+                        "value": [Decimal(v) * 1000 for v in (5, 3, 2)]})
+    mapping = [
+        MappingRow("1.02", "Depósitos judiciais", [(1, "1.02.01")]),
+        MappingRow("1.02", "Realizável a longo prazo", [(1, "1.02.01")], is_total=True),
+        MappingRow("1.02", "Imobilizado", [(1, "1.02.03")]),
+        MappingRow("1.02", "Ativo Não Circulante", [(1, "1.02")], is_total=True),
+    ]
+    results, extras = evaluate_lines(statement, mapping, cvm)
+    assert results["exact_match"].all()
+    assert extras == []

@@ -35,14 +35,15 @@ SCOPE_COLUMNS = {
 }
 
 
-def build_user_prompt(pages_text: str, statement_type: StatementType, scope: Scope) -> str:
-    """Build the instructions plus the raw page text sent to the LLM."""
-    return f"""Below is text extracted from the PDF pages that contain the \
-{STATEMENT_NAMES[statement_type]}. The text came from a PDF table, so each cell may \
-be on its own line and long account names may be split across two lines.
+PROMPT_INTRO = """Below is text extracted from the PDF pages that contain the \
+{statement}. The text came from a PDF table, so each cell may be on its own line and \
+long account names may be split across two lines."""
 
-Extract the statement following these rules:
-1. Use only the {SCOPE_COLUMNS[scope]} columns, and only the MOST RECENT period.
+# Rules per prompt version. Kept side by side so experiments stay reproducible.
+PROMPT_RULES = {
+    # v1: first version (phases 1-3).
+    "v1": """Extract the statement following these rules:
+1. Use only the {scope} columns, and only the MOST RECENT period.
 2. Return every account line, in the order printed, with the name exactly as printed \
 (join names split across lines; do not translate or abbreviate).
 3. Values: copy them in the scale printed in the header (do not convert). Numbers in \
@@ -50,11 +51,36 @@ parentheses or with a minus sign are negative. A dash ('-') means 0.
 4. Skip section headers that have no value of their own.
 5. Mark subtotal and total lines with is_total=true. Some subtotals are printed \
 without a label: name them after the section they total (e.g. 'Ativo Circulante').
-6. Do not invent lines or compute values that are not printed.
+6. Do not invent lines or compute values that are not printed.""",
+    # v2: makes the output layout an explicit contract (order of subtotals, sides of
+    # the balance sheet), after model comparison showed v1 was ambiguous.
+    "v2": """Extract the statement following these rules:
+1. Use only the {scope} columns, and only the MOST RECENT period.
+2. Return every account line with the name exactly as printed (join names split \
+across lines; do not translate, abbreviate or rename - this applies to subtotals too).
+3. Values: copy them in the scale printed in the header (do not convert). Numbers in \
+parentheses or with a minus sign are negative. A dash ('-') means 0.
+4. Skip section headers that have no value of their own.
+5. Order: list the lines in the order they are printed, and place every subtotal or \
+total line immediately AFTER the lines it adds up - where its value is printed - never \
+before them as a heading. Mark subtotal and total lines with is_total=true.
+6. Some subtotals are printed without a label: name them after the section heading \
+they total (e.g. 'Ativo Circulante').
+7. Assets (Ativo) and liabilities and equity (Passivo e Patrimônio Líquido) may be \
+printed side by side on the same page, so their lines can be interleaved in the text. \
+Keep every account on its own side: never move a line from assets to liabilities or \
+the other way round.
+8. Do not invent lines or compute values that are not printed.""",
+}
+DEFAULT_PROMPT_VERSION = "v2"
 
-<pages>
-{pages_text}
-</pages>"""
+
+def build_user_prompt(pages_text: str, statement_type: StatementType, scope: Scope,
+                      prompt_version: str = DEFAULT_PROMPT_VERSION) -> str:
+    """Build the instructions plus the raw page text sent to the LLM."""
+    intro = PROMPT_INTRO.format(statement=STATEMENT_NAMES[statement_type])
+    rules = PROMPT_RULES[prompt_version].format(scope=SCOPE_COLUMNS[scope])
+    return f"{intro}\n\n{rules}\n\n<pages>\n{pages_text}\n</pages>"
 
 
 def extract_statement(
@@ -62,6 +88,7 @@ def extract_statement(
     statement_type: StatementType,
     scope: Scope,
     client: LLMClient,
+    prompt_version: str = DEFAULT_PROMPT_VERSION,
 ) -> LLMResult[FinancialStatement]:
     """Find the statement pages in the PDF and ask the LLM to structure them."""
     pages = read_pages(pdf_path)
@@ -72,12 +99,13 @@ def extract_statement(
     pages_text = "\n\n".join(
         f"--- page {i + 1} ---\n{pages[i]}" for i in page_indexes
     )
-    prompt = build_user_prompt(pages_text, statement_type, scope)
+    prompt = build_user_prompt(pages_text, statement_type, scope, prompt_version)
     return client.extract(SYSTEM_PROMPT, prompt, FinancialStatement)
 
 
 def save_statement(result: LLMResult[FinancialStatement], name: str, out_dir: Path,
-                   source_pdf: Path | None = None) -> Path:
+                   source_pdf: Path | None = None,
+                   prompt_version: str | None = None) -> Path:
     """Save the statement as CSV (one row per line) and JSON (with run metadata)."""
     out_dir.mkdir(parents=True, exist_ok=True)
     statement = result.output
@@ -100,6 +128,7 @@ def save_statement(result: LLMResult[FinancialStatement], name: str, out_dir: Pa
         "seconds": round(result.seconds, 1),
         "cost_usd": str(result.cost_usd) if result.cost_usd is not None else None,
         "source_pdf": source_pdf.as_posix() if source_pdf else None,
+        "prompt_version": prompt_version,
     }
     json_path = out_dir / f"{name}.json"
     json_path.write_text(
@@ -136,12 +165,15 @@ def main() -> None:
     parser.add_argument("pdf", type=Path)
     parser.add_argument("--statement", type=StatementType, default=StatementType.BALANCE_SHEET)
     parser.add_argument("--scope", type=Scope, default=Scope.CONSOLIDATED)
+    parser.add_argument("--prompt", choices=sorted(PROMPT_RULES), default=DEFAULT_PROMPT_VERSION)
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
-    result = extract_statement(args.pdf, args.statement, args.scope, get_client())
+    result = extract_statement(args.pdf, args.statement, args.scope, get_client(),
+                               prompt_version=args.prompt)
     name = f"{args.pdf.stem}_{args.statement.value}_{args.scope.value}"
-    save_statement(result, name, PROCESSED_DIR, source_pdf=args.pdf)
+    save_statement(result, name, PROCESSED_DIR, source_pdf=args.pdf,
+                   prompt_version=args.prompt)
 
 
 if __name__ == "__main__":

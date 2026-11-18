@@ -23,8 +23,11 @@ T = TypeVar("T", bound=BaseModel)
 PRICES_PER_MTOK: dict[str, tuple[Decimal, Decimal]] = {
     "claude-opus-5-5": (Decimal("4"), Decimal("20")),
     "claude-sonnet-5-5": (Decimal("2"), Decimal("10")),
-    "claude-haiku-5-5": (Decimal("0.10"), Decimal("0.50")),
+    "claude-haiku-5-5": (Decimal("0.10"), Decimal("0.50")),  # prompts up to 100K tokens
 }
+
+# Models that accept the server-side refusal fallback (Haiku 5.5 does not).
+MODELS_WITH_FALLBACK = {"claude-opus-5-5", "claude-sonnet-5-5"}
 
 
 @dataclass
@@ -66,6 +69,10 @@ class AnthropicClient:
 
     def extract(self, system: str, user: str, schema: type[T]) -> LLMResult[T]:
         start = time.perf_counter()
+        extra = {}
+        if self.model in MODELS_WITH_FALLBACK:
+            # If a safety classifier declines, the API retries on a fallback model.
+            extra = {"betas": ["server-side-fallback-2026-07-01"], "fallbacks": "default"}
         # Streaming avoids HTTP timeouts on long outputs; we only need the final message.
         with self._client.beta.messages.stream(
             model=self.model,
@@ -74,9 +81,7 @@ class AnthropicClient:
             messages=[{"role": "user", "content": user}],
             output_format=schema,
             output_config={"effort": self.effort},
-            # If a safety classifier declines, the API retries on a fallback model.
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
+            **extra,
         ) as stream:
             response = stream.get_final_message()
         seconds = time.perf_counter() - start
@@ -99,11 +104,12 @@ class AnthropicClient:
         return result
 
 
-def get_client() -> LLMClient:
-    """Build the client configured in .env (LLM_PROVIDER, LLM_MODEL)."""
+def get_client(provider: str | None = None, model: str | None = None,
+               effort: str = "medium") -> LLMClient:
+    """Build an LLM client. Arguments override the .env settings (LLM_PROVIDER, LLM_MODEL)."""
     load_dotenv()
-    provider = os.getenv("LLM_PROVIDER", "anthropic").lower()
-    model = os.getenv("LLM_MODEL", "claude-opus-5-5")
+    provider = (provider or os.getenv("LLM_PROVIDER", "anthropic")).lower()
+    model = model or os.getenv("LLM_MODEL", "claude-opus-5-5")
     if provider == "anthropic":
-        return AnthropicClient(model=model)
+        return AnthropicClient(model=model, effort=effort)
     raise NotImplementedError(f"LLM provider '{provider}' is not implemented yet")

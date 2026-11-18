@@ -34,7 +34,7 @@ from src.extraction.schemas import FinancialStatement, StatementLine, StatementT
 logger = logging.getLogger(__name__)
 
 MAPPINGS_DIR = Path("mappings")
-MAPPING_COLUMNS = ["section", "pdf_account_name", "pdf_value", "cvm_codes",
+MAPPING_COLUMNS = ["section", "pdf_account_name", "pdf_value", "is_total", "cvm_codes",
                    "cvm_names", "draft_status", "reviewed"]
 
 # Names in a new extraction may differ slightly from the reviewed file (e.g. another
@@ -66,6 +66,7 @@ class MappingRow:
     section: str
     pdf_account_name: str
     codes: list[tuple[int, str]]  # (+1 or -1, CVM code)
+    is_total: bool = False
 
 
 def mapping_path(company: str, statement: FinancialStatement) -> Path:
@@ -149,6 +150,7 @@ def draft_mapping(statement: FinancialStatement, cvm: pd.DataFrame) -> list[dict
             "section": section or "",
             "pdf_account_name": line.account_name,
             "pdf_value": str(line.value),
+            "is_total": str(line.is_total),
             "cvm_codes": "+".join(codes),
             "cvm_names": " + ".join(names[c] for c in codes),
             "draft_status": status,
@@ -174,21 +176,28 @@ def load_mapping(path: Path) -> list[MappingRow]:
     """Load a reviewed mapping file. Rows with empty cvm_codes are kept (not evaluated)."""
     with path.open(encoding="utf-8-sig", newline="") as f:
         return [MappingRow(section=r["section"], pdf_account_name=r["pdf_account_name"],
-                           codes=parse_codes(r["cvm_codes"] or ""))
+                           codes=parse_codes(r["cvm_codes"] or ""),
+                           is_total=r.get("is_total") == "True")
                 for r in csv.DictReader(f)]
 
 
 def pair_lines(statement: FinancialStatement, mapping: list[MappingRow],
                ) -> tuple[list[tuple[MappingRow, StatementLine | None]], list[StatementLine]]:
-    """Pair each mapping row with an extracted line (same section, same or similar name).
+    """Pair each mapping row with an extracted line of the same section.
+
+    1st pass: same or similar name.
+    2nd pass, subtotals only: by position among the section's subtotals. Some subtotals
+    have no label in the PDF, so each model names them differently ('Realizável a longo
+    prazo' vs 'Não circulante'); their position is the stable identity. Values are never
+    used for pairing, otherwise a wrong value could not be detected.
 
     Returns (pairs, extra_lines): extra lines are extracted lines no mapping row claimed,
     e.g. invented lines or accounts the reference file does not have.
     """
     available = list(zip(statement.lines, assign_sections(statement)))
     used: set[int] = set()
-    pairs = []
-    for row in mapping:
+    paired: dict[int, StatementLine] = {}  # mapping row index -> extracted line
+    for row_index, row in enumerate(mapping):
         candidates = [(i, line) for i, (line, section) in enumerate(available)
                       if i not in used and (section or "") == row.section]
         best = max(candidates, default=None,
@@ -196,9 +205,21 @@ def pair_lines(statement: FinancialStatement, mapping: list[MappingRow],
         if best and _name_similarity(best[1].account_name,
                                      row.pdf_account_name) >= MIN_NAME_SIMILARITY:
             used.add(best[0])
-            pairs.append((row, best[1]))
-        else:
-            pairs.append((row, None))
+            paired[row_index] = best[1]
+
+    for section in {row.section for row in mapping}:
+        row_totals = [k for k, row in enumerate(mapping)
+                      if row.is_total and row.section == section]
+        line_totals = [i for i, (line, s) in enumerate(available)
+                       if line.is_total and (s or "") == section]
+        for position, row_index in enumerate(row_totals):
+            if row_index in paired or position >= len(line_totals):
+                continue
+            if line_totals[position] not in used:
+                used.add(line_totals[position])
+                paired[row_index] = available[line_totals[position]][0]
+
+    pairs = [(row, paired.get(k)) for k, row in enumerate(mapping)]
     extras = [line for i, (line, _) in enumerate(available) if i not in used]
     return pairs, extras
 

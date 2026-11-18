@@ -44,3 +44,16 @@ def test_save_statement_writes_csv_and_json(tmp_path):
     saved = json.loads((tmp_path / "weg_bs.json").read_text(encoding="utf-8"))
     assert saved["run"]["model"] == "claude-opus-5-5"
     assert saved["statement"]["currency_scale"] == "MIL"
+
+
+def test_prompt_v1_is_kept_unchanged_for_reproducibility():
+    prompt = build_user_prompt("PAGE TEXT", StatementType.BALANCE_SHEET, Scope.CONSOLIDATED,
+                               prompt_version="v1")
+    assert "5. Mark subtotal and total lines with is_total=true." in prompt
+    assert "immediately AFTER" not in prompt
+
+
+def test_prompt_v2_states_the_layout_contract():
+    prompt = build_user_prompt("PAGE TEXT", StatementType.BALANCE_SHEET, Scope.CONSOLIDATED)
+    assert "immediately AFTER the lines it adds up" in prompt
+    assert "never move a line from assets to liabilities" in prompt
