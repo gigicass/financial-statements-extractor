@@ -57,3 +57,14 @@ def test_prompt_v2_states_the_layout_contract():
     prompt = build_user_prompt("PAGE TEXT", StatementType.BALANCE_SHEET, Scope.CONSOLIDATED)
     assert "immediately AFTER the lines it adds up" in prompt
     assert "never move a line from assets to liabilities" in prompt
+
+
+def test_feedback_prompt_contains_previous_answer_and_failed_checks():
+    from src.evaluation.integrity import CheckResult
+    from src.experiments.feedback import build_feedback_prompt
+
+    failed = [CheckResult("Subtotal: Total do passivo", False, "no run adds up to 6.827.539")]
+    prompt = build_feedback_prompt("ORIGINAL PROMPT", make_result().output, failed)
+    assert prompt.startswith("ORIGINAL PROMPT")
+    assert "<previous_extraction>" in prompt and "Caixa e equivalentes de caixa" in prompt
+    assert "- Subtotal: Total do passivo: no run adds up to 6.827.539" in prompt

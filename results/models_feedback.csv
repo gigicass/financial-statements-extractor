@@ -1,0 +1,7 @@
+prompt,model,effort,repeat,company,before_lines_coverage_pct,before_lines_within_rounding_pct,before_extra_lines,before_checks_failed,after_lines_coverage_pct,after_lines_within_rounding_pct,after_extra_lines,after_checks_failed,first_cost_usd,feedback_cost_usd
+v2,claude-opus-5-5,low,1,PGMN,93.2,100.0,3.0,6.0,100.0,100.0,0,0,0.034904,0.060296
+v2,claude-opus-5-5,low,2,PGMN,97.7,100.0,1.0,4.0,100.0,100.0,0,0,0.034904,0.058128
+v2,claude-opus-5-5,low,3,PGMN,95.5,100.0,1.0,5.0,100.0,100.0,0,0,0.034484,0.060052
+v2,claude-sonnet-5-5,medium,1,PGMN,100.0,100.0,1.0,2.0,100.0,100.0,0,0,0.017662,0.031864
+v2,claude-sonnet-5-5,medium,2,PGMN,100.0,100.0,1.0,2.0,100.0,100.0,0,0,0.017662,0.033824
+v2,claude-sonnet-5-5,medium,3,PGMN,100.0,100.0,1.0,2.0,100.0,100.0,0,0,0.017662,0.031114

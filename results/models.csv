@@ -56,9 +56,6 @@ models,v2,claude-sonnet-5-5,medium,2,KLBN,4656.0,1746.0,8.2,0.026772,balance_she
 models,v2,claude-sonnet-5-5,medium,2,PGMN,3186.0,1129.0,8.3,0.017662,balance_sheet,7.0,6.0,85.7,100.0,100.0,9.0,2.0,0.0,44.0,44.0,100.0,100.0,100.0,1.0,
 models,v2,claude-sonnet-5-5,medium,2,WEG,5265.0,1522.0,7.6,0.02575,balance_sheet,7.0,7.0,100.0,100.0,100.0,12.0,0.0,0.0,55.0,55.0,100.0,100.0,100.0,0.0,
 models,v2,claude-sonnet-5-5,medium,3,CEAB,3470.0,1232.0,5.9,0.01926,balance_sheet,7.0,7.0,100.0,100.0,100.0,13.0,0.0,0.0,45.0,45.0,100.0,100.0,100.0,0.0,
-models,v2,claude-sonnet-5-5,medium,3,KLBN,,,,,,,,,,,,,,,,,,,,"4 validation errors for FinancialStatement
-lines.34.value
-  Input should be a valid decimal [type=decimal_parsing, input_value='-', input_type=str]
-    For further information visit https://errors.pyd"
+models,v2,claude-sonnet-5-5,medium,3,KLBN,4679.0,1852.0,9.4,0.027878,balance_sheet,7.0,7.0,100.0,100.0,100.0,14.0,0.0,0.0,60.0,60.0,100.0,96.7,100.0,0.0,
 models,v2,claude-sonnet-5-5,medium,3,PGMN,3186.0,1129.0,8.3,0.017662,balance_sheet,7.0,6.0,85.7,100.0,100.0,9.0,2.0,0.0,44.0,44.0,100.0,100.0,100.0,1.0,
 models,v2,claude-sonnet-5-5,medium,3,WEG,5265.0,1522.0,7.8,0.02575,balance_sheet,7.0,7.0,100.0,100.0,100.0,12.0,0.0,0.0,55.0,55.0,100.0,100.0,100.0,0.0,

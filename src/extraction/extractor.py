@@ -83,14 +83,9 @@ def build_user_prompt(pages_text: str, statement_type: StatementType, scope: Sco
     return f"{intro}\n\n{rules}\n\n<pages>\n{pages_text}\n</pages>"
 
 
-def extract_statement(
-    pdf_path: Path,
-    statement_type: StatementType,
-    scope: Scope,
-    client: LLMClient,
-    prompt_version: str = DEFAULT_PROMPT_VERSION,
-) -> LLMResult[FinancialStatement]:
-    """Find the statement pages in the PDF and ask the LLM to structure them."""
+def statement_prompt(pdf_path: Path, statement_type: StatementType, scope: Scope,
+                     prompt_version: str = DEFAULT_PROMPT_VERSION) -> str:
+    """Find the statement pages in the PDF and build the user prompt around them."""
     pages = read_pages(pdf_path)
     page_indexes = find_statement_pages(pages, statement_type)
     if not page_indexes:
@@ -99,7 +94,18 @@ def extract_statement(
     pages_text = "\n\n".join(
         f"--- page {i + 1} ---\n{pages[i]}" for i in page_indexes
     )
-    prompt = build_user_prompt(pages_text, statement_type, scope, prompt_version)
+    return build_user_prompt(pages_text, statement_type, scope, prompt_version)
+
+
+def extract_statement(
+    pdf_path: Path,
+    statement_type: StatementType,
+    scope: Scope,
+    client: LLMClient,
+    prompt_version: str = DEFAULT_PROMPT_VERSION,
+) -> LLMResult[FinancialStatement]:
+    """Find the statement pages in the PDF and ask the LLM to structure them."""
+    prompt = statement_prompt(pdf_path, statement_type, scope, prompt_version)
     return client.extract(SYSTEM_PROMPT, prompt, FinancialStatement)
 
 
