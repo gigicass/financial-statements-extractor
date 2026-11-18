@@ -33,6 +33,26 @@ def test_compare_values_exact_and_errors():
     assert diff["abs_error"] == Decimal("10") and diff["pct_error"] == Decimal("10")
 
 
+def test_compare_values_separates_rounding_from_real_errors():
+    # Statement in thousands: a R$ 1 mil difference is rounding, R$ 2 mil is not.
+    off_by_one = compare_values(Decimal("2362018000"), Decimal("2362017000"), Decimal(1000))
+    assert not off_by_one["exact_match"] and off_by_one["within_rounding"]
+    off_by_two = compare_values(Decimal("2362019000"), Decimal("2362017000"), Decimal(1000))
+    assert not off_by_two["within_rounding"]
+
+
+def test_company_is_inferred_from_file_name():
+    from pathlib import Path
+
+    import pytest
+
+    from src.evaluation.evaluate import company_from_path
+
+    assert company_from_path(Path("KLBN_DFP_2025_balance_sheet_consolidated.json")) == "KLBN"
+    with pytest.raises(ValueError):
+        company_from_path(Path("XYZ_DFP_2025.json"))
+
+
 def test_key_totals_converts_scale_and_reports_missing():
     statement = FinancialStatement.model_validate({
         "company": "X", "statement_type": "balance_sheet", "scope": "consolidated",

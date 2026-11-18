@@ -1,0 +1,45 @@
+﻿section,pdf_account_name,pdf_value,cvm_codes,cvm_names,draft_status,reviewed
+1.01,Caixa e equivalentes de caixa,185757,1.01.01,Caixa e Equivalentes de Caixa,single,ok
+1.01,Aplicações financeiras,37,1.01.02,Aplicações Financeiras,single_tiebreak_by_name,ok
+1.01,Contas a receber de clientes,1234010,1.01.03.01,Clientes,single,ok
+1.01,Estoques,3697341,1.01.04,Estoques,single,ok
+1.01,Acordos comerciais,216391,1.01.03.02.01,Acordos Comerciais,single,ok
+1.01,Tributos a recuperar,296613,1.01.06,Tributos a Recuperar,single_tiebreak_by_name,ok
+1.01,Despesas antecipadas,10934,1.01.03.02.02,Despesas antecipadas,single,ok
+1.01,Operações com derivativos,4152,1.01.08.03.01,Operações com Derivativos,single_tiebreak_by_name,ok
+1.01,Outras contas a receber,43481,1.01.03.02.03,Outras,single,ok
+1.01,Total do ativo circulante,5688716,1.01,Ativo Circulante,single,ok
+1.02,Aplicações financeiras,2014,1.02.01.03,Aplicações Financeiras Avaliadas ao Custo Amortizado,single,ok
+1.02,Tributos a recuperar,615514,1.02.01.10.03,Impostos e Contribuições a Recuperar,single,ok
+1.02,Operações com derivativos,4328,1.02.01.10.06,Operações com derivativos,single,ok
+1.02,Tributos diferidos,709122,1.02.01.07,Tributos Diferidos,single_tiebreak_by_name,ok
+1.02,Ativos de indenização,12976,1.02.01.10.07,Ativos de indenização,single,ok
+1.02,Depósitos judiciais,28798,1.02.01.10.04,Depósitos Judiciais,single,ok
+1.02,Investimentos,80899,1.02.02,Investimentos,single_tiebreak_by_name,ok
+1.02,Imobilizado,920283,1.02.03.01,Imobilizado em Operação,single,ok
+1.02,Intangível,184497,1.02.04,Intangível,single_tiebreak_by_name,ok
+1.02,Direito de uso,1673780,1.02.03.02,Direito de Uso em Arrendamento,single,ok
+1.02,Total do ativo não circulante,4232211,1.02,Ativo Não Circulante,single,ok
+1,Total do ativo,9920927,1,Ativo Total,single,ok
+2.01,Fornecedores,2607505,2.01.02,Fornecedores,single_tiebreak_by_name,ok
+2.01,"Empréstimos, financiamentos e debêntures",188701,2.01.04,Empréstimos e Financiamentos,single,ok
+2.01,Operações com derivativos,770,2.01.05.02.08,Operações com Derivativos,single,ok
+2.01,Arrendamentos,289364,2.01.05.02.10,Arrendamento Mercantil,single,ok
+2.01,Tributos a recolher,191405,2.01.03,Obrigações Fiscais,single,ok
+2.01,Obrigações sociais e trabalhistas,229302,2.01.01,Obrigações Sociais e Trabalhistas,single_tiebreak_by_name,ok
+2.01,Outras contas a pagar,70841,2.01.05.02.05+2.01.05.02.09,Outras Contas a Pagar + Aluguéis a Pagar,sum_of_two,ok
+2.01,Total do passivo circulante,3577888,2.01,Passivo Circulante,single,ok
+2.02,"Empréstimos, financiamentos e debêntures",1544416,2.02.01,Empréstimos e Financiamentos,single,ok
+2.02,Arrendamentos,1667528,2.02.02.02.05,Arrendamento Mercantil,single,ok
+2.02,Tributos a recolher,2180,2.02.02.02.04,Impostos e Contribuições a recolher,single,ok
+2.02,Provisão para contingências,20191,2.02.04-2.02.04.01.06,Provisões - Passivo de indenização,manual,ok
+2.02,Passivo de indenização,12976,2.02.04.01.06,Passivo de indenização,single,ok
+2.02,Outras contas a pagar,2360,2.02.02.02.06,Outras Contas a Pagar,single,ok
+2.02,Total do passivo não circulante,3249651,2.02,Passivo Não Circulante,single,ok
+2,Total do passivo,6827539,2.01+2.02,Passivo Circulante + Passivo Não Circulante,sum_of_two,ok
+2,Capital social,1974758,2.03.01,Capital Social Realizado,single,ok
+2,Reserva de capital,383440,2.03.02,Reservas de Capital,single,ok
+2,Reservas de lucros,726976,2.03.04,Reservas de Lucros,single,ok
+2,Total do patrimônio líquido atribuído aos controladores,3085174,2.03-2.03.09,Patrimônio Líquido Consolidado - Participação dos Acionistas Não Controladores,manual,ok
+2,Participação de não controladores,8214,2.03.09,Participação dos Acionistas Não Controladores,single,ok
+2,Total do passivo e patrimônio líquido,9920927,2,Passivo Total,single,ok

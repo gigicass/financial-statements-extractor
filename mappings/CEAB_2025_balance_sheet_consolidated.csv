@@ -1,0 +1,50 @@
+﻿section,pdf_account_name,pdf_value,cvm_codes,cvm_names,draft_status,reviewed
+1.01,Caixa e equivalentes de caixa,774521,1.01.01,Caixa e Equivalentes de Caixa,single,ok
+1.01,Títulos e valores mobiliários,268854,1.01.02.01.03,Títulos e valores mobiliários,single_tiebreak_by_name,ok
+1.01,Contas a receber,1753283,1.01.03,Contas a Receber,single_tiebreak_by_name,ok
+1.01,Estoques,1154866,1.01.04,Estoques,single,ok
+1.01,Tributos a recuperar,569544,1.01.06,Tributos a Recuperar,single_tiebreak_by_name,ok
+1.01,Derivativos,2552,1.01.08.03.02,Instrumentos Financeiros Derivativos,single,ok
+1.01,Outros ativos,36209,1.01.08.03.01,Outros Créditos,single,ok
+1.01,Total do ativo circulante,4559829,1.01,Ativo Circulante,single,ok
+1.02,Títulos e valores mobiliários,0,,,zero_in_pdf,ok
+1.02,Tributos diferidos,489748,1.02.01.07,Tributos Diferidos,single_tiebreak_by_name,ok
+1.02,Tributos a recuperar,791364,1.02.01.10.03,Tributos a Recuperar,single,ok
+1.02,Depósitos judiciais,91360,1.02.01.10.04,Depósito Judicial,single,ok
+1.02,Derivativos,0,,,zero_in_pdf,ok
+1.02,Outros ativos,4615,1.02.01.10.05,Outros Créditos,single,ok
+1.02,Total do ativo realizável a longo prazo,1377087,1.02.01,Ativo Realizável a Longo Prazo,single,ok
+1.02,Investimento,0,,,zero_in_pdf,ok
+1.02,Imobilizado,1057438,1.02.03.01,Imobilizado em Operação,single,ok
+1.02,Direito de uso – arrendamento mercantil,1474548,1.02.03.02,Direito de Uso em Arrendamento,single,ok
+1.02,Intangível,849731,1.02.04,Intangível,single_tiebreak_by_name,ok
+1.02,Total do ativo não circulante,4758804,1.02,Ativo Não Circulante,single,ok
+1,Total do ativo,9318633,1,Ativo Total,single,ok
+2.01,Fornecedores,1324832,2.01.02.01.01,Fornecedores Nacionais,single,ok
+2.01,Obrigações de risco sacado,421205,2.01.02.01.02,Obrigações de Risco Sacado,single,ok
+2.01,Empréstimos e debêntures,139796,2.01.04,Empréstimos e Financiamentos,single_tiebreak_by_name,ok
+2.01,Arrendamentos,372743,2.01.05.02.06,Financiamento por Arrendamento,single,ok
+2.01,Obrigações trabalhistas,293617,2.01.01.02,Obrigações Trabalhistas,single_tiebreak_by_name,ok
+2.01,Dividendos e juros sobre capital próprio a pagar,139779,2.01.05.02.01,Dividendos e JCP a Pagar,single,ok
+2.01,Tributos a recolher,385977,2.01.03.01,Obrigações Fiscais Federais,single_tiebreak_by_name,ok
+2.01,Derivativos,1760,2.01.05.02.04,Operações com derivativos,single,ok
+2.01,Outros passivos,36452,2.01.05.02.05,Outros Passivos,single,ok
+2.01,Total do passivo circulante,3116161,2.01,Passivo Circulante,single,ok
+2.02,Fornecedores,0,,,zero_in_pdf,ok
+2.02,Empréstimos e debêntures,820676,2.02.01,Empréstimos e Financiamentos,single_tiebreak_by_name,ok
+2.02,Arrendamentos,1407500,2.02.02.02.06,Financiamento por Arrendamento,single,ok
+2.02,Obrigações trabalhistas,16152,2.02.02.02.05,Obrigações Trabalhistas,single,ok
+2.02,Tributos a recolher,14325,2.02.02.02.03,Impostos a Recolher,single,ok
+2.02,"Provisão para riscos tributários, cíveis e trabalhistas",186554,2.02.04.01.05,"Provisão para riscos tributários, cíveis e trabalhistas",single_tiebreak_by_name,ok
+2.02,Outros passivos,50209,2.02.02.02.04,Outros,single,ok
+2.02,Total do passivo não circulante,2495416,2.02,Passivo Não Circulante,single,ok
+2.03,Total do passivo,5611577,2.01+2.02,Passivo Circulante + Passivo Não Circulante,sum_of_two,ok
+2.03,Capital social,1847177,2.03.01,Capital Social Realizado,single,ok
+2.03,Ações em tesouraria,-48190,2.03.02.05,Ações em Tesouraria,single,ok
+2.03,Reserva de capital,39243,2.03.02.07,Reserva de Capital,single,ok
+2.03,Reserva de lucros,1868222,2.03.04,Reservas de Lucros,single,ok
+2.03,Resultados abrangentes,602,2.03.08,Outros Resultados Abrangentes,single,ok
+2.03,Total participação de controladores,3707054,2.03-2.03.09,Patrimônio Líquido Consolidado - Participação dos Acionistas Não Controladores,manual,ok
+2.03,Participação dos acionistas não controladores,2,2.03.09,Participação dos Acionistas Não Controladores,single,ok
+2.03,Total do patrimônio líquido,3707056,2.03,Patrimônio Líquido Consolidado,single,ok
+2,Total do passivo e do patrimônio líquido,9318633,2,Passivo Total,single,ok

@@ -15,16 +15,25 @@ from src.extraction.pdf_reader import normalize
 from src.extraction.schemas import FinancialStatement
 
 
-def compare_values(extracted: Decimal, expected: Decimal) -> dict:
-    """Exact match plus absolute and percentage error (both in BRL units)."""
+def compare_values(extracted: Decimal, expected: Decimal,
+                   rounding_tolerance: Decimal = Decimal(0)) -> dict:
+    """Exact match, match within rounding, and absolute/percentage error (BRL units).
+
+    The CVM form rounds each account separately, so a PDF line that maps to a sum of
+    CVM accounts can differ by 1 unit of the statement scale (e.g. R$ 1 mil) even when
+    the value was read correctly. `within_rounding` tells those cases apart from real
+    reading errors; `exact_match` stays the headline metric.
+    """
     abs_error = abs(extracted - expected)
     pct_error = ((abs_error / abs(expected) * 100).quantize(Decimal("0.0001"))
                  if expected != 0 else None)
-    return {"exact_match": abs_error == 0, "abs_error": abs_error, "pct_error": pct_error}
+    return {"exact_match": abs_error == 0, "within_rounding": abs_error <= rounding_tolerance,
+            "abs_error": abs_error, "pct_error": pct_error}
 
 
 def _no_match() -> dict:
-    return {"exact_match": False, "abs_error": None, "pct_error": None}
+    return {"exact_match": False, "within_rounding": False, "abs_error": None,
+            "pct_error": None}
 
 
 def evaluate_key_totals(statement: FinancialStatement, cvm: pd.DataFrame) -> pd.DataFrame:
@@ -40,7 +49,8 @@ def evaluate_key_totals(statement: FinancialStatement, cvm: pd.DataFrame) -> pd.
         row = {"code": code, "cvm_name": cvm_by_code.loc[code, "name"], "cvm_value": expected,
                "extracted_name": line.account_name if line else None,
                "extracted_value": line.value * multiplier if line else None}
-        row.update(compare_values(line.value * multiplier, expected) if line else _no_match())
+        row.update(compare_values(line.value * multiplier, expected, Decimal(multiplier))
+                   if line else _no_match())
         rows.append(row)
     return pd.DataFrame(rows)
 
@@ -67,18 +77,23 @@ def evaluate_lines(statement: FinancialStatement, mapping: list[MappingRow],
                "cvm_codes": "".join(("-" if s < 0 else "+") + c
                                     for s, c in mapping_row.codes).lstrip("+"),
                "cvm_value": expected, "extracted_value": extracted}
-        row.update(compare_values(extracted, expected) if line else _no_match())
+        row.update(compare_values(extracted, expected, Decimal(multiplier))
+                   if line else _no_match())
         rows.append(row)
     return pd.DataFrame(rows), [line.account_name for line in extras]
 
 
 def summarize(results: pd.DataFrame) -> dict:
-    """Aggregate metrics: coverage (found) and accuracy (exact value among found)."""
+    """Aggregate metrics: coverage (found) and accuracy among the accounts found."""
     found = results["extracted_value"].notna()
+
+    def pct_of_found(column: str) -> float:
+        return round(100 * float(results.loc[found, column].mean()), 1) if found.any() else 0.0
+
     return {
         "accounts": len(results),
         "found": int(found.sum()),
         "coverage_pct": round(100 * float(found.mean()), 1),
-        "exact_match_pct": round(100 * float(results.loc[found, "exact_match"].mean()), 1)
-        if found.any() else 0.0,
+        "exact_match_pct": pct_of_found("exact_match"),
+        "within_rounding_pct": pct_of_found("within_rounding"),
     }
