@@ -14,6 +14,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.evaluation.cvm_loader import COMPANIES, DEFAULT_CVM_ZIP, load_cvm_statement
+from src.evaluation.integrity import check_file, summarize_checks
 from src.evaluation.matching import load_mapping, mapping_path
 from src.evaluation.metrics import evaluate_key_totals, evaluate_lines, summarize
 from src.extraction.extractor import load_statement
@@ -45,6 +46,7 @@ def evaluate_file(json_path: Path, cvm_zip: Path, details: bool) -> dict:
     totals = evaluate_key_totals(statement, cvm)
     row = {"company": company, "statement": statement.statement_type.value}
     row.update({f"totals_{k}": v for k, v in summarize(totals).items()})
+    row.update(summarize_checks(check_file(json_path)))
 
     path = mapping_path(company, statement)
     if not path.exists():
@@ -82,7 +84,8 @@ def main() -> None:
                             for p in args.extracted_json])
     columns = ["company", "totals_found", "totals_accounts", "totals_exact_match_pct",
                "lines_accounts", "lines_coverage_pct", "lines_exact_match_pct",
-               "lines_within_rounding_pct", "extra_lines"]
+               "lines_within_rounding_pct", "extra_lines", "checks_passed", "checks_failed",
+               "checks_inconclusive"]
     print("\n== Summary ==")
     _print_table(summary, [c for c in columns if c in summary.columns])
 

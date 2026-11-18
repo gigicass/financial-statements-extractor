@@ -76,7 +76,8 @@ def extract_statement(
     return client.extract(SYSTEM_PROMPT, prompt, FinancialStatement)
 
 
-def save_statement(result: LLMResult[FinancialStatement], name: str, out_dir: Path) -> Path:
+def save_statement(result: LLMResult[FinancialStatement], name: str, out_dir: Path,
+                   source_pdf: Path | None = None) -> Path:
     """Save the statement as CSV (one row per line) and JSON (with run metadata)."""
     out_dir.mkdir(parents=True, exist_ok=True)
     statement = result.output
@@ -98,6 +99,7 @@ def save_statement(result: LLMResult[FinancialStatement], name: str, out_dir: Pa
         "output_tokens": result.output_tokens,
         "seconds": round(result.seconds, 1),
         "cost_usd": str(result.cost_usd) if result.cost_usd is not None else None,
+        "source_pdf": source_pdf.as_posix() if source_pdf else None,
     }
     json_path = out_dir / f"{name}.json"
     json_path.write_text(
@@ -115,6 +117,20 @@ def load_statement(json_path: Path) -> FinancialStatement:
     return FinancialStatement.model_validate(data["statement"])
 
 
+def source_pdf_for(json_path: Path, raw_dir: Path = Path("data/raw")) -> Path:
+    """PDF a saved statement came from: stored in the JSON, or derived from its name.
+
+    Older runs did not store it; their name is '<pdf stem>_<statement>_<scope>'.
+    """
+    data = json.loads(Path(json_path).read_text(encoding="utf-8"))
+    stored = data.get("run", {}).get("source_pdf")
+    if stored:
+        return Path(stored)
+    statement = FinancialStatement.model_validate(data["statement"])
+    suffix = f"_{statement.statement_type.value}_{statement.scope.value}"
+    return raw_dir / f"{Path(json_path).stem.removesuffix(suffix)}.pdf"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract a financial statement from a PDF.")
     parser.add_argument("pdf", type=Path)
@@ -125,7 +141,7 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     result = extract_statement(args.pdf, args.statement, args.scope, get_client())
     name = f"{args.pdf.stem}_{args.statement.value}_{args.scope.value}"
-    save_statement(result, name, PROCESSED_DIR)
+    save_statement(result, name, PROCESSED_DIR, source_pdf=args.pdf)
 
 
 if __name__ == "__main__":
