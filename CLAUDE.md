@@ -48,33 +48,48 @@ Projeto de portfólio pessoal, público no GitHub, voltado a posicionamento em *
 - Demo: Streamlit
 - Testes: pytest
 
-## Estrutura planejada
+## Estrutura
 
 ```
 .
 ├── CLAUDE.md
 ├── README.md
+├── LICENSE                   # MIT
 ├── .env.example
-├── pyproject.toml
-├── data/                 # gitignored (raw/, processed/), exceto samples/
-├── notebooks/            # exploração
+├── pyproject.toml            # grupos: dev (pytest), report (matplotlib), app (streamlit)
+├── data/                     # gitignored (raw/, processed/), exceto samples/
+│   ├── raw/                  # PDFs <TICKER>_DFP_2025.pdf; hard_cases/; cvm/ (zip DFP)
+│   ├── processed/runs/       # cada execução de experimento (JSON)
+│   └── samples/              # amostra versionada usada pelo app online
 ├── src/
-│   ├── extraction/
-│   │   ├── pdf_reader.py      # PDF -> texto/páginas
-│   │   ├── schemas.py         # modelos Pydantic (linha da demonstração, demonstração)
+│   ├── extraction/           # não importa nada de evaluation/
+│   │   ├── pdf_reader.py      # PDF -> texto/páginas; localiza as páginas da demonstração
+│   │   ├── schemas.py         # modelos Pydantic (linha, demonstração, escala)
 │   │   ├── llm_client.py      # interface única para os provedores de LLM
-│   │   └── extractor.py       # orquestra PDF -> LLM -> dados estruturados
-│   └── evaluation/
-│       ├── cvm_loader.py      # carrega e normaliza os CSVs da CVM
-│       ├── matching.py        # casa contas extraídas com contas da CVM
-│       ├── metrics.py         # taxa de acerto, erro absoluto/percentual
-│       └── integrity.py       # checagens contábeis
+│   │   └── extractor.py       # versões do prompt; orquestra PDF -> LLM -> dados
+│   ├── evaluation/
+│   │   ├── cvm_loader.py      # carrega e normaliza os CSVs da CVM (gabarito)
+│   │   ├── matching.py        # totais padronizados, rascunho de de-para, pareamento
+│   │   ├── metrics.py         # cobertura, valor exato, dentro do arredondamento
+│   │   ├── integrity.py       # checagens contábeis (sem gabarito)
+│   │   ├── error_injection.py # experimento de erros plantados
+│   │   └── evaluate.py        # avaliação via linha de comando
+│   └── experiments/          # combina extração + avaliação
+│       ├── run_experiment.py  # prompt x modelo x effort x empresa x repetição
+│       ├── feedback.py        # retry com as checagens que falharam
+│       ├── tables.py          # tabelas de resultados (README e app)
+│       ├── report.py          # gera docs/results.md e docs/figures/
+│       └── build_samples.py   # gera data/samples/ para o app
+├── mappings/                 # de-para PDF -> CVM revisados pela autora
+├── results/                  # um CSV por experimento (versionado)
+├── docs/                     # results.md e figuras do README
 ├── app/
-│   └── streamlit_app.py
+│   ├── streamlit_app.py
+│   └── requirements.txt       # gerado com `uv export` (Streamlit Community Cloud)
 └── tests/
 ```
 
-A estrutura pode evoluir, mas mantenha a separação entre **extração** e **avaliação**.
+Mantenha a separação entre **extração** e **avaliação**: o que precisa das duas fica em `src/experiments/`.
 
 ## Roadmap
 
