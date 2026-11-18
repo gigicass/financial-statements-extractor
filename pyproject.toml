@@ -3,6 +3,7 @@ name = "financial-statements-extractor"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=2.10.0",
     "pydantic>=2.14.3",
     "pymupdf>=2.1",
     "python-dotenv>=1.2.4",
@@ -12,3 +13,7 @@ dependencies = [
 dev = [
     "pytest>=9.2.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
