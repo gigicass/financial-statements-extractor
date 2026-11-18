@@ -13,18 +13,26 @@ logger = logging.getLogger(__name__)
 # A statement starts on a page that contains the title AND at least one marker (a line
 # that only appears inside the statement itself, which rules out the table of contents).
 # All strings are normalized (lowercase, no accents) - see `normalize`.
+# "excluded": a page containing any of these is never part of the statement - e.g. the
+# statement of comprehensive income (DRA) shares the DRE's title words and its first
+# line ("Lucro líquido do exercício") and usually comes right after it.
 STATEMENT_KEYWORDS: dict[StatementType, dict[str, list[str]]] = {
     StatementType.BALANCE_SHEET: {
         "titles": ["balanco patrimonial", "balancos patrimoniais"],
         "markers": ["total do ativo", "total do passivo"],
+        "excluded": [],
     },
     StatementType.INCOME_STATEMENT: {
-        "titles": ["demonstracao do resultado", "demonstracoes do resultado"],
-        "markers": ["lucro liquido do exercicio", "receita operacional liquida"],
+        "titles": ["demonstracao do resultado", "demonstracoes do resultado",
+                   "demonstracao dos resultados", "demonstracoes dos resultados",
+                   "demonstracoes de resultados", "demonstracao de resultado"],
+        "markers": ["lucro bruto", "resultado bruto"],
+        "excluded": ["resultado abrangente", "resultados abrangentes"],
     },
     StatementType.CASH_FLOW: {
         "titles": ["fluxo de caixa", "fluxos de caixa"],
         "markers": ["atividades operacionais", "atividades de investimento"],
+        "excluded": [],
     },
 }
 
@@ -61,7 +69,8 @@ def find_statement_pages(pages: list[str], statement_type: StatementType) -> lis
     texts = [normalize(page) for page in pages]
 
     def has_marker(text: str) -> bool:
-        return any(marker in text for marker in keywords["markers"])
+        return (any(marker in text for marker in keywords["markers"])
+                and not any(excluded in text for excluded in keywords["excluded"]))
 
     start = next((i for i, text in enumerate(texts)
                   if has_marker(text) and any(t in text for t in keywords["titles"])

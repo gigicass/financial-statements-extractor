@@ -71,12 +71,14 @@ def retry_run(row: pd.Series, experiment: str, statement_type: StatementType,
 
     after = evaluate_file(after_path, DEFAULT_CVM_ZIP, details=False)
     after_run = json.loads(after_path.read_text(encoding="utf-8"))["run"]
-    keep = ["lines_coverage_pct", "lines_within_rounding_pct", "extra_lines", "checks_failed"]
+    # Line-level metrics only exist when there is a reviewed mapping (not for the DRE).
+    keep = ["totals_within_rounding_pct", "lines_coverage_pct", "lines_within_rounding_pct",
+            "extra_lines", "checks_failed"]
     return {
         "prompt": prompt, "model": row["model"], "effort": row["effort"],
         "repeat": int(row["repeat"]), "company": company,
-        **{f"before_{k}": row[k] for k in keep},
-        **{f"after_{k}": after[k] for k in keep},
+        **{f"before_{k}": row.get(k) for k in keep if k in after},
+        **{f"after_{k}": after[k] for k in keep if k in after},
         "first_cost_usd": row["cost_usd"],
         "feedback_cost_usd": float(after_run["cost_usd"]),
     }

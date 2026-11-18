@@ -1,0 +1,4 @@
+experiment,prompt,model,effort,repeat,company,input_tokens,output_tokens,seconds,cost_usd,statement,totals_accounts,totals_found,totals_coverage_pct,totals_exact_match_pct,totals_within_rounding_pct,checks_passed,checks_failed,checks_inconclusive
+income_statement_individual,v2,claude-haiku-5-5,medium,1,ASAI,2462,2340,10.7,0.0014162,income_statement,6,6,100.0,100.0,100.0,8,0,0
+income_statement_individual,v2,claude-opus-5-5,medium,1,ASAI,2462,948,11.1,0.028808,income_statement,6,6,100.0,100.0,100.0,8,0,0
+income_statement_individual,v2,claude-sonnet-5-5,medium,1,ASAI,2462,583,3.9,0.010754,income_statement,6,6,100.0,100.0,100.0,8,0,0

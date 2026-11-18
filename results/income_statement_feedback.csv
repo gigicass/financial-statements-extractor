@@ -1,0 +1,4 @@
+prompt,model,effort,repeat,company,before_totals_within_rounding_pct,before_checks_failed,after_totals_within_rounding_pct,after_checks_failed,first_cost_usd,feedback_cost_usd
+v2,claude-haiku-5-5,medium,1,CEAB,100.0,1,100.0,0,0.0015212,0.0014866
+v2,claude-haiku-5-5,medium,1,PGMN,100.0,1,100.0,0,0.0011403,0.0014344
+v2,claude-haiku-5-5,medium,1,WEG,100.0,1,100.0,0,0.0011186,0.0015785

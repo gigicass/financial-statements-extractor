@@ -56,7 +56,34 @@ KEY_TOTALS: dict[StatementType, dict[str, list[str]]] = {
         "2.03": ["total do patrimonio liquido", "patrimonio liquido",
                  "patrimonio liquido consolidado"],
     },
+    # Names as printed in the six PDFs of the study (normalized). Lines the CVM has but
+    # PDFs rarely print as one line (3.04 total operating expenses, 3.08 total taxes)
+    # are left out.
+    StatementType.INCOME_STATEMENT: {
+        "3.01": ["receita liquida", "receita liquida de vendas", "receita operacional liquida"],
+        "3.02": ["custo dos produtos e servicos vendidos", "custo dos produtos vendidos",
+                 "custo das mercadorias vendidas e dos servicos prestados",
+                 "custo das mercadorias vendidas e servicos prestados",
+                 "custos das mercadorias vendidas", "custo das mercadorias vendidas"],
+        "3.03": ["lucro bruto", "resultado bruto"],
+        "3.05": ["lucro antes do resultado financeiro e impostos",
+                 "lucro antes do resultado financeiro e dos tributos",
+                 "lucro antes do resultado financeiro",
+                 "resultado antes das receitas (despesas) financeiras",
+                 "lucro (prejuizo) operacional antes do resultado financeiro",
+                 "lucro operacional antes do resultado financeiro liquido"],
+        "3.07": ["lucro antes dos impostos", "lucro antes dos tributos sobre o lucro",
+                 "lucro antes dos impostos sobre o lucro", "resultado antes dos impostos",
+                 "lucro antes do imposto de renda e da contribuicao social"],
+        "3.11": ["lucro liquido do exercicio", "lucro do exercicio",
+                 "lucro liquido (prejuizo) do exercicio", "prejuizo do exercicio",
+                 "lucro (prejuizo) do exercicio"],
+    },
 }
+
+# In the income statement, revenue and cost are single printed lines, not subtotals,
+# so key lines are looked up among all lines, not only the ones marked is_total.
+KEY_LINES_ANY_TYPE = {StatementType.INCOME_STATEMENT}
 
 
 def find_key_total_line(statement: FinancialStatement, code: str) -> StatementLine | None:
@@ -67,8 +94,9 @@ def find_key_total_line(statement: FinancialStatement, code: str) -> StatementLi
     may name such a partial subtotal after the section ('Ativo Circulante').
     """
     aliases = KEY_TOTALS[statement.statement_type][code]
+    any_line = statement.statement_type in KEY_LINES_ANY_TYPE
     matches = [line for line in statement.lines
-               if line.is_total and normalize(line.account_name) in aliases]
+               if (line.is_total or any_line) and normalize(line.account_name) in aliases]
     return matches[-1] if matches else None
 
 

@@ -114,3 +114,39 @@ def test_error_injectors_change_the_statement_as_described():
     # Compensating error: total of all lines unchanged, so subtotals still close.
     assert sum(line.value for line in swapped.lines) == sum(line.value for line in statement.lines)
     assert all(r.passed for r in check_subtotals(swapped))
+
+
+def make_income_statement(lines) -> FinancialStatement:
+    return FinancialStatement.model_validate({
+        "company": "X", "statement_type": "income_statement", "scope": "consolidated",
+        "reference_date": "2025-12-31", "currency_scale": "MIL",
+        "lines": [{"account_name": n, "value": v, "is_total": t} for n, v, t in lines],
+    })
+
+
+INCOME = [
+    ("Receita líquida", "1000", False),
+    ("Custo dos produtos vendidos", "-600", False),
+    ("Lucro bruto", "400", True),
+    ("Despesas com vendas", "-100", False),
+    ("Despesas administrativas", "-50", False),
+    ("Lucro antes do resultado financeiro", "250", True),
+    ("Receitas financeiras", "30", False),
+    ("Despesas financeiras", "-80", False),
+    ("Lucro antes dos impostos", "200", True),
+    ("Imposto de renda e contribuição social", "-60", False),
+    ("Lucro líquido do exercício", "140", True),
+    ("Lucro básico por ação (em R$)", "1.52", False),
+]
+
+
+def test_income_statement_passes_subtotals_and_signs():
+    statement = make_income_statement(INCOME)
+    assert all(r.passed for r in check_subtotals(statement))
+    assert check_signs(statement).passed
+
+
+def test_cost_copied_without_parentheses_fails_sign_and_subtotal():
+    statement = make_income_statement(replace(INCOME, "Custo dos produtos vendidos", "600"))
+    assert check_signs(statement).passed is False
+    assert not all(r.passed for r in check_subtotals(statement))

@@ -113,23 +113,40 @@ def check_scale(statement: FinancialStatement, pages_text: str | None) -> CheckR
     return CheckResult(name, printed == statement.currency_scale, detail)
 
 
+# Expected sign of key lines, by CVM code: +1 must be positive, -1 must be negative.
+# Results (gross profit, net income...) can legitimately be either, so they are not here.
+EXPECTED_SIGNS: dict[StatementType, dict[str, int]] = {
+    StatementType.BALANCE_SHEET: {"1": 1, "1.01": 1, "1.02": 1},  # asset totals
+    StatementType.INCOME_STATEMENT: {"3.01": 1, "3.02": -1},  # revenue, cost of sales
+}
+
+
 def check_signs(statement: FinancialStatement) -> CheckResult:
-    """Asset totals must be positive (contra-accounts may be negative, totals may not)."""
-    name = "Asset totals are positive"
-    if statement.statement_type != StatementType.BALANCE_SHEET:
-        return CheckResult(name, None, "only implemented for the balance sheet")
-    found = {code: _find_key_total(statement, code) for code in ("1", "1.01", "1.02")}
-    negatives = [code for code, value in found.items() if value is not None and value <= 0]
+    """Key lines must have the expected sign (e.g. revenue > 0, cost of sales < 0).
+
+    In the income statement this catches the most common reading error: a value in
+    parentheses copied as positive (or the opposite).
+    """
+    name = "Key lines have the expected sign"
+    expected = EXPECTED_SIGNS.get(statement.statement_type, {})
+    found = {code: _find_key_total(statement, code) for code in expected}
     if all(value is None for value in found.values()):
-        return CheckResult(name, None, "no asset totals found")
-    return CheckResult(name, not negatives,
-                       f"non-positive totals: {negatives}" if negatives else "ok")
+        return CheckResult(name, None, "no key lines found")
+    wrong = [code for code, value in found.items()
+             if value is not None and value * expected[code] <= 0]
+    return CheckResult(name, not wrong, f"wrong sign: {wrong}" if wrong else "ok")
 
 
 def run_checks(statement: FinancialStatement, pages_text: str | None = None) -> list[CheckResult]:
-    """Run every check; `pages_text` (the statement pages) enables the scale check."""
-    results = [check_balance_equation(statement), *check_subtotals(statement),
-               check_scale(statement, pages_text), check_signs(statement)]
+    """Run every check that applies to the statement type.
+
+    `pages_text` (the statement pages) enables the scale check.
+    """
+    results = []
+    if statement.statement_type == StatementType.BALANCE_SHEET:
+        results.append(check_balance_equation(statement))
+    results += [*check_subtotals(statement), check_scale(statement, pages_text),
+                check_signs(statement)]
     for r in results:
         if r.passed is False:
             logger.warning("Integrity check failed - %s: %s", r.name, r.detail)

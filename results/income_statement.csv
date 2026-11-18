@@ -1,0 +1,16 @@
+experiment,prompt,model,effort,repeat,company,input_tokens,output_tokens,seconds,cost_usd,statement,totals_accounts,totals_found,totals_coverage_pct,totals_exact_match_pct,totals_within_rounding_pct,checks_passed,checks_failed,checks_inconclusive
+income_statement,v2,claude-haiku-5-5,medium,1,AMER,2625,2546,13.6,0.0015355,income_statement,6,6,100.0,100.0,100.0,8,0,0
+income_statement,v2,claude-haiku-5-5,medium,1,CEAB,2857,2471,10.8,0.0015212,income_statement,6,6,100.0,100.0,100.0,8,1,0
+income_statement,v2,claude-haiku-5-5,medium,1,KLBN,3053,1918,10.2,0.0012643,income_statement,6,6,100.0,83.3,83.3,9,0,0
+income_statement,v2,claude-haiku-5-5,medium,1,PGMN,2743,1732,9.1,0.0011403,income_statement,6,6,100.0,100.0,100.0,9,1,0
+income_statement,v2,claude-haiku-5-5,medium,1,WEG,3176,1602,9.2,0.0011186,income_statement,6,6,100.0,100.0,100.0,5,1,0
+income_statement,v2,claude-opus-5-5,medium,1,AMER,2625,977,11.6,0.03004,income_statement,6,6,100.0,100.0,100.0,8,0,0
+income_statement,v2,claude-opus-5-5,medium,1,CEAB,2857,1089,12.5,0.033208,income_statement,6,6,100.0,100.0,100.0,9,0,0
+income_statement,v2,claude-opus-5-5,medium,1,KLBN,3053,829,9.6,0.028792,income_statement,6,6,100.0,83.3,83.3,9,0,0
+income_statement,v2,claude-opus-5-5,medium,1,PGMN,2743,1141,9.4,0.033792,income_statement,6,6,100.0,100.0,100.0,9,0,0
+income_statement,v2,claude-opus-5-5,medium,1,WEG,3176,704,8.7,0.026784,income_statement,6,6,100.0,100.0,100.0,7,0,0
+income_statement,v2,claude-sonnet-5-5,medium,1,AMER,2625,1271,8.0,0.01796,income_statement,6,6,100.0,100.0,100.0,8,0,0
+income_statement,v2,claude-sonnet-5-5,medium,1,CEAB,2857,776,4.0,0.013474,income_statement,6,6,100.0,100.0,100.0,9,0,0
+income_statement,v2,claude-sonnet-5-5,medium,1,KLBN,3053,749,4.7,0.013596,income_statement,6,6,100.0,83.3,83.3,9,0,0
+income_statement,v2,claude-sonnet-5-5,medium,1,PGMN,2743,689,3.9,0.012376,income_statement,6,6,100.0,100.0,100.0,9,0,0
+income_statement,v2,claude-sonnet-5-5,medium,1,WEG,3176,629,4.5,0.012642,income_statement,6,6,100.0,100.0,100.0,7,0,0
