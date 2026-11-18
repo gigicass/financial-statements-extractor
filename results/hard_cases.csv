@@ -1,0 +1,4 @@
+experiment,prompt,model,effort,repeat,company,input_tokens,output_tokens,seconds,cost_usd,statement,totals_accounts,totals_found,totals_coverage_pct,totals_exact_match_pct,totals_within_rounding_pct,checks_passed,checks_failed,checks_inconclusive,lines_accounts,lines_found,lines_coverage_pct,lines_exact_match_pct,lines_within_rounding_pct,extra_lines
+hard_cases,v2,claude-haiku-5-5,medium,1,AMER,3541,4686,17.9,0.0026971,balance_sheet,7,7,100.0,100.0,100.0,10,0,0,44.0,44.0,100.0,100.0,100.0,0.0
+hard_cases,v2,claude-opus-5-5,medium,1,AMER,3541,2111,16.7,0.056384,balance_sheet,7,7,100.0,100.0,100.0,10,0,0,44.0,44.0,100.0,100.0,100.0,0.0
+hard_cases,v2,claude-sonnet-5-5,medium,1,AMER,3541,1463,10.8,0.021712,balance_sheet,7,7,100.0,100.0,100.0,10,0,0,44.0,44.0,100.0,100.0,100.0,0.0

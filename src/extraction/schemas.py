@@ -30,10 +30,16 @@ class Scope(str, Enum):
 
 
 class CurrencyScale(str, Enum):
-    """Scale of the reported values, mirroring the CVM column ESCALA_MOEDA."""
+    """Scale of the reported values. UNIDADE and MIL mirror the CVM column ESCALA_MOEDA;
+    some companies (e.g. Americanas, Assaí) publish their PDFs in millions."""
 
     UNIT = "UNIDADE"
     THOUSAND = "MIL"
+    MILLION = "MILHAO"
+
+
+SCALE_FACTORS = {CurrencyScale.UNIT: 1, CurrencyScale.THOUSAND: 1_000,
+                 CurrencyScale.MILLION: 1_000_000}
 
 
 class StatementLine(BaseModel):
@@ -63,4 +69,4 @@ class FinancialStatement(BaseModel):
 
     def value_multiplier(self) -> int:
         """Factor that converts this statement's values to units of BRL."""
-        return 1000 if self.currency_scale == CurrencyScale.THOUSAND else 1
+        return SCALE_FACTORS[self.currency_scale]

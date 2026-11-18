@@ -15,7 +15,7 @@ from dataclasses import dataclass
 from decimal import Decimal
 from pathlib import Path
 
-from src.evaluation.matching import KEY_TOTALS
+from src.evaluation.matching import find_key_total_line
 from src.extraction.extractor import load_statement, source_pdf_for
 from src.extraction.pdf_reader import find_statement_pages, normalize, read_pages
 from src.extraction.schemas import CurrencyScale, FinancialStatement, StatementType
@@ -39,11 +39,8 @@ def _fmt(value: Decimal) -> str:
 
 def _find_key_total(statement: FinancialStatement, code: str) -> Decimal | None:
     """Value of the total line that corresponds to a CVM key code (e.g. '1' = Ativo Total)."""
-    aliases = KEY_TOTALS[statement.statement_type][code]
-    for line in statement.lines:
-        if line.is_total and normalize(line.account_name) in aliases:
-            return line.value
-    return None
+    line = find_key_total_line(statement, code)
+    return line.value if line else None
 
 
 def check_balance_equation(statement: FinancialStatement) -> CheckResult:
@@ -95,6 +92,8 @@ def check_subtotals(statement: FinancialStatement) -> list[CheckResult]:
 def detect_scale(pages_text: str) -> CurrencyScale | None:
     """Read the scale from the statement header ('Em milhares de reais', 'R$ mil'...)."""
     text = normalize(pages_text)
+    if re.search(r"milhoes de reais|em milhoes|r\$ ?milhoes|r\$ ?mm\b", text):
+        return CurrencyScale.MILLION
     if re.search(r"milhares de reais|em milhares|r\$ ?mil\b|em r\$ mil", text):
         return CurrencyScale.THOUSAND
     if re.search(r"\bem reais\b|\(r\$\)", text):

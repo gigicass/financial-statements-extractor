@@ -10,9 +10,8 @@ from decimal import Decimal
 
 import pandas as pd
 
-from src.evaluation.matching import KEY_TOTALS, MappingRow, pair_lines
-from src.extraction.pdf_reader import normalize
-from src.extraction.schemas import FinancialStatement
+from src.evaluation.matching import KEY_TOTALS, MappingRow, find_key_total_line, pair_lines
+from src.extraction.schemas import FinancialStatement, StatementLine
 
 
 def compare_values(extracted: Decimal, expected: Decimal,
@@ -39,13 +38,12 @@ def _no_match() -> dict:
 def evaluate_key_totals(statement: FinancialStatement, cvm: pd.DataFrame) -> pd.DataFrame:
     """One row per key CVM total: was it extracted, and is the value exactly right?"""
     multiplier = statement.value_multiplier()
-    totals = {normalize(line.account_name): line for line in statement.lines if line.is_total}
     cvm_by_code = cvm.set_index("code")
 
     rows = []
-    for code, aliases in KEY_TOTALS[statement.statement_type].items():
+    for code in KEY_TOTALS[statement.statement_type]:
         expected = cvm_by_code.loc[code, "value"]
-        line = next((totals[a] for a in aliases if a in totals), None)
+        line = find_key_total_line(statement, code)
         row = {"code": code, "cvm_name": cvm_by_code.loc[code, "name"], "cvm_value": expected,
                "extracted_name": line.account_name if line else None,
                "extracted_value": line.value * multiplier if line else None}
@@ -66,19 +64,26 @@ def evaluate_lines(statement: FinancialStatement, mapping: list[MappingRow],
     cvm_values = dict(zip(cvm["code"], cvm["value"]))
     pairs, extras = pair_lines(statement, mapping)
 
+    # Rows of the same group are evaluated together, as one account.
+    units: dict[str, list[tuple[MappingRow, StatementLine | None]]] = {}
+    for k, (mapping_row, line) in enumerate(pairs):
+        if mapping_row.codes:
+            units.setdefault(mapping_row.group or f"row-{k}", []).append((mapping_row, line))
+
     rows = []
-    for mapping_row, line in pairs:
-        if not mapping_row.codes:
-            continue
-        expected = sum((sign * cvm_values[code] for sign, code in mapping_row.codes),
-                       Decimal(0))
-        extracted = line.value * multiplier if line else None
-        row = {"section": mapping_row.section, "account": mapping_row.pdf_account_name,
+    for members in units.values():
+        first = members[0][0]
+        expected = sum((sign * cvm_values[code] for sign, code in first.codes), Decimal(0))
+        found = all(line is not None for _, line in members)
+        extracted = (sum((line.value for _, line in members), Decimal(0)) * multiplier
+                     if found else None)
+        row = {"section": first.section,
+               "account": " + ".join(r.pdf_account_name for r, _ in members),
                "cvm_codes": "".join(("-" if s < 0 else "+") + c
-                                    for s, c in mapping_row.codes).lstrip("+"),
+                                    for s, c in first.codes).lstrip("+"),
                "cvm_value": expected, "extracted_value": extracted}
         row.update(compare_values(extracted, expected, Decimal(multiplier))
-                   if line else _no_match())
+                   if found else _no_match())
         rows.append(row)
     return pd.DataFrame(rows), [line.account_name for line in extras]
 

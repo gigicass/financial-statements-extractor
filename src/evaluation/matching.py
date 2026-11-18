@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 
 MAPPINGS_DIR = Path("mappings")
 MAPPING_COLUMNS = ["section", "pdf_account_name", "pdf_value", "is_total", "cvm_codes",
-                   "cvm_names", "draft_status", "reviewed"]
+                   "group", "cvm_names", "draft_status", "reviewed"]
 
 # Names in a new extraction may differ slightly from the reviewed file (e.g. another
 # model fixes a typo or changes case). Below this similarity a line is not paired.
@@ -59,14 +59,33 @@ KEY_TOTALS: dict[StatementType, dict[str, list[str]]] = {
 }
 
 
+def find_key_total_line(statement: FinancialStatement, code: str) -> StatementLine | None:
+    """The total line that corresponds to a CVM key code (e.g. '1' = Ativo Total).
+
+    Takes the LAST matching line: PDFs sometimes print unlabeled partial subtotals
+    before the section total (e.g. current assets before 'held for sale'), and a model
+    may name such a partial subtotal after the section ('Ativo Circulante').
+    """
+    aliases = KEY_TOTALS[statement.statement_type][code]
+    matches = [line for line in statement.lines
+               if line.is_total and normalize(line.account_name) in aliases]
+    return matches[-1] if matches else None
+
+
 @dataclass
 class MappingRow:
-    """One reviewed row: a PDF account and the signed CVM codes that make up its value."""
+    """One reviewed row: a PDF account and the signed CVM codes that make up its value.
+
+    `group`: when several PDF lines add up to CVM accounts that the CVM does not split
+    (e.g. two tax lines vs one 'Obrigações Fiscais'), the rows share a group id and the
+    same codes, and the evaluation compares the SUM of those lines with the codes.
+    """
 
     section: str
     pdf_account_name: str
     codes: list[tuple[int, str]]  # (+1 or -1, CVM code)
     is_total: bool = False
+    group: str = ""
 
 
 def mapping_path(company: str, statement: FinancialStatement) -> Path:
@@ -122,7 +141,11 @@ def suggest_codes(name: str, value: Decimal, section: str | None,
     """Suggest CVM code(s) for one PDF line. Returns (codes, draft_status)."""
     if value == 0:
         return [], "zero_in_pdf"
-    for scope in ([section] if section else []) + [None]:
+    # Search the line's section first, then its whole side of the balance sheet
+    # ('1' assets, '2' liabilities + equity). Never across sides: with values in
+    # millions, small numbers make cross-side coincidences common and meaningless.
+    scopes = [section, section.split(".")[0]] if section else [None]
+    for scope in scopes:
         pool = cvm if scope is None else cvm[(cvm["code"] == scope)
                                              | cvm["code"].str.startswith(scope + ".")]
         pool = pool[pool["value"] != 0]
@@ -177,7 +200,8 @@ def load_mapping(path: Path) -> list[MappingRow]:
     with path.open(encoding="utf-8-sig", newline="") as f:
         return [MappingRow(section=r["section"], pdf_account_name=r["pdf_account_name"],
                            codes=parse_codes(r["cvm_codes"] or ""),
-                           is_total=r.get("is_total") == "True")
+                           is_total=r.get("is_total") == "True",
+                           group=r.get("group") or "")
                 for r in csv.DictReader(f)]
 
 
@@ -186,7 +210,8 @@ def pair_lines(statement: FinancialStatement, mapping: list[MappingRow],
     """Pair each mapping row with an extracted line of the same section.
 
     1st pass: same or similar name.
-    2nd pass, subtotals only: by position among the section's subtotals. Some subtotals
+    2nd pass: rows that are a key total, through the key-total aliases.
+    3rd pass, subtotals only: by position among the section's subtotals. Some subtotals
     have no label in the PDF, so each model names them differently ('Realizável a longo
     prazo' vs 'Não circulante'); their position is the stable identity. Values are never
     used for pairing, otherwise a wrong value could not be detected.
@@ -207,17 +232,35 @@ def pair_lines(statement: FinancialStatement, mapping: list[MappingRow],
             used.add(best[0])
             paired[row_index] = best[1]
 
+    # 2nd pass: rows that ARE a key total (codes == one key code) take the line found by
+    # the key-total aliases, e.g. 'Ativo Circulante' -> the row mapped to '1.01'.
+    key_codes = set(KEY_TOTALS[statement.statement_type])
+    line_ids = {id(line): i for i, (line, _) in enumerate(available)}
+    for row_index, row in enumerate(mapping):
+        if row_index in paired or len(row.codes) != 1:
+            continue
+        sign, code = row.codes[0]
+        if sign != 1:
+            continue
+        line = find_key_total_line(statement, code) if code in key_codes else None
+        if line is not None and line_ids[id(line)] not in used:
+            used.add(line_ids[id(line)])
+            paired[row_index] = line
+
+    # 3rd pass: remaining subtotals by position, only when the section has the same number
+    # of subtotals on both sides - otherwise positions would not correspond (e.g. an
+    # earnings release table without the partial subtotals of the official statement).
     for section in {row.section for row in mapping}:
         row_totals = [k for k, row in enumerate(mapping)
                       if row.is_total and row.section == section]
         line_totals = [i for i, (line, s) in enumerate(available)
                        if line.is_total and (s or "") == section]
-        for position, row_index in enumerate(row_totals):
-            if row_index in paired or position >= len(line_totals):
-                continue
-            if line_totals[position] not in used:
-                used.add(line_totals[position])
-                paired[row_index] = available[line_totals[position]][0]
+        if len(row_totals) != len(line_totals):
+            continue
+        for row_index, line_index in zip(row_totals, line_totals):
+            if row_index not in paired and line_index not in used:
+                used.add(line_index)
+                paired[row_index] = available[line_index][0]
 
     pairs = [(row, paired.get(k)) for k, row in enumerate(mapping)]
     extras = [line for i, (line, _) in enumerate(available) if i not in used]

@@ -28,6 +28,11 @@ STATEMENT_KEYWORDS: dict[StatementType, dict[str, list[str]]] = {
     },
 }
 
+# Some PDFs bundle an earnings release before the official statements (e.g. Assaí).
+# Release tables are managerial (often in R$ millions, sometimes adjusted figures), so
+# pages with these markers are never taken as the start of a statement.
+EARNINGS_RELEASE_MARKERS = ["divulgacao de resultados", "earnings release"]
+
 
 def read_pages(pdf_path: str | Path) -> list[str]:
     """Return the text of each page of the PDF (index 0 = page 1)."""
@@ -59,7 +64,8 @@ def find_statement_pages(pages: list[str], statement_type: StatementType) -> lis
         return any(marker in text for marker in keywords["markers"])
 
     start = next((i for i, text in enumerate(texts)
-                  if has_marker(text) and any(t in text for t in keywords["titles"])), None)
+                  if has_marker(text) and any(t in text for t in keywords["titles"])
+                  and not any(r in text for r in EARNINGS_RELEASE_MARKERS)), None)
     if start is None:
         logger.info("%s not found", statement_type.value)
         return []

@@ -39,10 +39,19 @@ def run_dir(experiment: str, prompt: str, model: str, effort: str, repeat: int) 
     return RUNS_DIR / experiment / prompt / f"{model}-{effort}" / f"r{repeat}"
 
 
+def find_pdf(company: str) -> Path:
+    """Study PDFs live in data/raw/, hard cases in data/raw/hard_cases/."""
+    for folder in (RAW_DIR, RAW_DIR / "hard_cases"):
+        if (pdf := folder / f"{company}_DFP_2025.pdf").exists():
+            return pdf
+    raise FileNotFoundError(f"No PDF for {company} in {RAW_DIR}")
+
+
 def run_one(experiment: str, prompt: str, model: str, effort: str, repeat: int,
-            company: str, statement_type: StatementType, scope: Scope) -> dict:
+            company: str, statement_type: StatementType, scope: Scope,
+            page_numbers: list[int] | None = None) -> dict:
     """Extract (if not done yet) and evaluate one company; return its results row."""
-    pdf = RAW_DIR / f"{company}_DFP_2025.pdf"
+    pdf = find_pdf(company)
     out_dir = run_dir(experiment, prompt, model, effort, repeat)
     name = f"{pdf.stem}_{statement_type.value}_{scope.value}"
     json_path = out_dir / f"{name}.json"
@@ -54,7 +63,8 @@ def run_one(experiment: str, prompt: str, model: str, effort: str, repeat: int,
     else:
         try:
             client = get_client(model=model, effort=effort)
-            result = extract_statement(pdf, statement_type, scope, client, prompt)
+            result = extract_statement(pdf, statement_type, scope, client, prompt,
+                                       page_numbers)
         except Exception as e:  # one failed run must not stop the experiment
             logger.error("Run failed (%s %s r%d %s): %s", model, effort, repeat, company, e)
             return {**row, "error": str(e)[:200]}
@@ -78,11 +88,13 @@ def main() -> None:
     parser.add_argument("--companies", nargs="+", default=STUDY_COMPANIES)
     parser.add_argument("--statement", type=StatementType, default=StatementType.BALANCE_SHEET)
     parser.add_argument("--scope", type=Scope, default=Scope.CONSOLIDATED)
+    parser.add_argument("--pages", type=int, nargs="+",
+                        help="1-based pages to use instead of the automatic page finder")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
     rows = [run_one(args.name, prompt, model, effort, repeat, company, args.statement,
-                    args.scope)
+                    args.scope, args.pages)
             for prompt in args.prompts
             for model in args.models
             for effort in args.efforts

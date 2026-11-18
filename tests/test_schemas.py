@@ -46,3 +46,7 @@ def test_value_schema_only_allows_plain_numbers():
     with pytest.raises(ValidationError):
         StatementLine(account_name="Derivativos", value="-")
     assert StatementLine(account_name="Tesouraria", value="-43579").value == Decimal("-43579")
+
+
+def test_million_scale_multiplier():
+    assert make_statement(currency_scale="MILHAO").value_multiplier() == 1_000_000

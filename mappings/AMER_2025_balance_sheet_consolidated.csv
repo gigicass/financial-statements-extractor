@@ -1,0 +1,54 @@
+﻿section,pdf_account_name,pdf_value,is_total,cvm_codes,group,cvm_names,draft_status,reviewed
+1.01,Caixa e equivalentes de caixa,879,False,1.01.01,,Caixa e Equivalentes de Caixa,single,ok
+1.01,Títulos e valores mobiliários,175,False,1.01.02.01.03,,Títulos e valores mobiliários,single_tiebreak_by_name,ok
+1.01,Contas a receber de clientes,1467,False,1.01.03,,Contas a Receber,single_tiebreak_by_name,ok
+1.01,Contas a receber - partes relacionadas,0,False,,,,zero_in_pdf,ok
+1.01,Estoques,1850,False,1.01.04,,Estoques,single_tiebreak_by_name,ok
+1.01,Tributos a recuperar,1010,False,1.01.06.01.01,,Impostos a Recuperar,single,ok
+1.01,Imposto de renda e contribuição social,35,False,1.01.06.01.02,,Imposto de renda e contribuição social,single,ok
+1.01,Despesas antecipadas,165,False,1.01.07,,Despesas Antecipadas,single_tiebreak_by_name,ok
+1.01,Outros ativos circulantes,344,False,1.01.08.03,,Outros,single_tiebreak_by_name,ok
+1.01,Ativos mantidos para venda,1846,False,1.01.08.02,,Ativos de Operações Descontinuadas,single,ok
+1.01,Total do ativo circulante,7771,True,1.01,,Ativo Circulante,single,ok
+1.02,Títulos e valores mobiliários,0,False,,,,zero_in_pdf,ok
+1.02,Tributos a recuperar,2883,False,1.02.01.10.04,,Impostos a recuperar,single,ok
+1.02,Imposto de renda e contribuição social,341,False,1.02.01.10.07,,Imposto de renda e contribuição social,single,ok
+1.02,Imposto de renda e contribuição social diferidos,74,False,1.02.01.07.01,,Imposto de Renda e Contribuição Social Diferidos,single_tiebreak_by_name,ok
+1.02,Depósitos judiciais,739,False,1.02.01.10.03,,Depósitos Judiciais,single,ok
+1.02,Contas a receber - partes relacionadas,0,False,,,,zero_in_pdf,ok
+1.02,Outros ativos não circulantes,15,False,1.02.01.10.05,,Outros Ativos Não Circulantes,single,ok
+1.02,Investimentos,32,False,1.02.02,,Investimentos,single_tiebreak_by_name,ok
+1.02,Imobilizado,1464,False,1.02.03.01,,Imobilizado em Operação,single,ok
+1.02,Intangível,172,False,1.02.04,,Intangível,single_tiebreak_by_name,ok
+1.02,Ativo de direito de uso,2758,False,1.02.03.02.01,,Ativo de Direito de Uso,single_tiebreak_by_name,ok
+1.02,Total do ativo não circulante,8478,True,1.02,,Ativo Não Circulante,single,ok
+1,TOTAL DO ATIVO,16249,True,1,,Ativo Total,single,ok
+2.01,Fornecedores,2461,False,2.01.02,,Fornecedores,single_tiebreak_by_name,ok
+2.01,Risco sacado,308,False,2.01.05.02.09,,Risco Sacado,single,ok
+2.01,Empréstimos e financiamentos,0,False,,,,zero_in_pdf,ok
+2.01,Contas a pagar - partes relacionadas,0,False,,,,zero_in_pdf,ok
+2.01,"Salários, provisões e contribuições sociais",262,False,2.01.01.02.01,,"Salários, encargos e contribuições",single_tiebreak_by_name,ok
+2.01,Tributos a recolher,343,False,2.01.03-2.01.03.01.01,,Obrigações Fiscais - Imposto de Renda e Contribuição Social a Pagar,manual,ok
+2.01,Imposto de renda e contribuição social,2,False,2.01.03.01.01,,Imposto de Renda e Contribuição Social a Pagar,single,ok
+2.01,Adiantamento recebido de clientes,32,False,2.01.05.02.06,,Adiantamento Recebido de Clientes,single,ok
+2.01,Passivo de arrendamento,365,False,2.01.05.02.07,,Passivo de arrendamento,single,ok
+2.01,Outros passivos circulantes,287,False,2.01.05.02.04,,Outras Obrigações,single,ok
+2.01,Passivos associados a ativos mantidos para venda,604,False,2.01.07,,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,single_tiebreak_by_name,ok
+2.01,Total do passivo circulante,4664,True,2.01,,Passivo Circulante,single,ok
+2.02,Fornecedores,259,False,2.02.02.02.09,,Fornecedores,single,ok
+2.02,Empréstimos e financiamentos,0,False,,,,zero_in_pdf,ok
+2.02,Debêntures,1995,False,2.02.01.02,,Debêntures,single_tiebreak_by_name,ok
+2.02,Tributos a recolher,71,False,2.02.02.02.08,,Tributos a recolher,single,ok
+2.02,Imposto de renda e contribuição social diferidos,0,False,,,,zero_in_pdf,ok
+2.02,Provisão para processos judiciais e contingências,701,False,2.02.04.01,,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,single_tiebreak_by_name,ok
+2.02,Contas a pagar - Partes relacionadas,0,False,,,,zero_in_pdf,ok
+2.02,Passivo de arrendamento,3218,False,2.02.02.02.05,,Passivo de arrendamento,single,ok
+2.02,Provisão para perdas em investimentos,0,False,,,,zero_in_pdf,ok
+2.02,Plano de assistência médica,195,False,2.02.02.02.07,,Plano de Assistência Médica,single,ok
+2.02,Outros passivos não circulantes,387,False,2.02.02.02.03,,Outras Obrigações,single,ok
+2.02,Total do passivo não circulante,6826,True,2.02,,Passivo Não Circulante,single,ok
+2.03,Capital social,39891,False,2.03.01,,Capital Social Realizado,single,ok
+2.03,Outros resultados abrangentes,-7,False,2.03.08,,Outros Resultados Abrangentes,single,ok
+2.03,Prejuízos acumulados,-35125,False,2.03.05,,Lucros/Prejuízos Acumulados,single,ok
+2.03,Total do patrimônio líquido,4759,True,2.03,,Patrimônio Líquido Consolidado,single,ok
+2,TOTAL DO PASSIVO E DO PATRIMÔNIO LÍQUIDO,16249,True,2,,Passivo Total,single,ok

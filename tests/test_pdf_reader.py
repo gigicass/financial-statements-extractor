@@ -30,3 +30,9 @@ def test_includes_continuation_page_without_title():
 
 def test_find_statement_pages_returns_empty_when_absent():
     assert find_statement_pages([TOC_PAGE], StatementType.CASH_FLOW) == []
+
+
+def test_skips_earnings_release_pages():
+    release = "DIVULGAÇÃO DE RESULTADOS 4T25\nBalanço Patrimonial (R$ milhões)\nTotal do ativo\n47.825"
+    pages = [TOC_PAGE, release, BALANCE_ASSETS, LIABILITIES_NO_TITLE, INCOME_STATEMENT]
+    assert find_statement_pages(pages, StatementType.BALANCE_SHEET) == [2, 3]

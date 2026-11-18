@@ -1,0 +1,54 @@
+﻿section,pdf_account_name,pdf_value,is_total,cvm_codes,group,cvm_names,draft_status,reviewed
+1.01,Caixa e equivalentes de caixa,5854,False,1.01.01,,Caixa e Equivalentes de Caixa,single,ok
+1.01,Contas a receber,3056,False,1.01.03,,Contas a Receber,single_tiebreak_by_name,ok
+1.01,Estoques,7504,False,1.01.04,,Estoques,single,ok
+1.01,Tributos a recuperar,1139,False,1.01.06,,Tributos a Recuperar,single,ok
+1.01,Instrumentos financeiros derivativos,7,False,1.01.08.03.01,,Instrumentos Financeiros Derivativos,single,ok
+1.01,Despesas antecipadas,111,False,1.01.08.03.04,,Despesas Antecipadas,single_tiebreak_by_name,ok
+1.01,Outras contas a receber,111,False,1.01.08.03.03,,Outras Contas a Receber,single_tiebreak_by_name,ok
+1.01,Circulante,17782,True,1.01-1.01.08.01,,Ativo Circulante - Ativos Não-Correntes a Venda,manual,ok
+1.01,Ativos mantidos para venda,18,False,1.01.08.01.01,,Ativos Mantidos para Venda,single_tiebreak_by_name,ok
+1.01,Total do ativo circulante,17800,True,1.01,,Ativo Circulante,single,ok
+1.02,Tributos a recuperar,943,False,1.02.01.10.04,,Tributos a Recuperar,single,ok
+1.02,Imposto de renda e contribuição social diferidos,443,False,1.02.01.07,,Tributos Diferidos,single,ok
+1.02,Instrumentos financeiros derivativos,448,False,1.02.01.10.06,,Instrumentos Financeiros Derivativos,single,ok
+1.02,Partes relacionadas,30,False,1.02.01.09,,Créditos com Partes Relacionadas,single_tiebreak_by_name,ok
+1.02,Depósitos judiciais,22,False,1.02.01.10.05,,Depósitos Judiciais,single,ok
+1.02,Despesas antecipadas,19,False,1.02.01.10.08,,Despesas Antecipadas,single,ok
+1.02,Outras contas a receber,605,False,1.02.01.10.07,,Outras Contas a Receber,single,ok
+1.02,Não circulante,2510,True,1.02.01,,Ativo Realizável a Longo Prazo,single,ok
+1.02,Investimentos,326,False,1.02.02,,Investimentos,single_tiebreak_by_name,ok
+1.02,Imobilizado,13073,False,1.02.03.01,,Imobilizado em Operação,single,ok
+1.02,Intangível,5202,False,1.02.04,,Intangível,single,ok
+1.02,Direito de uso,8914,False,1.02.03.02,,Direito de Uso em Arrendamento,single,ok
+1.02,"Investimentos, Imobilizado, Intangível e Direito de uso",27515,True,1.02.02+1.02.03+1.02.04,,Investimentos + Imobilizado + Intangível,manual,ok
+1.02,Total do ativo não circulante,30025,True,1.02,,Ativo Não Circulante,single,ok
+1,TOTAL DO ATIVO,47825,True,1,,Ativo Total,single,ok
+2.01,Fornecedores,11437,False,2.01.02.01.01,,Fornecedores,single,ok
+2.01,Fornecedores - Convênios,990,False,2.01.02.01.02,,Fornecedores - Convênios,single,ok
+2.01,Empréstimos,1202,False,2.01.04.01,,Empréstimos e Financiamentos,single,ok
+2.01,Debêntures e notas promissórias,517,False,2.01.04.02,,Debêntures,single,ok
+2.01,Salários e encargos sociais,753,False,2.01.01,,Obrigações Sociais e Trabalhistas,single,ok
+2.01,Passivo de arrendamento,461,False,2.01.05.02.17,,Passivo de Arrendamento,single,ok
+2.01,Demais impostos a recolher,473,False,2.01.03,taxes_payable,Obrigações Fiscais,manual,ok
+2.01,Imposto de renda e contribuição social a pagar,45,False,2.01.03,taxes_payable,Obrigações Fiscais,manual,ok
+2.01,Receitas a apropriar,507,False,2.01.05.02.09,,Receitas a Apropriar,single,ok
+2.01,Dividendos e juros sobre capital próprio a pagar,123,False,2.01.05.02.01,,Dividendos e JCP a Pagar,single,ok
+2.01,Outras contas a pagar,309,False,2.01.05.02.19,,Outras Contas a Pagar,single,ok
+2.01,Total do passivo circulante,16817,True,2.01,,Passivo Circulante,single,ok
+2.02,Fornecedores,0,False,,,,zero_in_pdf,ok
+2.02,Empréstimos,2414,False,2.02.01.01,,Empréstimos e Financiamentos,single,ok
+2.02,Debêntures e notas promissórias,12166,False,2.02.01.02,,Debêntures,single,ok
+2.02,Provisão para demandas judiciais,266,False,2.02.04,,Provisões,single,ok
+2.02,Passivo de arrendamento,10017,False,2.02.02.02.09,,Passivo de Arrendamento,single,ok
+2.02,Receitas a apropriar,518,False,2.02.06.02,,Receitas a Apropriar,single_tiebreak_by_name,ok
+2.02,Plano de ações liquidadas em caixa,12,False,2.02.02.02.12,,Plano de ações liquidadas em caixa,single,ok
+2.02,Outras contas a pagar,61,False,2.02.02.02.11,,Outras Contas a Pagar,single,ok
+2.02,Total do passivo não circulante,25454,True,2.02,,Passivo Não Circulante,single,ok
+2.03,Capital social,1456,False,2.03.01,,Capital Social Realizado,single,ok
+2.03,Reserva de capital,115,False,2.03.02,capital_reserves,Reservas de Capital,manual,ok
+2.03,Reservas de lucros,4106,False,2.03.04,,Reservas de Lucros,single,ok
+2.03,Ações em tesouraria,-104,False,2.03.02,capital_reserves,Reservas de Capital,manual,ok
+2.03,Outros resultados abrangentes,-19,False,2.03.08,,Outros Resultados Abrangentes,single,ok
+2.03,Total do patrimônio líquido,5554,True,2.03,,Patrimônio Líquido,single,ok
+2,TOTAL DO PASSIVO E PATRIMÔNIO LÍQUIDO,47825,True,2,,Passivo Total,single,ok

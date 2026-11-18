@@ -84,10 +84,18 @@ def build_user_prompt(pages_text: str, statement_type: StatementType, scope: Sco
 
 
 def statement_prompt(pdf_path: Path, statement_type: StatementType, scope: Scope,
-                     prompt_version: str = DEFAULT_PROMPT_VERSION) -> str:
-    """Find the statement pages in the PDF and build the user prompt around them."""
+                     prompt_version: str = DEFAULT_PROMPT_VERSION,
+                     page_numbers: list[int] | None = None) -> str:
+    """Find the statement pages in the PDF and build the user prompt around them.
+
+    `page_numbers` (1-based) overrides the automatic page finder.
+    """
     pages = read_pages(pdf_path)
-    page_indexes = find_statement_pages(pages, statement_type)
+    if page_numbers:
+        page_indexes = [n - 1 for n in page_numbers]
+        logger.info("Using pages %s given by the user", page_numbers)
+    else:
+        page_indexes = find_statement_pages(pages, statement_type)
     if not page_indexes:
         raise ValueError(f"No {statement_type.value} pages found in {pdf_path}")
 
@@ -103,9 +111,10 @@ def extract_statement(
     scope: Scope,
     client: LLMClient,
     prompt_version: str = DEFAULT_PROMPT_VERSION,
+    page_numbers: list[int] | None = None,
 ) -> LLMResult[FinancialStatement]:
     """Find the statement pages in the PDF and ask the LLM to structure them."""
-    prompt = statement_prompt(pdf_path, statement_type, scope, prompt_version)
+    prompt = statement_prompt(pdf_path, statement_type, scope, prompt_version, page_numbers)
     return client.extract(SYSTEM_PROMPT, prompt, FinancialStatement)
 
 

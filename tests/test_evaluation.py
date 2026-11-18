@@ -142,3 +142,71 @@ def test_unlabeled_subtotal_is_paired_by_position_when_names_differ():
     results, extras = evaluate_lines(statement, mapping, cvm)
     assert results["exact_match"].all()
     assert extras == []
+
+
+def test_key_total_uses_last_line_when_partial_subtotal_has_the_same_name():
+    # Unlabeled partial subtotal (before 'held for sale') named like the section total.
+    statement = FinancialStatement.model_validate({
+        "company": "X", "statement_type": "balance_sheet", "scope": "individual",
+        "reference_date": "2025-12-31", "currency_scale": "MILHAO",
+        "lines": [
+            {"account_name": "Caixa", "value": "17782"},
+            {"account_name": "Ativo Circulante", "value": "17782", "is_total": True},
+            {"account_name": "Ativos mantidos para venda", "value": "18"},
+            {"account_name": "Total do ativo circulante", "value": "17800", "is_total": True},
+        ],
+    })
+    from src.evaluation.matching import find_key_total_line
+
+    assert find_key_total_line(statement, "1.01").value == Decimal("17800")
+
+
+def test_grouped_rows_are_compared_by_their_sum():
+    # Two PDF lines that the CVM reports as one account (e.g. Assaí's tax payables).
+    statement = FinancialStatement.model_validate({
+        "company": "X", "statement_type": "balance_sheet", "scope": "individual",
+        "reference_date": "2025-12-31", "currency_scale": "MILHAO",
+        "lines": [
+            {"account_name": "Demais impostos a recolher", "value": "473"},
+            {"account_name": "IR e CS a pagar", "value": "45"},
+            {"account_name": "Total do passivo circulante", "value": "518", "is_total": True},
+        ],
+    })
+    cvm = pd.DataFrame({"code": ["2.01", "2.01.03"], "name": ["", ""],
+                        "value": [Decimal(518_000_000), Decimal(518_000_000)]})
+    mapping = [
+        MappingRow("2.01", "Demais impostos a recolher", [(1, "2.01.03")], group="taxes"),
+        MappingRow("2.01", "IR e CS a pagar", [(1, "2.01.03")], group="taxes"),
+        MappingRow("2.01", "Total do passivo circulante", [(1, "2.01")], is_total=True),
+    ]
+    results, _ = evaluate_lines(statement, mapping, cvm)
+    assert len(results) == 2
+    taxes = results[results["account"].str.contains("Demais")].iloc[0]
+    assert taxes["account"] == "Demais impostos a recolher + IR e CS a pagar"
+    assert taxes["exact_match"]
+
+
+def test_missing_partial_subtotal_is_reported_missing_not_wrong():
+    # Earnings-release layout: no partial subtotal before 'held for sale'.
+    statement = FinancialStatement.model_validate({
+        "company": "X", "statement_type": "balance_sheet", "scope": "individual",
+        "reference_date": "2025-12-31", "currency_scale": "MILHAO",
+        "lines": [
+            {"account_name": "Caixa", "value": "17782"},
+            {"account_name": "Ativos mantidos para venda", "value": "18"},
+            {"account_name": "Ativo Circulante", "value": "17800", "is_total": True},
+        ],
+    })
+    cvm = pd.DataFrame({"code": ["1.01", "1.01.01", "1.01.08.01"], "name": [""] * 3,
+                        "value": [Decimal(v) * 1_000_000 for v in (17800, 17782, 18)]})
+    mapping = [
+        MappingRow("1.01", "Caixa", [(1, "1.01.01")]),
+        MappingRow("1.01", "Circulante", [(1, "1.01"), (-1, "1.01.08.01")], is_total=True),
+        MappingRow("1.01", "Ativos mantidos para venda", [(1, "1.01.08.01")]),
+        MappingRow("1.01", "Total do ativo circulante", [(1, "1.01")], is_total=True),
+    ]
+    results, extras = evaluate_lines(statement, mapping, cvm)
+    by_account = results.set_index("account")
+    assert by_account.loc["Total do ativo circulante", "exact_match"]
+    assert by_account.loc["Circulante", "extracted_value"] is None
+    assert extras == []

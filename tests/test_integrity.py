@@ -88,6 +88,8 @@ def test_detect_scale_from_header():
     assert detect_scale("Balanço Patrimonial\n(Em milhares de reais)") == CurrencyScale.THOUSAND
     assert detect_scale("Balanço Patrimonial\nEm Reais") == CurrencyScale.UNIT
     assert detect_scale("Balanço Patrimonial") is None
+    assert detect_scale("Balanços patrimoniais (Em milhões de reais)") == CurrencyScale.MILLION
+    assert detect_scale("IV – Balanço Patrimonial (R$ milhões)") == CurrencyScale.MILLION
 
 
 def test_scale_check_flags_wrong_scale():
